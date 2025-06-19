@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms in html</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend
+        style="
+          text-transform: capitalize;
+          font-size: x-large;
+          font-weight: bolder;
+        "
+      >
+        form
+      </legend>
+      <form class="form">
+        <label>Name</label>
+        <input required type="text" placeholder="enter the name" /><br />
+        <label>Email</label>
+        <input required type="eamil" placeholder="enter the email" /><br />
+        <fieldset>
+          <legend>gender</legend>
+          <label>male</label>
+          <input required type="radio" />
+          <label>female</label>
+          <input required type="radio" />
+          <br />
+        </fieldset>
+        <label>Phone Numbe</label>
+        <input required type="tel" placeholder="enter the number" />
+        <br />
+        <label>country</label>
+        <select>
+          <option value="india">India</option>
+          <option value="america">America</option>
+          <option value="africa">Africa</option>
+        </select>
+        <br />
+        <label>address</label>
+        <text
+          area
+          cols="2"
+          rows="4"
+          aria-placeholder="enter the address"
+        ></text>
+        <br />
+        <label>time</label>
+        <input type="time" /><br />
+        <label>date</label>
+        <input type="date" /><br />
+        <label>check box</label>
+        <input type="checkbox" /><br />
+        <label>colors</label>
+        <input type="color" />
+        <br />
+        <label>chose file</label>
+        <input type="file" />
+        <br />
+        <label>search</label>
+        <input type="search" />
+        <br />
+        <label>month</label>
+        <input type="month" />
+        <br />
+        <label>week</label>
+        <input type="week" />
+        <br />
+        <label>number</label>
+        <input type="number" />
+        <br />
+        <label>datetime</label>
+        <input type="datetime" />
+        <br />
+        <label>img</label>
+        <input type="img" />
+        <br />
+        <label>url</label>
+        <input type="url" />
+        <br />
+        <button type="summit">sumit</button>
+      </form>
+    </fieldset>
+  </body>
+</html>

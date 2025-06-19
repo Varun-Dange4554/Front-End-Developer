@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>canvas</title>
+  </head>
+  <body>
+    <h1>canvas html example</h1>
+    <canvas
+      id="my_canvas"
+      width="600"
+      height="500"
+      style="border: 9px solid red"
+    >
+    </canvas>
+    <script>
+      //Gets the canvas elements context
+      const Canvas = document.getElementById("my_canvas");
+      const ctx = Canvas.getContext("2d");
+
+      //draw a rectangle
+      ctx.fillStyle = "blue";
+      //co-ordinats x-axis,y-asix,width,heigth
+      ctx.fillRect(300, 100, 100, 100);
+      //Draw a circle
+      ctx.beginPath();
+      // co-ordinats x,y,r,start-angle,end-angle
+      ctx.arc(300, 300, 150, 0, 2 * Math.PI);
+      ctx.fillStyle = "red";
+      ctx.fill(); //we have invoke this methods
+
+      //draw a line
+      ctx.beginPath();
+      ctx.moveTo(90, 90); //x y axis coordinations
+      ctx.lineTo(180, 160); //x y axis coordinations
+      ctx.StrokeStyle = "green";
+      ctx.linewidth = 8;
+      ctx.stroke();
+      //newv Path begin
+      ctx.beginPath();
+      ctx.strokeStyle = "blue";
+      ctx.moveTo(400, 250);
+      //to of the line where we put our coordination
+      ctx.lineTo(40, 20);
+      //Bottomof the line where we put our coordination
+      ctx.stroke();
+    </script>
+  </body>
+</html>

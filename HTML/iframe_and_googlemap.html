@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iframe and google map</title>
+  </head>
+  <body>
+    <h1>iframe and google map</h1>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/fbUECPsxuGI?si=5eO8T-xZZ_wjttkb"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <div style="overflow: hidden; max-width: 100%; width: 500px; height: 500px">
+      <div
+        id="display-google-map"
+        style="height: 100%; width: 100%; max-width: 100%"
+      >
+        <iframe
+          style="height: 100%; width: 100%; border: 0"
+          frameborder="0"
+          src="https://www.google.com/maps/embed/v1/place?q=jogeshri&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+        ></iframe>
+      </div>
+      <a
+        class="googlecoder"
+        href="https://www.bootstrapskins.com/themes"
+        id="enable-map-data"
+        >premium bootstrap themes</a
+      ><style>
+        #display-google-map img {
+          max-height: none;
+          max-width: none !important;
+          background: none !important;
+        }
+      </style>
+    </div>
+  </body>
+</html>
