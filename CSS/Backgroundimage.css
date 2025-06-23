@@ -1,0 +1,18 @@
+body {
+    height: 100vh;
+
+}
+
+.img {
+    border: 1px solid black;
+    height: inherit;
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/18/19/09/beach-1836461_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
