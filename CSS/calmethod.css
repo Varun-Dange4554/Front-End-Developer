@@ -1,0 +1,19 @@
+:root {
+    --width: 100px;
+    --width-1: 100px;
+    --height: 100px;
+    --height-1: 100px;
+
+}
+
+.container {
+    border: 1px solid red;
+    width: 100px;
+    height: 150px;
+}
+
+.container_1 {
+    border: 1px solid green;
+    width: calc(var(--width) + var(--width-1));
+    height: calc(var(--height-1) + var(--height));
+}
