@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-scale>img {
+    width: 400;
+    height: 300;
+    border: 1px solid red;
+    margin: 10px;
+    
+    
+}
+
+body {
+    border: 1px solid green;
+    height: 120vh;
+
+}
+
+img:hover {
+    scale: 1.5;
+    cursor: pointer;
+
+
+}
