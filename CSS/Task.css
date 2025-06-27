@@ -1,0 +1,19 @@
+.container {
+    border: 1px solid red;
+    height: 100vh;
+    display: flexbox;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+
+#box-1 {
+    transform: skewX(200deg);
+}

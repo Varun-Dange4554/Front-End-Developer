@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.div-shadows >img{
+    width: 500px;
+    height: 500px;
+    box-shadow: 10px 10px 10px 10px gray;
+}
+
+h1 {
+    text-shadow: 6px -9px 3px red;
+    margin: 200px;
+    padding: 0px;
+}
+
+body {
+    border: 2px solid green;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+    filter: drop-shadow (40px 10px 30px);
+}

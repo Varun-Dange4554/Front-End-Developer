@@ -1,0 +1,51 @@
+.container {
+    border: 1px solid red;
+    height: 97vh;
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+
+}
+
+.child-2 {
+    transform: rotate(60deg);
+
+}
+
+.child-3 {
+    transform: rotate(90deg);
+
+}
+
+.child-4 {
+    transform: rotate(180deg);
+
+}
+
+.child-5 {
+    transform: rotate(360deg);
+
+}
+
+.child-6 {
+    transform: rotateX(50deg);
+
+}
+
+.child-7 {
+    transform: rotateY(50deg);
+
+}
+
+.child-8 {
+    transform: rotateZ(40deg);
+
+}

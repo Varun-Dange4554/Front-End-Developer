@@ -1,0 +1,37 @@
+.container {
+    border: 1px solid red;
+    height: 100vh;
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box {
+    width: 150px;
+    height: 160px;
+    background-color: red;
+
+}
+
+.child-1:hover {
+    transform: skewx(200deg);
+
+}
+
+.child-2 {
+    transform: skewY(200deg);
+}
+
+.child-3 {
+    transform: skew(30deg, 20deg);
+}
+
+.child-4 {
+    transform: skew(50deg, 50deg);
+}
+
+.child-5 {
+    transform: skew(10deg, 50deg);
+}

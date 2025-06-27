@@ -1,0 +1,29 @@
+h1 {
+    text-transform: lowercase;
+
+}
+
+
+.font-1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: lighter;
+
+}
+
+.font-2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.font-3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.font-4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.font-5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

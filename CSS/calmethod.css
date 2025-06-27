@@ -6,11 +6,13 @@
 
 }
 
+
 .container {
     border: 1px solid red;
-    width: 800px;
-    height: 800px;
-} 
+    width: 400px;
+    height: 400px;
+    box-sizing: content-box;
+}
 
 .container_1 {
     border: 1px solid green;
