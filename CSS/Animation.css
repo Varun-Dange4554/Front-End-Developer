@@ -24,7 +24,7 @@
 
 /* Animation */
 .hello:hover {
-    transition: ease-out;
+    transition: ease-in-out;
     transition-duration: 0.5s;
     transition-delay: 0.7s;
     transform: scale(1.5);
@@ -32,7 +32,7 @@
 
 .animation {
     animation-name: naina;
-    animation-duration: 1s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     text-align: center;
@@ -47,7 +47,7 @@
 
 @keyframes naina {
     from {
-        translate: 200vm 0;
+        translate: 200vw 0;
         scale: 200% 1;
     }
 
@@ -60,7 +60,7 @@
 
 .animation2 {
     animation-name: sunaina;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     text-align: center;
@@ -74,7 +74,7 @@
 
 @keyframes sunaina {
     from {
-        translate: -200vm 0;
+        translate: -200vw 0;
         scale: 200% 1;
     }
 

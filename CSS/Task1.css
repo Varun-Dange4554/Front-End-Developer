@@ -1,0 +1,24 @@
+body {
+    border: 3px solid green;
+    height: 97vh;
+
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    animation: mymove 10s infinite;
+    display: flex;
+    justify-self: center;
+
+
+
+}
+
+@keyframes mymove {
+    50% {
+        transform: rotate(360deg);
+        transform: rotate3d(1, 1, 1, 360deg);
+
+    }
+}

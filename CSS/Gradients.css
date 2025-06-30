@@ -1,0 +1,44 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 350px;
+    padding: 60px;
+    border: 2px solid red;
+    background: linear-gradient(to left, red, green);
+    /* -webkit-text-fill-color: transparent;
+    background-clip: text; */
+
+}
+
+.redial {
+    margin-top: 40px;
+    width: 200px;
+    height: 200px;
+    /* background: radial-gradient(red, green, blue); */
+    background: repeating-radial-gradient(circle, red, green 10%, blue 15%);
+
+
+    border: 2px solid red;
+}
+
+.conic {
+    margin-top: 200px;
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(from 0deg at center,
+            red,
+            yellow,
+            blue,
+            green,
+            red);
+    border-radius: 50%;
+    border: 2px solid red;
+}
