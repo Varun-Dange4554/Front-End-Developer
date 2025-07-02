@@ -8,14 +8,14 @@
 
 
 .container {
-    border: 1px solid red;
-    width: 400px;
-    height: 400px;
+    border: 3px solid red;
+    /* width: 400px; */
+    height: 97vh;
     box-sizing: content-box;
 }
 
 .container_1 {
-    border: 1px solid green;
+    border: 3px solid green;
     width: calc(var(--width) + var(--width-1));
     height: calc(var(--height-1) + var(--height));
 }
