@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body+div {
+    display: none;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    border: 3px solid red;
+    margin-top: 20px;
+    text-transform: capitalize;
+
+}
+
+.div-parent {
+    margin-top: 90px;
+    margin-left: 600px;
+}
+
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+
+}
+
+#div-2 {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to right, red, green);
+    color: black;
+    font-size: 24px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px color(0, 0, 0, 0.4);
+    animation: mymove 3s linear infinite;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+
+@keyframes mymove {
+    0% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    50% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+
+    100% {
+        transform: matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1);
+
+    }
+
+}
+
+#div-3,
+img {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to left, aqua, blue);
+    color: black;
+    font-size: 24px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px color(0, 0, 0, 0.4);
+    animation: matrix3d 3s linear infinite;
+
+}
+
+@keyframes matrix3d {
+    0% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    50% {
+        transform: matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1);
+    }
+
+    100% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+}
+
+#div-1 {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to left, aqua, blue);
+    color: black;
+    font-size: 24px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px color(0, 0, 0, 0.4);
+    animation: matrix3d 3s linear infinite;
+
+}
+
+@keyframes matrix3d {
+    0% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    50% {
+        transform: matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1);
+    }
+
+    /* 100% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    } */
+}
+
+img {
+    background-size: auto;
+    height: 150px;
+    width: 150px;
+}
+
+img:hover {
+    scale: 2.0
+}
