@@ -1,0 +1,16 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.form{
+    
+}
+
+h1 {
+    height: 130px;
+    background-color: chocolate;
+    text-align: center;
+    padding-top: 20px;
+}
