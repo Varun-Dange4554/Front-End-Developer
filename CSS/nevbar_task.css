@@ -1,0 +1,82 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.content {
+    height: 50px;
+    width: 100%;
+
+    background-color: aqua;
+    border: 1px solid black;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.child_1 {
+    height: 40px;
+    width: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+
+
+}
+
+.input1>img {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 30px;
+
+}
+
+
+.input2>img {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 70px;
+
+}
+
+.premium {
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 71px;
+
+
+}
+
+.child_2 {
+    height: 40px;
+    width: 60%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serch1 {
+    width: 100%;
+    display: flex;
+
+
+}
+
+.serch1 input {
+    width: 100%;
+
+}
+
+.child_3 {
+    height: 40px;
+    width: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+
+}
