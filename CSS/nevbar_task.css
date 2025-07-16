@@ -54,21 +54,22 @@
 .child_2 {
     height: 40px;
     width: 60%;
+
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.serch1 {
+.search1 {
     width: 100%;
-    display: flex;
+    /* display: flex; */
 
 
 }
 
-.serch1 input {
-    width: 100%;
+.search1 input {
+    width: 90%;
 
 }
 
