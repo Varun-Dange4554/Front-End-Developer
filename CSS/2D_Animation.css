@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+     box-sizing: border-box;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+    margin: 20px;
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    transition:  3s ease;
+
+}
+.translate:hover{
+    transform: translate(50px,20px);
+
+}
+.rotate:hover{
+    transform: rotate(45deg);
+
+}
+.scale:hover{
+    transform: scale(1.5);
+}
+.skew:hover{
+    transform: skew(20deg,10deg);
+
+}

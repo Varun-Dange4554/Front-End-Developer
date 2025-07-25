@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.box{
+    height: 97vh;
+    border: 2px solid black;
+    
+
+}
+.box3D{
+    height: 120px;
+    width: 120px;
+    background-color: chartreuse;
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+    line-height: 120px;
+    transition:  2s ease-in;
+    
+    
+
+    
+}
+.rotateX:hover{
+    transform: rotatex(180deg);
+
+}
+.rotateY:hover{
+    transform: rotatey(180deg);
+}
+.rotateZ:hover{
+    transform: rotatez(180deg);
+}
+.translateZ:hover{
+    transform: translatez(100px);
+}
