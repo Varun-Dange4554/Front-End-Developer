@@ -3,16 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
-.my-box{
-    height: 300px;
+.box{
+    height: 150px;
     width: 200px;
+    border: 2px solid black;
+    margin-left: 100px;
+}
+#box1{
+    position: relative;
     background-color: red;
+    top: 40px;
+    z-index: 3;
+    
+    
     
 }
-.box1{
-    height: 300px;
-    width: 200px;
+#box2{
+    position: relative;
+    z-index: 2;
     background-color: chartreuse;
-    position: absolute;
-    /* z-index: 3; */
+    /* visibility: hidden;Will hide the element but show its empty space
+     display: none; will hide the element and the spsce 
+     z-index will work only position :relativ, absolute,fixed or sticky */
 }
+#box3{
+    background-color: pink;
+    
+    
+}
+#box4{
+    background-color: chocolate;
+}
+
+
+
+
