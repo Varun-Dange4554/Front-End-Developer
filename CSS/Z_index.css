@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.my-box{
+    height: 300px;
+    width: 200px;
+    background-color: red;
+    
+}
+.box1{
+    height: 300px;
+    width: 200px;
+    background-color: chartreuse;
+    position: absolute;
+    /* z-index: 3; */
+}
