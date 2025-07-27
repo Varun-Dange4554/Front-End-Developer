@@ -6,7 +6,7 @@
 .navbar{
     width: 1520.8px;
     height: 60px;
-    /* border: 1px solid black; */
+    /* border: 1px solid black; */ 
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -64,6 +64,7 @@ p-2{
     /* border:2px solid chartreuse; */
     display: flex;
 }
+
 .select-tag{
     width: 51.6px;
     height: 40px;
@@ -74,8 +75,6 @@ p-2{
     border-bottom-left-radius: 10px;
 }
 
-
-}
 .search-bar input{
     width: 672.25px;
     height: 40px;
