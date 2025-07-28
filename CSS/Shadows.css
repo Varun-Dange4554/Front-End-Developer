@@ -4,25 +4,29 @@
     box-sizing: border-box;
 
 }
+body{
+    position: absolute;
+    top:50%;
+    left:50%;
+     transform: translate(-50%,-50%);
+}
 
 .div-shadows >img{
-    width: 500px;
-    height: 500px;
+    width: 200px;
+    height: 200px;
     box-shadow: 10px 10px 10px 10px gray;
+
 }
 
 h1 {
     text-shadow: 6px -9px 3px red;
-    margin: 200px;
+    margin: 50px;
     padding: 0px;
 }
 
-body {
-    border: 2px solid green;
-}
 
-img {
-    width: 500px;
-    height: 400px;
-    filter: drop-shadow (40px 10px 30px);
+.img-1 >img {
+    width: 300px;
+    height: 200px;
+    filter: drop-shadow (4px 10px 30px black);
 }

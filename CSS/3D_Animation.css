@@ -6,6 +6,9 @@
 .box{
     height: 97vh;
     border: 2px solid black;
+    perspective: 500px;
+
+
     
 
 }
@@ -18,11 +21,8 @@
     margin: 20px;
     text-align: center;
     line-height: 120px;
-    transition:  2s ease-in;
-    
-    
+    transition:   2s ease-in;
 
-    
 }
 .rotateX:hover{
     transform: rotatex(180deg);

@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn >button{
+    height: 100px;
+    width: 250px;
+    border-radius: 50px;
+    outline: 4px outset red;
+    outline-offset: 20px;
+    outline-style: dashed;
+    font-size: x-large;
+
+}
+button:hover{
+    background-color: blue;
+}
