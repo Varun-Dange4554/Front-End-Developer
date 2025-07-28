@@ -7,31 +7,30 @@
     border: 2px solid black;
     height: 100px;
     width: 1024px;
-    margin-left: 248.0px;
-    margin-right: 248.0px;
-    display: flex;
-    
+    margin-left: 230px;
+    margin-right: 230px; 
 }
-
-.img-1 img{
+.box-1 img{
+    border: 1px solid red;
       height: 95px;
       width: 150px;
       margin-bottom: 5px;
 
 }
-.box-2{
+.box-2 {
     border: 2px solid red;
-    width: 900px;
-    height:35px;
-    margin-top: 40px;
-    display:flex ;
-    justify-content: space-between;
-    /* padding-left: 151px; */
+    width: 870px;
+    height:37px;
+    margin-left: 151px;
+    margin-top: 50px;
+    text-align:center;
+    line-height: 30px;
 }
 
-.p-1 .p-2 .p-3 .p-4 .p-5 .p-6 .p-7{
+a {
     color: #555555;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
-    padding: 7px 15px;
+    padding: 7px 15px; 
+    text-decoration: none;
 }
