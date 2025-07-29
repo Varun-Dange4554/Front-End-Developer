@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 97vh;
+    border: 4px double red;
+}
+.container{
+    height: 97vh;
+    border: 4px solid black;
+    display: flex;            /*move to rows */  
+     justify-content: center; /*  move to x-axis*/
+    align-items: center;       /*move to y-axis */
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 20px;
+    background-color: aqua;
+     align-content: center;  /*move to y-axis */
+     text-align: center;  /*move to x-axis  */
+     
+    
+}
