@@ -1,0 +1,9 @@
+.float_prop{
+    border: 3px dotted red;
+    /* float: left; */
+    /* float: inline-end; */
+    /* float: inline-start; */
+    float: center;
+    width: 50%;
+    margin: auto;
+}
