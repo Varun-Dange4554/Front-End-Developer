@@ -9,30 +9,9 @@ body{
     top: 50%;
     transform: translate(-50%,-50%);
 }
-.container{
+main{
     height: 300px;
     width: 600px;
     border: 1px solid black;
 
 }
-.box{
-  height: 60px;
-    width: 100%;
-    margin: 2px;
-    background-color: lightgreen;
-    color: white;
-    font-size: x-large;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* .box-1{
-    height: 60px;
-    width: 100%;
-    background-color: lightgreen;
-} */
-/* .contain-1 {
-    border: 2px solid gray;
-    height: 180px;
-    width: 100%;
-} */
