@@ -12,5 +12,5 @@ body{
 }
 h2::before{
     counter-increment: value;
-    content: "DATA" counter(value)" -->";
+    content: " DATA" counter(value)" -->";
 }

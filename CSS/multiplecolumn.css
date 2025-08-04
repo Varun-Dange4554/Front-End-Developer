@@ -1,5 +1,5 @@
 .container{
-    column-count: 3;
+    column-count: 9;
     column-gap: 30px;
     column-rule-style: dashed;
     column-rule-width: 10px;

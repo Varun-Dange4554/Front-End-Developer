@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+html,
+body,
+ul{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.select_tag{
+    width: 150%;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+ul{
+    margin-top: 10px;
+}
+li{
+    border: 1px solid green;
+    height: 20px;
+    width: 100%;
+    margin-left:40px;
+    
+}
