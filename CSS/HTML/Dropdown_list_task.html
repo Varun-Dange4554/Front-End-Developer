@@ -3,22 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown list</title>
+    <title>Manual Drop Down</title>
     <link rel="stylesheet" href="../Dropdown_list_task.css">
 </head>
 <body>
-    <fieldset class="fieldset" >
-    <!-- <select name="dropdown list" id="dropdown list " valu=" " class="select-tag">  -->
-
-            <legend >Age</legend>
-    <select name="dropdown list" id="dropdown list " valu=" " class="select-tag"> 
-    <option value=" "> </option>
-    <option value="None">None </option>
-    <option value="Ten ">Ten </option>
-    <option value=" Twenty">twenty </option>
-    <option value="Thirty ">Thirty </option>
+    <fieldset class="mainCont">
+        <legend>age</legend>
+        <div class="select_tag_dummy_div">
+            <input id="select" name="select"
+            class="select_tag_dummy_div" type="text">
+        </div>
     </fieldset>
-    </select>
-
+    <div id="dropdowns" class="list">
+        <ul>
+            <li>none</li>
+            <li>ten</li>
+            <li>twenty</li>
+            <li>thirty</li>
+        </ul>
+    </div>
 </body>
+<script>
+    const body=document.querySelector('body');
+    const input=document.querySelector('#select')
+    const dropdowns = document.querySelector('#dropdowns');
+
+      input.addEventListener('focus', () => {
+        dropdowns.classList.add('block');
+    });
+
+    body.addEventListener('focusout', () => {
+        dropdowns.classList.remove('block');
+    });
+</script>
 </html>
