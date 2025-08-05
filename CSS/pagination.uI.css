@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display:flex;
+    
+
+
+}
+/* .container{
+    display: flex;
+    align-items: center;  
+   margin-top: 30px;
+   width: 40%;
+    /* border: 1px solid red; 
+    justify-content: space-between;
+
+
+}
+.number{
+    display: flex;
+    gap: 15px;
+
+}
+p{
+   border: 1px solid black;
+   height: 40px;
+   width: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50px;
+   
+}
+.arrow_back ,.arrow_forward{
+   border: 1px solid black;
+   height: 50px;
+   width: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50px;
+   
+}
+p:hover,
+.arrow_back:hover ,
+.arrow_forward:hover{
+    background-color: blueviolet;
+} */
+
+
+
+
+/* example2 */
+.content{
+    display: flex;
+    margin-top: 70px;
+    width: 70%;
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+}
+p1{
+    height: 35px;
+    width: 100px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+}
+p{
+    height: 35px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    cursor: pointer;
+
+}
+p:hover ,p1:hover{
+    background-color: red;
+    cursor: pointer;
+
+    
+}
