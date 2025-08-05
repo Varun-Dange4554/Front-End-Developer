@@ -1,0 +1,64 @@
+*{
+    padding: 0px;
+    margin: 0px ;
+    box-sizing: border-box;
+    
+}
+body,
+html{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+   
+}
+body{
+     display: flex;
+    align-items: center;
+
+}
+.container{
+    height: 40vh;
+    width: inherit;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.number{
+    height: 20px;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+p1, p2,  p4, p5 {
+    background-color: gray;
+    height: 45px;
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+p3{
+    background-color: red;
+    height: 45px;
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+svg{
+    display: flex;
+     background-color: gray;
+    
+   
+}
+.left{
+    display: flex;
+    align-items: center;
+}
