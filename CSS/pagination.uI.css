@@ -10,12 +10,12 @@ body{
 
 
 }
-/* .container{
+.container{
     display: flex;
     align-items: center;  
    margin-top: 30px;
    width: 40%;
-    /* border: 1px solid red; 
+     /* border: 1px solid red;  */
     justify-content: space-between;
 
 
@@ -49,13 +49,13 @@ p:hover,
 .arrow_back:hover ,
 .arrow_forward:hover{
     background-color: blueviolet;
-} */
+}
 
 
 
 
 /* example2 */
-.content{
+/* .content{
     display: flex;
     margin-top: 70px;
     width: 70%;
@@ -65,7 +65,7 @@ p:hover,
 p1{
     height: 35px;
     width: 100px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,4 +86,4 @@ p:hover ,p1:hover{
     cursor: pointer;
 
     
-}
+} */

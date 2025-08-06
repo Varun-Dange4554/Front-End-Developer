@@ -1,0 +1,23 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+.text{
+    text-align: center;
+    text-transform: capitalize;
+    /* font-size: xx-large; */
+    font-size: 67px;
+    background: repeating-linear-gradient( green,yellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAljQY1y4jr8KCVNlFj8Sh_zbfWX2Lgf-bQ&s')
+    10 repeat ;
+
+
+}
