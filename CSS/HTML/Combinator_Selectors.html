@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator selectors</title>
+    <link rel="stylesheet" href="../Combinator_Selectors.css" >
+</head>
+<body>
+    <!-- combinator selector -->
+     <!-- !start child combinator -->
+      <div class="combinator">
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+    </div>
+    <!-- end child combinator -->
+
+        <!--start Descendant combinator  -->
+        <ul>
+            <li>
+                <div>Item 1</div>
+                <ul>
+                    <li>subitem A</li>
+                    <li>Subitem B</li>
+                </ul>
+
+            </li>
+            <li>
+                <div>Item 2</div>
+                <ul>
+                    <li>subitem A</li>
+                    <li>Subitem B</li>
+                </ul>
+            </li>
+        </ul>
+        <!-- end Descendent combinator -->
+
+        <!-- subsequent-sibling start -->
+         <article>
+            <p>hello</p>
+            <span>this is not red because it appear before any paregraph</span>
+            <p>Here is a paregraph.</p>
+            <code>Here is a parehraph.</code>
+            <span>
+                this span is red because it appears after the paragraph,even though there are other nodes is between .
+            </span>
+            <p>Whatever it may be,keep smilling .</p>
+            <h1>Dream big</h1>
+            <span>
+                Doesn'tmatter hov many or what kind of nodes are in between, all spans from the same parent after a paregraph are red.
+            </span>
+         </article>
+         <span>
+            THis span is not because it dosen't share a parent with a paregraph.
+         </span>
+
+         <!-- subsequent-sibling end  -->
+
+         <!-- next-sibling start -->
+          <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+          </ul>
+          <p>
+            <b>hello !</b>
+            <i>hello !</i>
+          </p>
+          <!-- next-sibling end  -->
+
+          <!-- namespace start -->
+           <p>This paregarph <a href="#">has a link</a>.</p>
+           <svg width="400" viewBox="0 0 400 20">
+            <a href="#">
+                <text x="0" y="15">Link created in svg</text>
+            </a>
+           </svg>
+           <!-- name space end -->
+
+           <!-- & nesting selector start -->
+            <p class="example">
+                This paregraph <a href="#">contains a link </a>,try hovering or focusing it.
+            </p>
+            <!-- & nesting selector end  -->
+
+</body>
+</html>
