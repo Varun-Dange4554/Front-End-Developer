@@ -13,8 +13,8 @@ body{
     width: 700px;
     height: 320px;
     background-color: blue;
-    display:block;
-    align-content: center;
+    /* display:block; */
+    /* align-content: center; */
 }
 .box{
     margin: 3px;
@@ -28,7 +28,7 @@ body{
     justify-content: center;
 }
 .contain-1,.contain-2,.contain-3 {
-          display: flex;
+    display: flex;
 }
 .box-3{
     flex-shrink: 0.5;

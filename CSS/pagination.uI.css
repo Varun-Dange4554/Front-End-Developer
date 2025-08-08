@@ -5,7 +5,11 @@
     
 }
 body{
-    display:flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
     
 
 
@@ -13,9 +17,11 @@ body{
 .container{
     display: flex;
     align-items: center;  
-   margin-top: 30px;
-   width: 40%;
-     /* border: 1px solid red;  */
+    
+
+   width: 50%;
+   gap: 50px;
+     
     justify-content: space-between;
 
 
@@ -37,11 +43,11 @@ p{
 }
 .arrow_back ,.arrow_forward{
    border: 1px solid black;
-   height: 50px;
-   width: 50px;
+   height: 40px;
+   width: 40px;
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: space-between;
    border-radius: 50px;
    
 }
@@ -55,17 +61,16 @@ p:hover,
 
 
 /* example2 */
-/* .content{
+ /* .content{
     display: flex;
     margin-top: 70px;
     width: 70%;
-    /* border: 1px solid black; */
     justify-content: space-evenly;
 }
 p1{
     height: 35px;
     width: 100px;
-    /* border: 2px solid red; */
+    /* border: 2px solid red; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,4 +91,4 @@ p:hover ,p1:hover{
     cursor: pointer;
 
     
-} */
+}  */
