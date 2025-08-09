@@ -6,17 +6,21 @@
 }
 body{
     /* display: flex;
-    justify-content: center;
-      margin-top: 150px;  */
-    background-color: gray;
+    justify-content: center;*/
+      /* margin-top: 150px;   */
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    
 }
 .main{
     background-color:#E6E6E6;
-    height: 97vh;
+    height: 120vh;
     width: 100%;
     border: 3px solid white;
+    
     /* border-radius: 60px; */
-    padding: 20px 40px 0px 50px ;
+    /* padding: 20px 40px 0px 50px ; */
    
 }
 .navbar{
@@ -49,20 +53,77 @@ p1 {
     width: 18%;
     display:flex ;
     justify-content: space-evenly;
-    /* border: 1px solid red; */
+    
 }
 
 
-section{
-    margin-top: 30px;
+section1{
+
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    
+
+    
 }
-img {
-    background-image: url(CSS/utils/building icon.jpeg)
-    height: 30px;
-    width: 30px;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.img1 img{
+    
+    border-radius: 50%;
+    height: 100px;
+    width:  100px;
+    border: 3px solid white;   
+ 
+}
+
+h1{
+    text-align: center;
+    line-height: 1.3;
+    font-size:40px ;
+
+}
+button{
+    height: 50px;
+    width: 10%;
+    border-radius: 30px;
+    margin-left: 630px;
+  margin-top: 15px;
+    color: #E6E6E6;
+    background-color: black;
+    display: block;
+    
+}
+.main_1{
+    /* border: 3px solid black; */
+    padding: 20px 40px 0px 50px ;
+border-bottom-left-radius: 90px;
+border-bottom-right-radius: 90px;
+
+    
+    
+
+}
+.section3{
+
+}
+    
+
+
+    
+
+.main_2{
+     height: 300px;
+    width: 100%;
+    background-color: white;
     border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px 0px 50px ;
+
+}
+img{
+    height: 100px;
+    width: 100px;
 }
