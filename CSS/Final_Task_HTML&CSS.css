@@ -7,7 +7,7 @@
 body{
     /* display: flex;
     justify-content: center;*/
-      /* margin-top: 150px;   */
+      /* margin: 150px;   */
     background-color:white;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
@@ -15,7 +15,7 @@ body{
 }
 .main{
     background-color:#E6E6E6;
-    height: 120vh;
+    height: 300vh;
     width: 100%;
     border: 3px solid white;
     
@@ -68,13 +68,17 @@ section1{
     
 }
 
-.img1 img{
+.img1 img {
     
     border-radius: 50%;
     height: 100px;
     width:  100px;
     border: 3px solid white;   
  
+}
+.p2{
+       height: 100px;
+    width:  100px;
 }
 
 h1{
@@ -83,47 +87,113 @@ h1{
     font-size:40px ;
 
 }
+
 button{
     height: 50px;
     width: 10%;
     border-radius: 30px;
     margin-left: 630px;
-  margin-top: 15px;
+  margin-top: 20px;
     color: #E6E6E6;
     background-color: black;
-    display: block;
+    
     
 }
 .main_1{
     /* border: 3px solid black; */
     padding: 20px 40px 0px 50px ;
-border-bottom-left-radius: 90px;
-border-bottom-right-radius: 90px;
-
-    
-    
 
 }
+
 .section3{
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid black; */
 
-}
-    
+} 
 
-
-    
-
-.main_2{
-     height: 300px;
+.main_2 {
+     height: 200px;
     width: 100%;
     background-color: white;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     align-items: center;
+    margin-top: 60px;
     justify-content: space-between;
+    padding: 0px 40px 0px 50px ;
+    
+    
+}
+img  {
+    height: 100px;
+    width: 100px;
+    
+}
+.p2 img{
+    height: 10px;
+    width: 10px;
+     
+}
+ .p2{
+    font-size: x-large;
+    line-height: 100px;
+    display: flex;
+ }
+.main3{
+    height: 200px;
+    width: 100%;
+    /* border: 3px solid black; */
+
+    
+}
+h2{
+    
+    text-align: center;
+}
+.h1{
+    margin-top: 80px;
+}
+.hr{
+    height: 100px;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;    
+}
+hr{
+    width: 80%;
+    position:absolute;
+    
+}
+.btn{
+    background-color:white;
+    color: black;
+    position: relative;
+    margin-left: 40px;
+    transform: skew(10deg, -10deg);
+    /* transform: rotate(-4deg ); */
+     
+}
+footer{
+    border: 2px solid black;
+    height: 300px;
+    width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   /* align-items: center;  */
+   
     padding: 0px 40px 0px 50px ;
 
 }
-img{
-    height: 100px;
-    width: 100px;
-}
+     
+.main4 img{
+    
+    height: 50px;
+    width: 50px;
+    margin-top: 50px;
+    /* margin-inline: 150px; */
+    
+ }
