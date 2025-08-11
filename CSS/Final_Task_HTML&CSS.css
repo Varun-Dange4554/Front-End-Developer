@@ -15,7 +15,7 @@ body{
 }
 .main{
     background-color:#E6E6E6;
-    height: 300vh;
+    height: 160vh;
     width: 100%;
     border: 3px solid white;
     
@@ -122,8 +122,6 @@ button{
     margin-top: 60px;
     justify-content: space-between;
     padding: 0px 40px 0px 50px ;
-    
-    
 }
 img  {
     height: 100px;
@@ -144,11 +142,8 @@ img  {
     height: 200px;
     width: 100%;
     /* border: 3px solid black; */
-
-    
 }
 h2{
-    
     text-align: center;
 }
 .h1{
@@ -174,26 +169,50 @@ hr{
     position: relative;
     margin-left: 40px;
     transform: skew(10deg, -10deg);
-    /* transform: rotate(-4deg ); */
-     
+    /* transform: rotate(-4deg ); */    
 }
 footer{
-    border: 2px solid black;
-    height: 300px;
-    width: 100%;
-   display: flex;
-   justify-content: space-evenly;
-   /* align-items: center;  */
-   
-    padding: 0px 40px 0px 50px ;
+    
+    /* border: 1px solid red; */
+    /* padding: 0px 40px 0px 50px ; */
+
+    
+}
+.main4{
+    /* height: 300px;
+    width: 100%; */
+    /* border: 1px solid black; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    padding: 0px 100px 0px 100px ;
+
 
 }
-     
 .main4 img{
-    
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     margin-top: 50px;
-    /* margin-inline: 150px; */
     
- }
+    /* text-align: center; */
+}
+.text {
+    
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 140px 0px 110px ;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.text-1 {
+    /* height: 200px; */
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 140px 0px 110px ;
+    margin-left: 120px;
+    margin-top: 10px;
+font-size: small;
+    
+
+}
