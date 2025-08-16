@@ -61,6 +61,15 @@ p1 {
     display:flex ;
     justify-content: space-evenly;   
 }
+a{
+    color: black;
+    text-transform: none;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    
+}
 section1{
 
     display: flex;
