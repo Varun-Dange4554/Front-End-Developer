@@ -262,7 +262,7 @@ footer{
 
    
     margin-left: 130px;
-    /* margin-top: 50px; */
+    margin-top: 50px;
     
     /* position: absolute; */
 
@@ -287,5 +287,7 @@ footer{
         .main{
             flex-direction: column;
         }
-        
+        .main_1{
+               height: 100px;
+        }
     }
