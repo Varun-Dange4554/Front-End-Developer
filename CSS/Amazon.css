@@ -62,7 +62,7 @@ p-2{
     margin: 0px 10px ;
     padding: 10px 4px 10px 3px ;
     /* border:2px solid chartreuse; */
-    display: flex;
+    display: flex;   
 }
 
 .select-tag{
@@ -74,7 +74,6 @@ p-2{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-
 .search-bar input{
     width: 672.25px;
     height: 40px;
