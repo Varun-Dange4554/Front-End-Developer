@@ -208,3 +208,5 @@ if (number % 2 == 1) {
   console.log('Even number...');
 }
 ```
+
+## switch case
