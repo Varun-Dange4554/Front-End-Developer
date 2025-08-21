@@ -210,3 +210,16 @@ if (number % 2 == 1) {
 ```
 
 ## switch case
+
+- kind of `if-else` conditional rendering.
+- but in this we have two reserve- keyWord `break` or `default/case` and `continue`.
+
+```js
+
+switch(condition){
+  case: sum+1
+  break;
+  default : console.log('none')
+}
+
+```
