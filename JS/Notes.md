@@ -15,9 +15,15 @@ class{
 }
 ```
 
+**`What is a java script`**
+
+- javaScript is programming language of the web page.
+- It can update and change both HTML and CSS.
+- It can calculate, manipulate and validate data.
+
 ### Internal & External `JS`
 
-- Internal JS
+- Internal `JS`
 
 ```js
 <!DOCTYPE html>
@@ -29,8 +35,7 @@ class{
 </script>
 </html>
 ```
-
-- External JS
+- External `js`
 
 ```js
 <!DOCTYPE html>
@@ -41,9 +46,39 @@ class{
 </script>
 </html>
 ```
-
+### Variable Rule
+  - variables name are case sensitive;"a" & "A" is different.
+ -  only letters,digits,underscore( _ )and $ is allowed.(not even space)  
+ - Only a latter, undescore( _ ) or $ should be 1st character.
+ - Reserved words cannot be variables name.
+ ```js  
+ isFollow =camel case;
+```
+## Variable declaerd keyword (let,var & const )
+ - `var: varible can be re-declaerd & update .A global scope variable.`
+ -  `let: variable cannot be re-declared but can be update.A block scope variable.`
+ - `const:Variable cannot be re-declared or update.A block scope variable.`
+ 
+ var 
+ ```js
+ var age = 20;
+ var age = 22;
+ var age = 21;
+ console.log(age)
+```
+ let
+ ```js
+ let age = 20;
+ age = 22;
+ age = 21;
+ console.log(age)
+ ```
+ const 
+ ```js
+ const PI = 3.14;
+ console.log(PI);
+ ```
 ## Data - Type in `js`
-
 1. String
 
 ```js
@@ -223,3 +258,19 @@ switch(condition){
 }
 
 ```
+**_how to work_**
+
+ - The value of the expression is compared with the values of each case
+ - If there is no match, no code is executed.
+
+ **_The break Keyword_**
+  
+   - This will stop the execution inside the switch block.
+   - No more statements in the switch block will be executed.
+
+**_The default Keyword_**   
+
+ - The default keyword specifies a block of code to run if there is no case match.
+ - The default keyword is optional.
+ 
+
