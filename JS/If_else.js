@@ -72,7 +72,8 @@ if (mode === "dark")   {
 
    // using && 
 
-   let score = prompt("Enter a score");
+  
+ let score = parseInt(prompt("Enter a score"));
 
   if(score >= 90 && score <= 100){
     console.log('student grades is A')

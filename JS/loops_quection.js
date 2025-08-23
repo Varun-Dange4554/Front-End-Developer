@@ -51,5 +51,10 @@ let=1;
   console.log("end of loop");
 
   //7. Print the square of the first 10 natural numbers.  
+   
 
-  
+ 
+  for(let i = 1; i<= 10;i++){
+    console.log('squre of',i, 'is',  i * i);
+  } 
+    
