@@ -85,5 +85,6 @@
 
 
    for(let i = 1; i<= 10;i++){
-    console.log('squre of',i, 'is',  i * i);
+    console.log('squre of',i, 'is',  (i ** 3));
   } 
+    
