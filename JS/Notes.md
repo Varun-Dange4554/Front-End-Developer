@@ -41,9 +41,10 @@ class{
 <!DOCTYPE html>
 <html>
 <head></head>
-<body></body>
+<body>
 <script src="./fileName">
 </script>
+</body>
 </html>
 ```
 ### Variable Rule
@@ -147,6 +148,19 @@ var arrObj = [
 
 - `===`-->In this **js** use to compire **data-type** & **data-value** show be alway's same then perform operation,and this will return alway's__boolean__ value.
 
+- `!==`--> The != operator checks if two values are not equal, allowing type coercion (just like == does with equality).
+
+  - If the values are of different types, JavaScript will try to convert them to the same type before comparing.   
+
+   - It returns a Boolean: true if the values are not equal after conversion, false if they are.
+
+ - `!==` The !== operator checks whether two values are not equal in value or type.
+
+   - It does not perform type coercion.
+
+   - Returns true only if the values are not equal or not the same type.
+
+
 3.  **Logical Operators**
 
 - AND `[&&]`
@@ -158,7 +172,7 @@ var arrObj = [
 - NOT `[!]`
   - this will toggle/convert the value into opposite of the current value.
   - eg:- `!true -> false`
-
+  
 ## notes `20/08/2025`
 
 ```js

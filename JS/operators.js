@@ -1,6 +1,5 @@
 //operators 
 
-// const { Children } = require("react");
 
 
 //Arithmetic operators
@@ -44,10 +43,13 @@
 
 //Comparison Operators
 
-// (Equal to ==),   (data & type ===),  (Not equal to !=),    (Not equal to & type !==)
+// (Equal to ==) check the data value, 
+//   (data value & type ===) check both value & same than it will give you the prope result.
+//   (Not equal to !=)   data value   
+//  (Not equal to & type !==)  value and type
 
 
-// let a = 3;
+// let a = '4';
 // let b = 4;
 
 // console.log("a == b",   a == b);
@@ -101,20 +103,23 @@
     ~ -->NOT
     
     */
-  //  let num66 = 15;
-  //  let num77 = 12;
+  /*
+   let num66 = 15;
+   let num77 = 10;
 
-  //  let binaryConv1 = num66.toString(2);
-  //  console.log("binaryCoven",binaryConv1);
-  //  let binaryConv2 = num77.toString(2);
-  //  console.log("binaryConve",binaryConv2);
-  //  let and = ~num77;
+   let binaryConv1 = num66.toString(2);
+   console.log("binaryCoven",binaryConv1);
+   let binaryConv2 = num77.toString(2);
+   console.log("binaryConve",binaryConv2);
+   let and1 = ~num77;
+   console.log('`NOT',and1);
 
-  // let and = num66 & num77;
-  // console.log("and",and);
+  let and2 = num66 & num77;
+  console.log("and2&",and2);
 
-  // let and = num66 | num77;
-  // console.log("and ",and);
+  let and3 = num66 | num77;
+  console.log("and3| ",and3);  
+  */
 
 
 
@@ -123,14 +128,58 @@
 
 
 //speard operator
-  // let arr = [1,2,3,4];
-  //  let newArr = [...arr,5,6,7,8];
-  //  console.log('newArr',newArr);
+   /*let arr = [1,2,3,4];
+   let newArr = [...arr,5,6,7,8];
+   console.log('newArr',newArr);*/
  
-   //rest operator
+  //rest operator
 
-   const sum = (...xyz){
-    // console.log("a", a,b,c);
-    console.log('args:',xya);
-   } 
-   sum[1,2,3,4];
+  /*function name (...args){
+    console.log(args);
+  }
+name(1,2,3,4)
+    */
+
+
+/*
+    + ==> concatination
+    += ==> Append string
+*/
+
+// + ==> concatination
+/*
+let name8 = 'Varun';
+
+let sur_Name = 'Dange';
+
+
+let full_Name; name8 + ' ' + sur_Name;
+
+let maried = true ;
+
+let answer = `${name8} ${sur_Name} is not maried ${maried}`;
+
+console.log('answer',answer);
+
+*/
+
+// append string
+/*
+let name1 = 'varun';
+let name2 = 'Dange';
+name1 +=' ' + name2;
+console.log('name:-',name1);
+*/
+
+// Type operator
+/*
+
+let str = 'varun dange';
+let  num = 12;
+let bool = true ;
+
+
+console.log('str',typeof str);
+console.log('num:',typeof num);
+console.log('bool',typeof bool);  
+*/
