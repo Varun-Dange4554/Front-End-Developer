@@ -3,6 +3,9 @@
     height: 0px;
     box-sizing: border-box;
 }
+body{
+  
+}
 .navigaction-bar{
     border: 2px solid black;
     height: 100px;
@@ -11,14 +14,14 @@
     margin-right: 230px; 
 }
 .box-1 img{
-    border: 1px solid red;
+    /* border: 1px solid red; */
       height: 95px;
       width: 150px;
       margin-bottom: 5px;
 
 }
 .box-2 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 870px;
     height:37px;
     margin-left: 151px;
@@ -27,10 +30,26 @@
     align-content: center;
 }
 
+
 a {
     color: #555555;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
     padding: 7px 15px; 
     text-decoration: none;
+}
+a:hover{
+    background-color: aqua;
+    color: black;
+}
+
+.section1{
+    background-image: url(utils/commerical-ac.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+      margin-top: 10px;
+    height: 80vh;
+      width: 1500px;
+    border: 2px solid black;
 }
