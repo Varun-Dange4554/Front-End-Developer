@@ -63,3 +63,28 @@ let=1;
 for (let i = 1; i<=10; i++){
   console.log("cube of",)
 }
+
+
+//9. print the fibonacci series up to 10 term using a loop.
+
+
+let a = 0, b = 1;
+console.log(a);
+console.log(b);
+for (let i=0; i<=10; i++) {
+  let temp = a + b;
+  // console.log(temp);
+  a = b;
+  b = temp;
+  console.log(temp);
+}
+
+// 10.print this pattern with nested loops.
+
+for (let i=0; i<=5;i++){
+  let row =' ';
+  for (let j = 1;j<=i;j++) {
+    row += j;
+  }
+  console.log(row);
+}

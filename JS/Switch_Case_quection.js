@@ -220,4 +220,23 @@ switch(code ){
 
 
 
-//10.
+//10.print the season(Winter ,Spring, summer,Autumn) based on user input 1-4.
+
+
+let season = parseInt(prompt('Enter the number'));
+ switch (season){
+  case 1:
+  console.log('Winter');
+  break;
+  case 2:
+   console.log('Spring');
+    break;
+   case 3:
+   console.log('Summer');
+    break;
+    case 4:
+    console.log('Autuman');
+      break;
+    default :
+      console.log('Invalid number please select to 1-4'); 
+}

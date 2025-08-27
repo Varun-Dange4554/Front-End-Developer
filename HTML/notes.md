@@ -33,3 +33,5 @@ The <h1> element defines a large heading
 The <p> element defines a paragraph
 ```
 
+`Structure of HTML5`:-
+ 
