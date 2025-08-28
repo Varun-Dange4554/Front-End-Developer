@@ -17,4 +17,18 @@ else{
     arr[n-1];
     console.log(`arr`,arr[n-1]);
 }
-// console.log(`arr:`,arr);
+console.log(`arr:`,arr);
+
+
+
+//Q check if a number is divisibale by both 3 & 5.
+
+let number = parseInt(prompt('Enter the number'));
+
+    if (number % 3 == 0   || number % 5 == 0){
+      console.log(`the ${number} is divisible`);
+
+    }
+    else{
+      console.log(`The ${number} is not divisible`);
+    }

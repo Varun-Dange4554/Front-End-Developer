@@ -185,23 +185,17 @@ console.log('bool',typeof bool);
 */
 
 
+let age = prompt(`Enter the age `);
 
-let arr=[10, 30, 50, 80, 80, 10, 30, 60, 40, 10, 100];
+if ( age <= 12){
+  console.log('child')
+}else if (age <= 19){
+  console.log(`teen`);
+}else if (age <= 59){
+  console.log(`Adult`);
 
-let n=2;
-// i have to remove the duplicates's
-arr = [...new Set(arr)];
-// console.log(arr);
-
-arr = arr.sort((a, b)=> b-a);
-console.log(arr);
-
-if(n-1 > arr.length ){
-  console.log(`please enter the valid value & the value you put is not exist in arry lengths...`);
+}else{
+   console.log(`Senior`);
 }
-else{
-  
-    arr[n-1];
-    console.log(`arr`,arr[n-1]);
-}
-// console.log(`arr:`,arr);
+
+
