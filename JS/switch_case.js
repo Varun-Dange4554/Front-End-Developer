@@ -12,22 +12,32 @@ switch  (true) {
 
 }
 
-switch (2){
+let day = 4 ;
+switch (day){
+    case 0:
+        console.log("Sunday");
+        break;
     case 1:
-        console.log(monday);
+        console.log("Monday");
         break;
+     case 2:
+        console.log("Tuesday");
+        break;
+     case 3:
+        console.log("Wednesday");
+        break;
+      case 4:
+        console.log("Thursday");
+        break;
+      case 5:
+        console.logg("Friday");
+        break;
+      case 6:
+        console.log("Saturday");
+        break;
+       default :
+       console.log("no match data");     
 
-    case 2:
-        console.log(Tue);
-        break;
-      case 3:
-        console.log(Wen);
-        break;
-        case 3:
-            console.log(the);
-            break;
-           default:
-            console.log(nothing);
 }
 
 
@@ -43,8 +53,8 @@ switch(traffik_light){
             console.log('go slow');
          break;
        case "G":
-        console.log(Go);
+        console.log('Go');
         break;
         default:
-            console.log(noo);     
+            console.log('invalid');     
 }

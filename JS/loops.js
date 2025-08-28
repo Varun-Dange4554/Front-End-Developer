@@ -28,4 +28,4 @@ do {
     console.log(numbers);
     numbers++;
 
-}while (numbers < 10);
+}while (numbers <= 10);
