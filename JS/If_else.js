@@ -192,3 +192,13 @@ if ( age <= 12){
 
 
 
+//Q Check if a given character is a vowel or consonant.
+
+
+let char = prompt(`enter the character` );
+char = char.toUpperCase();
+if (char == `A` || char == `E` || char==`I`|| char==`O` || char==`U`){
+  console.log(`is vowel`);
+} else{
+  console.log(`is a consoonant`);
+}

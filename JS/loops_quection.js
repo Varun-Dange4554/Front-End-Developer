@@ -61,7 +61,7 @@ let=1;
 //8. Print the cube of the first 10 natural numbers.  
 
 for (let i = 1; i<=10; i++){
-  console.log("cube of",)
+  console.log(`cube of ${i} is ${i ** 3}`)
 }
 
 

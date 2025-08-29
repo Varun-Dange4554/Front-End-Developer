@@ -15,6 +15,8 @@
 // console.log("a / b = ",a / b );       //Division
 // console.log("a % b = ", a % b);       //modulus % 
 // console.log( "a ** b = ", a ** b);    //Exponentiation
+// console.log("++a",++a);
+// console.log('a++',a++);
 
 
 
@@ -103,7 +105,8 @@
     ~ -->NOT
     
     */
-  /*
+   /*
+  
    let num66 = 15;
    let num77 = 10;
 
@@ -111,6 +114,7 @@
    console.log("binaryCoven",binaryConv1);
    let binaryConv2 = num77.toString(2);
    console.log("binaryConve",binaryConv2);
+
    let and1 = ~num77;
    console.log('`NOT',and1);
 
@@ -137,7 +141,7 @@
   /*function name (...args){
     console.log(args);
   }
-name(1,2,3,4)
+name(1,2,3,4,5,6)
     */
 
 
@@ -185,17 +189,6 @@ console.log('bool',typeof bool);
 */
 
 
-let age = prompt(`Enter the age `);
 
-if ( age <= 12){
-  console.log('child')
-}else if (age <= 19){
-  console.log(`teen`);
-}else if (age <= 59){
-  console.log(`Adult`);
-
-}else{
-   console.log(`Senior`);
-}
 
 
