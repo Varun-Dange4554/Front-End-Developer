@@ -14,6 +14,7 @@ if(n-1 > arr.length ){
 }
 else{
   
+
     arr[n-1];
     console.log(`arr`,arr[n-1]);
 }
@@ -27,7 +28,6 @@ let number = parseInt(prompt('Enter the number'));
 
     if (number % 3 == 0   || number % 5 == 0){
       console.log(`the ${number} is divisible`);
-
     }
     else{
       console.log(`The ${number} is not divisible`);

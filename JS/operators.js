@@ -16,7 +16,10 @@
 // console.log("a % b = ", a % b);       //modulus % 
 // console.log( "a ** b = ", a ** b);    //Exponentiation
 // console.log("++a",++a);
-// console.log('a++',a++);
+// a++;
+// console.log('a++',a);
+// a--;
+// console.log('a--',a);
 
 
 
@@ -25,6 +28,7 @@
 // let b = 3;
 
 // console.log("a = ",a ,"b = ",b);
+
 
 // console.log("--a = ", --a);      //Pre Increment
 
@@ -187,8 +191,3 @@ console.log('str',typeof str);
 console.log('num:',typeof num);
 console.log('bool',typeof bool);  
 */
-
-
-
-
-
