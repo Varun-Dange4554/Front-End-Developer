@@ -191,3 +191,13 @@ console.log('str',typeof str);
 console.log('num:',typeof num);
 console.log('bool',typeof bool);  
 */
+
+
+
+// normal fuction call
+
+function anualDay(){
+    console.log("hello function")
+}
+let ans = anualDay();
+console.log(ans);
