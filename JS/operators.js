@@ -192,12 +192,10 @@ console.log('num:',typeof num);
 console.log('bool',typeof bool);  
 */
 
-
-
-// normal fuction call
-
-function anualDay(){
-    console.log("hello function")
+function mul(x, y){
+    result = x * y;
+    return result;
+    
 }
-let ans = anualDay();
-console.log(ans);
+let val =mul(2,5);
+console.log(val);

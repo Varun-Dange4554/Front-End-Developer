@@ -1,6 +1,6 @@
 let num_1=10;
 let num_2=10;
-let operator="*";
+let operator="-";
 
 function calc(...arr){
     let n1=arr[0];
@@ -17,8 +17,8 @@ switch(s){
         return n1*n2;
     case '/':
         return n1/n2;
-     case '-':
-        return n1-n2;
+    //  case '-':
+    //     return n1-n2;
     
 
 

@@ -18,6 +18,9 @@ let name= "Dange";
 console.log('name',name);
 
 
+
+
+
 // mutable --> non-primitive data type (call by reference)
 
 let arr=[1, 2, 3, 4];

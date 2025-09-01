@@ -293,3 +293,45 @@ switch(expression) {
  - The default keyword is optional.
  
 
+# Function :- 
+Functions are defined using the `function` keyword, followed by a function name, a list of parameters in parentheses (optional), and a block of code enclosed in curly braces
+
+ - block of code that perfrom a specific task, can be `invoked`(call) whenever needed
+
+```js
+function anualDay(){
+    console.log("hello function");
+};
+ anualDay();
+
+```
+   - Parameters and Arguments:- Functions can accept input values through parameters defined in their declaration. When the function is called, specific values (arguments) are passed, which are then used within the function's scope.
+   ```js
+       function add(a, b) {
+      return a + b;
+    }
+    let sum = add(5, 3); // sum will be 8
+   ```
+   - Return Values:- Functions can return a value using the return keyword. This value can then be used by the code that called the function. If no return statement is present, the function implicitly returns undefined.
+
+ ```js
+    function add(a, b) {
+  return a + b;
+}
+let result = add(5, 3);  // result is 8
+console.log(result);     // Output: 8
+ ```  
+  - Arrow Functions:- A more concise syntax for defining functions, particularly useful for short, single-expression functions.
+```js
+    const square = num => num * num;
+    console.log(square(7)); // Output: 49
+```  
+
+### Immutable & Mutable :-
+In java script Mutable can be changed or modified after creation & Immutable cannot be changed directly
+
+#### Immutable :-
+Primitive data type like string & Number are Immutable. Once you create tham , you can't change their value directly.
+
+#### Mutable :-
+Reference data type like, arrays & object are mutable.Once you create them, can be changed or modified.

@@ -2,12 +2,9 @@
 // normal fuction call
 
 function anualDay(){
-    console.log("hello function")
-}
-let ans1 = anualDay();
-console.log(ans1);
-
-
+    console.log("hello function");
+};
+ anualDay();
 
 
 
@@ -36,3 +33,85 @@ console.log(`ans`,ans);
 {} braces
 [] braket
 */
+
+
+
+// call function
+
+function addTwoNumber(number1, number2){   //parameters
+console.log(number1 + number2);
+
+}
+addTwoNumber(2, 5)                         //arguments
+
+
+
+
+
+
+function addTwoNumber(number1, number2){   //parameters
+   
+  // let result = number1 * number2;
+  // return result;
+  return number1 + number2;
+
+}
+ const result = addTwoNumber(2, 5);
+ console.log(`result`,result);           
+
+
+
+
+
+ 
+// function loginUserMassege(username){
+//      return `${username} just logged in`     
+// }
+// console.log(loginUserMassege("varun"));
+
+
+
+
+function loginUserMassege(username){
+if(username === undefined){
+  console.log(`please enter the user name`);
+  return;
+}
+
+     return `${username} just logged in`     
+}
+// console.log(loginUserMassege("varun"));
+console.log(loginUserMassege());
+
+
+
+
+
+
+
+
+
+// function ==> two number, sum
+
+function sum(a, b){
+    console.log(a+b);
+
+}
+sum(2, 5);
+
+
+
+
+
+
+// return value
+
+
+function mul(x, y){
+  // local variable
+    result = x * y;
+    return result;
+    
+}
+let val =mul(2,5);
+console.log(val);
