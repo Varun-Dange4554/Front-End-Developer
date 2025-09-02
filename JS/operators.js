@@ -192,10 +192,12 @@ console.log('num:',typeof num);
 console.log('bool',typeof bool);  
 */
 
-function mul(x, y){
-    result = x * y;
-    return result;
-    
+
+//8. Write a function that reverses a string.
+   
+
+
+function reverseStr (str){
+  return str.split('').reverse('').join('');
 }
-let val =mul(2,5);
-console.log(val);
+console.log(reverseStr('hello'));

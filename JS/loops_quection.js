@@ -57,7 +57,11 @@ let=1;
   for(let i = 1; i<= 10;i++){
     console.log('squre of',i, 'is',  i * i);
   } 
-    
+  
+
+
+
+
 //8. Print the cube of the first 10 natural numbers.  
 
 for (let i = 1; i<=10; i++){
