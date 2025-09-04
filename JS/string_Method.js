@@ -4,3 +4,4 @@ let newstr=str.trim();
   
 let upper=newstr.toUpperCase();
 console.log(upper);
+

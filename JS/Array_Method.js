@@ -1,36 +1,42 @@
 
-// push method  
+// push() method
+// Adds one or more elements to the end of an array.  
 let array1 = [1, 2, 6, 4, 5, 3];
 console.log(array1)
 array1.push(9);
 console.log(array1);
 
-//pop method
-let array2 = [1, 2, 6, 4, 5, 3];
-array2.pop();
-console.log(array2);
+//pop() method
+// Remove the last element from an array.
+// let array1 = [1, 2, 6, 4, 5, 3];
+array1.pop();
+console.log(array1);
 
-// shift and unshift
+// shift()
+// Remove the first element from the array.
 
-array2.shift();
-console.log(array2);
+array1.shift();
+console.log(array1);
 
-array2.unshift(9);
-console.log(array2);
+//unshift()
+// Adds one or more elements to the beginning of an array.
+array1.unshift(9);
+console.log(array1);
 
 // delete
+//The delete operator does not update the array length and does not reindex the array. 
+// It just removes the value at a specific index and leaves an empty slot (called a hole).
 
-let array3 = [1, 2, 6, 4, 5, 3];
-delete array3[3];
-console.log(array3);
+delete array1[3];
+console.log(array1);
+console.log(array1.length);
 
 //splice 
-array3.splice(2,1,"varun");
-console.log(array3);
+array1.splice(2,1,"varun");
+console.log(array1);
 
 //slice
-let array4 = [9, 3, 0, 7, 4, 8 ];
 
-let newarr = array4.slice(3);
+let newarr = array1.slice(3);
 console.log(newarr);
 
