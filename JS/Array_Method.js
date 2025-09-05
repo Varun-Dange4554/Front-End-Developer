@@ -32,11 +32,55 @@ console.log(array1);
 console.log(array1.length);
 
 //splice 
-array1.splice(2,1,"varun");
+// The splice() method is used to add, remove, or replace elements in an array in place.
+
+
+array1.splice(0, 2, "varun");
 console.log(array1);
 
-//slice
+//slice()
+// The slice() method slices out a piece of an array into a new arra
 
-let newarr = array1.slice(3);
+let newarr = array1.slice(2);
 console.log(newarr);
+
+
+
+// array length
+// .length returns the number of elements in the arra
+// let array1 = [1, 2, 6, 4, 5, 3];
+let size = array1.length;
+console.log(array1);
+
+// arrar toString()
+//The toString() method returns the elements of an array as a comma separated string.
+let names = ["varun","vipul","sanket","sanskar"];
+let myList = names.toString();
+console.log(myList);
+
+let size1 = myList.length;
+console.log(size1);
+
+// array at() 
+
+let name1 = names.at(1);
+console.log(name1);
+
+// array at[]
+let name3 = names.at(3);
+console.log(name3);
+
+// Array join()
+
+let join = names.join();
+console.log(join);
+
+//Array copyWithin()
+//  The copyWithin() method copies a sequence of array elements to another position within the same array, without changing its length.
+
+let array2 = [1, 2, 6, 4, 5, 3];
+let copy = array2.copyWithin(0,1);
+console.log(array2);
+
+
 
