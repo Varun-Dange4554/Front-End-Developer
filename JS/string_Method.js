@@ -84,11 +84,4 @@ console.log (str.substring(-6));  // out put  'varun dange'
 console.log (str.slice(4, 0));  // out put ' ' 
 console.log (str.substring(4, 0));  // out put 'varu'
 
-//String isWellFormed()
-
-console.log(str.isWellFormed());
-
-let str4 = "\uafkpcad";
-console.log(str4.isWellFormed());
-
- 
+//String 
