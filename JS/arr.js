@@ -32,3 +32,4 @@ let number = parseInt(prompt('Enter the number'));
     else{
       console.log(`The ${number} is not divisible`);
     }
+    

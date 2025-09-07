@@ -7,8 +7,7 @@ function anualDay(){
  anualDay();
 
 
-
-
+ 
 
 let number_1=10;
 let number_2=5

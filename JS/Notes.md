@@ -335,3 +335,4 @@ Primitive data type like string & Number are Immutable. Once you create tham , y
 
 #### Mutable :-
 Reference data type like, arrays & object are mutable.Once you create them, can be changed or modified.
+
