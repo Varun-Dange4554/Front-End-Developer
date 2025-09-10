@@ -2,9 +2,9 @@
 
 // map
 
-let arr =  [1,7,7,3,2,7,8,4,7,0];
+let arr2 =  [1,7,7,3,2,7,8,4,7,0];
 let newArr =[];
-arr.map((elements,index,self)=>{
+arr2.map((elements,index,self)=>{
     if(elements!== 7){
         newArr.push(elements);
         return elements
@@ -81,13 +81,12 @@ console.log(constFruits);
  let funcStr = str.split(''); // array and with single string value
  console.log(`-->funcStr`,funcStr);
 
- const countString = funcStr.reduce((acc,Strings) => {
-    acc[strings] = (acc[strings]) || 0) + 1;
+ const countString = funcStr.reduce((acc, char) => {
+    acc[char] = (acc[char] || 0) + 1;
 
     return acc;
  },{});
- console.log(countString);
-
+ console.log(countString);  
 
 
 

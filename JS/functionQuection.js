@@ -7,6 +7,8 @@ function addTwoNumber(a, b){
 let result = addTwoNumber(7,2);
 console.log(result); 
 
+
+
 // 2. Create a function that checks if a number is even or odd.
 
 function evenodd(number){
@@ -97,13 +99,10 @@ function countvowel (str){
 console.log(countvowel("sark"));
 
 
-//8. Write a function that reverses a string.
 
 
 //8. Write a function that reverses a string.
    
-
-
 function reverseStr (str){
   return str.split('').reverse('').join('');
 }
