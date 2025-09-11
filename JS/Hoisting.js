@@ -1,4 +1,5 @@
-// immutable primitive data type (call by value)
+// immutable primitive data type (call by value)  Immutable-->unchangeable
+// number string and booleans
 
 let name1='varun';
 let number=22;
@@ -21,8 +22,8 @@ console.log('name',name);
 
 
 
-// mutable --> non-primitive data type (call by reference)
-
+// mutable --> non-primitive data type (call by reference)   mutable --> changeable
+//  // object  arrays and functions 
 let arr=[1, 2, 3, 4];
 
 arr[0]=4;

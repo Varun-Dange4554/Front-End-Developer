@@ -39,7 +39,26 @@ console.log(arr1);
 // splice
 // slice
 
+let arr2 = [1,2,3,4,5,6];
+let ans1 = arr2.shift();
+console.log(ans1);
+arr2
 
+Array.prototype.shift=function(){
+    if (this.length === 0) return undefined;
+
+    const  first  = this[0];
+
+    for (let i = 1; i < this.length; i++){
+        this[i - 1] = this[i];
+    }
+    this.length--;
+    return first;
+};
+
+
+arr2.shift();
+console.log(arr2); // out put [3, 4, 5, 6]  
 
 
 

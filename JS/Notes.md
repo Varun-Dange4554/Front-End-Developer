@@ -322,6 +322,14 @@ let result = add(5, 3);  // result is 8
 console.log(result);     // Output: 8
  ```  
   - Arrow Functions:- A more concise syntax for defining functions, particularly useful for short, single-expression functions.
+ 
+ Argument not working with arrow function and use to val keyword
+ 
+ no prototype for arrow function
+
+ new keyword not working with arrow function 
+
+ arrow function dont have own this
 ```js
     const square = num => num * num;
     console.log(square(7)); // Output: 49
@@ -336,3 +344,42 @@ Primitive data type like string & Number are Immutable. Once you create tham , y
 #### Mutable :-
 Reference data type like, arrays & object are mutable.Once you create them, can be changed or modified.
 
+# object 
+
+
+In JavaScript, an object is a non-primitive data type used to store collections of related data and more complex entities. Unlike primitive data types (like strings, numbers, booleans), which hold a single value, objects can store multiple values, organized as key-value pairs, also known as properties.
+
+ - Objects hold data in key-value pairs.
+
+ - Values can be any type: strings, numbers, arrays, even functions.
+
+ - Objects are mutable and passed by reference.
+
+ - Use dot or bracket notation to access values. 
+
+ - Use for...in or Object.keys() to loop through them.
+
+# Array
+
+## 🔹 Definition of Array in JavaScript
+
+An **array** in JavaScript is a special type of object used to **store multiple values in a single variable**.  
+It is a **collection of elements**, where each element has an **index** (starting from 0).
+
+Arrays can hold values of **any data type**, including numbers, strings, booleans, objects, functions, and even other arrays.
+
+### ✅ Example:
+
+```js
+let colors = ["red", "green", "blue"];
+```
+
+### ✅ Key Characteristics:
+
+- Arrays are mutable (can be changed).
+
+- Arrays are zero-indexed.
+ 
+- Arrays are objects, but behave like lists.
+
+- Can store mixed data types.          
