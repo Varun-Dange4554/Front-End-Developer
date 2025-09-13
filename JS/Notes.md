@@ -173,6 +173,7 @@ var arrObj = [
   - this will toggle/convert the value into opposite of the current value.
   - eg:- `!true -> false`
   
+
 ## notes `20/08/2025`
 
 ```js
@@ -292,6 +293,60 @@ switch(expression) {
  - The default keyword specifies a block of code to run if there is no case match.
  - The default keyword is optional.
  
+   4.Spread Operator
+
+    ✅ Used in:
+
+  - Function calls
+
+  - Array literals
+
+   - Object literals
+
+   ```js
+    🔸 Example: Spread in Function Call
+       let nums = [1, 2, 3];
+       Math.max(...nums); // same as Math.max(1, 2, 3)
+    🔸 Example: Spread in Arrays
+         let a = [1, 2];
+         let b = [3, 4];
+         let combined = [...a, ...b]; // [1, 2, 3, 4]
+    🔸 Example: Spread in Objects
+        let obj1 = { x: 1, y: 2 };
+        let obj2 = { z: 3 };
+        let merged = { ...obj1, ...obj2 }; // { x: 1, y: 2, z: 3 }
+
+```
+  5.Rest Operator
+
+  Use: To collect multiple elements into a single array (or object).
+
+✅ Used in:
+
+- Function parameters
+
+- Destructuring assignment
+```js
+    🔸 Example: Rest in Function Parameters
+
+        function sum(...numbers) {
+         return numbers.reduce((a, b) => a + b);
+           }
+
+           sum(1, 2, 3, 4); // returns 10
+
+    🔸 Example: Rest in Array Destructuring
+
+       let [first, ...rest] = [10, 20, 30, 40];
+       // first = 10
+       // rest = [20, 30, 40]
+ 
+    🔸 Example: Rest in Object Destructuring
+       let { a, ...others } = { a: 1, b: 2, c: 3 };
+       // a = 1
+      // others = { b: 2, c: 3 }
+
+```
 
 # Function :- 
 Functions are defined using the `function` keyword, followed by a function name, a list of parameters in parentheses (optional), and a block of code enclosed in curly braces

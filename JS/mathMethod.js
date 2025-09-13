@@ -77,3 +77,41 @@ console.log(randomNum);
 let maxnumber = Math.max(25, 78, 13, 56);
 
 console.log(maxnumber); // out put 78
+
+// Q5 . Calculate 2 raised to the power of 8.
+
+let base = 2;
+let exponent = 8;
+let result1 = Math.pow(base,exponent);
+console.log(result1);
+
+
+// Q6 . Find the minimum value among -12, -5, 0, 8, 3.
+
+let arr = [-12,-5,0,8,3];
+let min = Math.min(...arr);
+console.log(min)
+
+// Q7. Find the maximum value among 25, 78, 13, 56.
+  let a = 25;
+  let b = 78;
+  let c = 13;
+  let d = 56;
+
+  let max = Math.max(a,b,c,d);
+  console.log("Maximum value is",max); // 78
+
+  // Q8. Generate a random number between 1 and 10.
+  let randomnumber = Math.floor(Math.random()*10)+1;
+  console.log(randomnumber);
+
+// Q9. Find the floor value of 9.99.
+  let floo = Math.floor(9.99);
+  console.log(floo);  //  out put 9
+
+
+
+
+
+
+    

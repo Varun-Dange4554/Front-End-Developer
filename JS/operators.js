@@ -136,18 +136,30 @@
 
 
 //speard operator
-   /*let arr = [1,2,3,4];
-   let newArr = [...arr,5,6,7,8];
-   console.log('newArr',newArr);*/
+   let arr = [1,2,3,4];
+   let newArr = [...arr,5,6];
+   console.log('newArr',newArr);
  
-  //rest operator
 
-  /*function name (...args){
+ 
+
+
+
+  //rest operator
+   //
+
+  function name (...args){
     console.log(args);
   }
 name(1,2,3,4,5,6)
-    */
-
+    
+// example rest
+function addnumber(a,b,c,...other){
+    console.log(other)
+  return a+b+c;
+}
+let re = addnumber(2,5,6,5,4,78);
+console.log(re)
 
 /*
     + ==> concatination
