@@ -34,6 +34,8 @@ arr1.pops();
 console.log(arr1);
 
 
+
+
 // map
 // shift
 // unshit
