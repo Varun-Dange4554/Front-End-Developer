@@ -401,7 +401,6 @@ Reference data type like, arrays & object are mutable.Once you create them, can 
 
 # object 
 
-
 In JavaScript, an object is a non-primitive data type used to store collections of related data and more complex entities. Unlike primitive data types (like strings, numbers, booleans), which hold a single value, objects can store multiple values, organized as key-value pairs, also known as properties.
 
  - Objects hold data in key-value pairs.
@@ -438,3 +437,81 @@ let colors = ["red", "green", "blue"];
 - Arrays are objects, but behave like lists.
 
 - Can store mixed data types.          
+
+# syncs in Js
+
+### Synchronous
+Synchoronous means the cod eruns in a particular sequence of instruction given in the program Each instruction for waits for the previous instruction to complete its exections.
+
+### Asynchronous
+Due to synchronous programming sometimes imp instructions get blocked due to some previous instruction, which case delay intel UI Ascynchronous code excution allows to execut next instruction immediately and dosent block the flow
+
+
+
+### callback Hell
+
+ - callback hell:-Nested callback stacked below one other forming a pyramid structure.
+ - This style of programming becomes difficult to understand & manage 
+ syntax
+ ```js
+function doTask(callback) {
+  setTimeout(() => {
+    console.log('Task done');
+    callback(); // call the next thing
+  }, 1000);
+}
+
+doTask(() => {
+  console.log('Next step');
+});
+
+ ```
+
+ ### Promise 
+ Promise is for `"eventual"` completion of task it is an object in js. It is a solution to callback
+
+ `A java script promise object can be`
+
+ - panding:- The result is undifined 
+ - Resolved:-The result is a value (ful filed)
+ - Rejected:-The result is an error object 
+
+ ```js
+ promise
+ .then() & .catch()
+ promise.then((res)=>{----})
+ promise.catch((err)=>{----})
+
+ ```
+
+ ex
+ ```js
+ // Create a promise
+let myPromise = new Promise((resolve, reject) => {
+  // async operation
+  let success = true;
+
+  if (success) {
+    resolve("✅ Success!");
+  } else {
+    reject("❌ Error!");
+  }
+});
+
+// Use the promise
+myPromise
+  .then(result => {
+    console.log(result); // "✅ Success!"
+  })
+  .catch(error => {
+    console.log(error); // "❌ Error!"
+  });
+
+ ```
+### Async-Await
+
+- async function always returns a promise 
+```js
+async function myFunc(){---}
+```
+await pauses the execution of it's surrounding async function untilthe promise is settled.
