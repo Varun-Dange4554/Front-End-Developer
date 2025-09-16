@@ -5,7 +5,6 @@
 1. this prefer `class-base` & `function-base`
 
 ```js
-
 function names(){
     console.log('hello function java script...')
 }
@@ -14,9 +13,9 @@ class{
     console.log('hello class java script ')
 }
 ```
+**What is a java script**
 
-**`What is a java script`**
-
+java script is a programming language we use it to give instriction to the computer.
 - javaScript is programming language of the web page.
 - It can update and change both HTML and CSS.
 - It can calculate, manipulate and validate data.
@@ -86,21 +85,48 @@ class{
 var str = 'string'; // single qoute
 var str = "string"; // double qoute
 var str = `string`; // back-tick -> ternary operator `${name}`
-```
+````
+`1.Primitive data type`
 
-1. Number.
-
-```js
-var num = 19;
-```
-
-2. Boolean.
+1. Number:-All numbers (integers and floats)
 
 ```js
-var bool = true;
+let num = 19;
+```
+2. Boolean:-Logical true/false
+
+```js
+let bool = true;
+```
+3. string:-A sequence of characters
+```js
+let str = "Varun";
+```
+4.BigInt:-For very large integers
+
+```js
+let bigNumber = 12345678901234567890n; // BigInt
+```
+5.Undefined:-A variable that has been declared but not assigned a value
+
+```js
+let notDefined;               // Undefined
+```
+6.Null:-Represents intentional "no value"
+
+```js
+let empty = null;             // Null
+```
+7.Symbol:-Unique identifiers (used in advanced use cases)
+
+```js
+let id = Symbol("uniqueId");  // Symbol
+
 ```
 
-3. Array.
+`2. Non-Primitive (Reference) Data Types`
+
+1. Array:-Ordered list of values
 
 - Array dataType was `Object` it's store value in index format..
 
@@ -108,39 +134,31 @@ var bool = true;
 var arr = [1, 2, 3, 4]; // array of number [];
 ```
 
-4. Object.
+2. Object:-Collection of key-value pairs
 
 - will Store the value as a **_key value pair_**
 - data-type of this will give you a object only..
 
 ```js
 var obj = {
-  name: 'mehfooz',
+  name: 'varun',
+  age:20;
 };
 ```
 
-4. arrayObject.
-
+3.Function:-A block of code
 ```js
-var arrObj = [
-  {
-    id: 8899009202920,
-    name: 'mehfooz khan',
-    age: 26,
-    DOB: 23 - 04 - 200,
-  },
-  {
-    id: 8899009202920,
-    name: 'abhishek',
-  },
-];
+function greet(name) {
+  return "Hello, " + name + "!";
+}
+console.log(greet("Alice")); // Output: Hello, Alice!
 ```
 ## Operater's in `js`
 
 1. **Arithmetic operators**
 
 - this will contain the math's operation like eg.. 
-**[add,sub,mul,div,expo,module]**
+**`[add,sub,mul,div,expo,module]`**
 
 2. **comparison operators**
 
@@ -441,7 +459,7 @@ let colors = ["red", "green", "blue"];
 # syncs in Js
 
 ### Synchronous
-Synchoronous means the cod eruns in a particular sequence of instruction given in the program Each instruction for waits for the previous instruction to complete its exections.
+Synchoronous means the code runs in a particular sequence of instruction given in the program Each instruction for waits for the previous instruction to complete its exections.
 
 ### Asynchronous
 Due to synchronous programming sometimes imp instructions get blocked due to some previous instruction, which case delay intel UI Ascynchronous code excution allows to execut next instruction immediately and dosent block the flow
@@ -473,7 +491,7 @@ doTask(() => {
  `A java script promise object can be`
 
  - panding:- The result is undifined 
- - Resolved:-The result is a value (ful filed)
+ - Resolved:-The result is a value (full filed)
  - Rejected:-The result is an error object 
 
  ```js

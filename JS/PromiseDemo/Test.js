@@ -57,7 +57,7 @@ appends('./myscript.js')
 
 
 // code 3
-
+/*
 function appends(s){
     return new Promise((res, rej) => {
         let script = document.createElement('script');
@@ -88,4 +88,90 @@ function appends(s){
  handle();
  // here we use useing js for understanding the concept
  
- 
+ */
+
+
+
+// promise
+// let promise = new Promise((res, rej)=>{
+    //    console.log(`I am a promise`);
+    //    res("result");
+    // rej("error");
+// });
+
+
+
+function getdata (dataId,getNextData){
+    return new Promise((resolve, reject) => {
+     setTimeout(()=>{
+    console.log("data",dataId);
+    if(getNextData){
+        getNextData();
+    }
+    
+    },3000)   
+     
+
+        
+
+    });
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ // callback hell
+
+function getdata (dataId,getNextData){
+    // console.log("data",dataId);
+    setTimeout(()=>{
+    console.log("data",dataId);
+    if(getNextData){
+        getNextData();
+    }
+    
+    },2000)
+
+}
+getdata(1,()=>{
+    console.log(`getting data 2`);
+    getdata(2,()=>{
+        console.log(`getting data 3`);
+        getdata(3,()=>{
+        console.log(`getting data 4`);
+
+
+            getdata(4);
+        });
+    });
+});
+*/
+
