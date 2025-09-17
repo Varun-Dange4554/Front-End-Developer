@@ -99,38 +99,87 @@ function appends(s){
     // rej("error");
 // });
 
+/*
 
-
-function getdata (dataId,getNextData){
-    return new Promise((resolve, reject) => {
-     setTimeout(()=>{
-    console.log("data",dataId);
-    if(getNextData){
-        getNextData();
-    }
-    
-    },3000)   
-     
-
-        
-
+const getPromise = ()=>{
+    return new Promise((resolve, reject)=>{
+     console.log(`I am a promise`);
+     resolve("success");
+    // reject("not a fill filed")
     });
+};
+
+let promise = getPromise();
+promise.then((res)=>{
+    console.log("promise if fullfils",res);
+});
+
+promise.catch((err)=>{
+    console.log("rejected",err);
+})
+
+*/
+/*
+function asyncFunc1(){
+    return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+console.log("data 1");
+resolve(`success`);
+
+    },3000);
+    }); 
+}
+
+function asyncFunc2(){
+    return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+console.log("data 2");
+resolve(`success`);
+
+    },3000);
+    }); 
+}
+
+console.log("fatching data1.............")
+let p1 = asyncFunc1();
+p1.then((res)=>{
+//    console.log(res);
+console.log("fatching data2.............")
+let p2 = asyncFunc2();
+p2.then((res)=>{
+    // console.log(res);
+})
+})
+*/
+
+
+function getdata (dataId){
+    // console.log("data",dataId);
+    return new Promise((resolve, reject)=>{
+
     
-    }
+        
+    setTimeout(()=>{
+    console.log("data",dataId);
+    resolve("success");
+    },2000)
+});
+}
+// promise chain
+    console.log(`getting data 1`);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+getdata(1)
+.then((res)=>{
+    console.log(`getting data 2`);
+return getdata(2);
+})
+.then((res)=>{
+    console.log(`getting data 3`);
+    return getdata(3);
+})
+.then((res)=>{
+    console.log(res);
+})
 
 
 
