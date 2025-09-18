@@ -153,11 +153,59 @@ p2.then((res)=>{
 */
 
 
+
+
+
+
+
+
+/*
+// async await
+
 function getdata (dataId){
     // console.log("data",dataId);
     return new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+    console.log("data",dataId);
+    resolve("success");
+    },2000)
+});
+}
 
-    
+async function getAlldata(){
+console.log("getting data1...................");
+
+   await getdata(1);
+console.log("getting data2...................");
+
+   await getdata(2);
+console.log("getting data3...................");
+
+   await getdata(3);
+console.log("getting data4...................");
+
+   await getdata(4);
+console.log("getting data5...................");
+
+   await getdata(5);
+
+}
+
+getAlldata();
+
+
+*/
+
+
+
+
+
+
+
+/*
+function getdata (dataId){
+    // console.log("data",dataId);
+    return new Promise((resolve, reject)=>{
         
     setTimeout(()=>{
     console.log("data",dataId);
@@ -180,14 +228,7 @@ return getdata(2);
 .then((res)=>{
     console.log(res);
 })
-
-
-
-
-
-
-
-
+*/
 
 
 

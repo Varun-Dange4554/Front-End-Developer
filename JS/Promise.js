@@ -33,7 +33,7 @@ ice_cream
   }); */
 
 //! what if we get delay to get the response
-
+/*
 console.log('A');
 
 let ice_cream = new Promise((res, rej) => {
@@ -71,7 +71,7 @@ ice_cream.then(() => {
 
 console.log('E');
 
-
+*/
 // Synchronous
 /*
 let prom = new Promise(function(resolve,reject){
@@ -86,3 +86,31 @@ prom
 .then((res)=>console.log(res))
 .catch((err)=>console.log(err))
 */
+
+/*
+
+function sec(){
+  console.log("hello i am call back function's");
+}
+main(sec);
+function main(func){
+  func()
+}
+  */
+
+
+
+function waiting_msg_promise(){
+ return new Promise((resolve,reject)=>{
+  resolve("gotch you????????");
+ })
+}
+
+const async_await_show_msg_promise = async ()=>{
+console.log("start the task...")
+
+let msg = await waiting_msg_promise();
+console.log('msg',msg);
+console.log(`finish the task!!!!`);
+}
+async_await_show_msg_promise()
