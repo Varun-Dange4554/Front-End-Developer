@@ -40,9 +40,9 @@ let ice_cream = new Promise((res, rej) => {
   let got_ice_cream;
   console.log('B');
 
-  /*
-  $   setTimeout(()=>{},delay)
-  */
+  
+  // $   setTimeout(()=>{},delay)
+  
 
   setTimeout(() => {
     got_ice_cream = false;
@@ -70,3 +70,19 @@ ice_cream.then(() => {
   });
 
 console.log('E');
+
+
+// Synchronous
+/*
+let prom = new Promise(function(resolve,reject){
+  let data = false;
+  if(data) {
+    resolve("got the data!!!");
+  }else {
+    reject("Not geted???");
+  }
+});
+prom
+.then((res)=>console.log(res))
+.catch((err)=>console.log(err))
+*/
