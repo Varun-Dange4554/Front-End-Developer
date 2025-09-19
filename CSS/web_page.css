@@ -13,19 +13,17 @@
     
 
 }
-.nav1,.nav2, .nav3{
-  
-   
-}
 
 p1,p2{
-    margin: 10px;
-    /* border: 1px solid gainsboro; */
+
+    border: 1px solid gainsboro;
     padding: 5px 10px 16px;
     border-radius:10px ;
-    font-size: larger;
-
+    font-size: large;
+    margin: 2px;
 }
+
+
 p1:hover{
     color: blue;
     text-decoration: underline;
@@ -33,4 +31,17 @@ p1:hover{
 p2:hover{
     color: blue;
     text-decoration: underline;
+}
+.box1{
+    margin-top: 35vh;
+    height: 200px;
+    width: 30%;
+    border: 1px solid red;
+}
+
+button{
+    width: 30%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: blueviolet;
 }
