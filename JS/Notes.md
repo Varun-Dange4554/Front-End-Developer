@@ -365,6 +365,46 @@ switch(expression) {
       // others = { b: 2, c: 3 }
 
 ```
+# Loop in js
+- Loos are used to excted a pices of code again and again.
+
+for loop
+```js
+for (let i=0;i<=5;i++){
+console.log("varu")
+}
+
+```
+while loop 
+```js
+while(condition){
+  // do some work
+}
+
+
+
+let i = 1;
+while(i<=5>){
+  console.log("varun");
+  i++
+}
+
+```
+do while loop
+```js
+do{
+  //do some work
+}while (condition);
+
+let i = 0;
+do{
+console.log("varun");
+i++
+}
+while(i<=5);
+
+
+```
 
 # Function :- 
 Functions are defined using the `function` keyword, followed by a function name, a list of parameters in parentheses (optional), and a block of code enclosed in curly braces

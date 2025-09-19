@@ -93,4 +93,8 @@ for (let i=0; i<=15;i++){
   console.log(row);
 }
 
-//11.                                            
+//🟡 Intermediate Practice quection
+
+// Q11.Print the reverse of a given number (e.g., 123 → 321).
+
+
