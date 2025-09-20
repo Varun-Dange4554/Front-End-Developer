@@ -10,8 +10,8 @@ const apicalling =async ()=>{
         `postId ${els.postId}
          id: ${els.id}
          name: ${els.name}
-         email ${email}
-         body ${body}
+         email: ${els.email}
+         body: ${els.body}
         `
     )
     });

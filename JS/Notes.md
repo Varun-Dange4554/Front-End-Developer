@@ -573,3 +573,19 @@ myPromise
 async function myFunc(){---}
 ```
 await pauses the execution of it's surrounding async function untilthe promise is settled.
+
+# Fetch API
+
+API (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate with each other, acting as a messenger or intermediary between them to exchange data and perform tasks.
+
+- The Fetch API provides an interface for fetching (sending/receiving) resourse
+
+- It uses Request and Response objects.
+
+- The fetch()method os used tto fetch a resourse(data)
+
+### Understanding Terms
+
+- AJAX is Asynchronous JS & XML
+- JSON is javascript object Notation
+- json()method: returns a second promise that resolves with the result with the result of parsing the response body text as JSON.(Input is JSON,output is JS object)
