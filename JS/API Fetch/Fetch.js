@@ -13,6 +13,8 @@ const apicalling =async ()=>{
 
 
     // sync way handle promise
+
+
     // fetch(BASE_URL).then((res)=>res.json()).then((res)=>console.log(res))
     // .catch((error)=>console.log(error)).finally(()=>console.log("data has been fetch"));
 

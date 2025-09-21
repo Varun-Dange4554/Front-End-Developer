@@ -41,7 +41,7 @@ console.log(newData); // out put undefined
  
 let arr=[1,2,3,4,5,6,7,8,9,10];
 
-let val = arr.reduce((acc,cur)=>{
+let val = arr.reduce((acc,cur)=> {
       return acc+=cur
 },0);
 console.log(`val:`,val);
@@ -117,3 +117,107 @@ arr1.forEach((num)=>{
     return val   >= 3
  })
  console.log(evenArr);
+
+
+
+
+
+
+ 
+// for Each
+
+// const number=[1,2,3,4,5,6,7,8];
+
+// Performs a function on each element (no return value).
+// number.forEach((num)=>{
+//     console.log(num*2); // out put 2,4,6,8,10,14,16
+// });
+
+// for each new Arr
+
+// let newArr=[];
+// number.forEach((num)=>newArr.push(num * 2))
+// console.log(newArr);   // out put [2,4,6,8,10,12,14,16]
+
+// no return arr
+// const number=[1,2,3,4,5,6,7,8];
+
+// function double(n){
+//     return n *2;
+// }
+
+// let newArr = number.forEach(double);
+// console.log(newArr);   // out put undefined
+
+
+
+// reduce()
+// Reduces an array to a single value.
+
+// const number=[1,2,3,4,5,6,7,8];
+// const newArr = number.reduce((acc,num)=>num % 2 == 0); 
+// console.log(newArr);  //out put true 
+
+// const product = number.reduce((acc,num)=>acc * num,1);
+
+// console.log(product);  //out put 4020
+
+
+
+
+
+//  .map
+
+// Applies a function to each element of an array and returns a new array.
+
+// const number=[1,2,3,4,5,6,7,8];
+
+// let newArr = number.map(num=> num * 2);
+// console.log(newArr);   // out put [2,4,6,8,10,12,14,16]
+
+// function use
+// const number=[1,2,3,4,5,6,7,8];
+
+// function double(n){
+//     return n *2;
+// }
+
+// let newArr = number.map(double);
+// console.log(newArr);   // out put [2,4,6,8,10,12,14,16]
+
+
+
+// find 
+
+// const number=[1,2,3,4,5,6,7,8];
+
+// let ans = number.find((num)=>
+//     num === 2*2);
+// console.log(ans); // out put 4 
+
+
+
+
+// filter()  Filters an array based on a test function.
+// const number=[1,2,3,4,5,6,7,8];
+// const newArr = number.filter((num)=>num % 2 == 0);
+// console.log(newArr);  //out put [2,4,6,8]
+
+
+// slice()
+// start: (Optional) Index to start extraction (inclusive).
+
+// // end: (Optional) Index to stop extraction (exclusive). If omitted, it slices till the end.
+
+// const number=[1,2,3,4,5,6,7,8];
+// const newArr = number.slice(1,5);
+// console.log(newArr); // out put [2,3,4,5]
+
+
+// splice()
+// The splice() method is used to add, remove, or replace elements in an array
+
+// const number=[1,2,3,4,5,6,7,8];
+// const newArr = number.splice(1,5);
+// console.log(newArr); // out put [2,3,4,5,6]
+// console.log(number); // out put [1,7,8]
