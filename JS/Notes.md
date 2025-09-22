@@ -589,3 +589,8 @@ API (Application Programming Interface) is a set of rules and protocols that all
 - AJAX is Asynchronous JS & XML
 - JSON is javascript object Notation
 - json()method: returns a second promise that resolves with the result with the result of parsing the response body text as JSON.(Input is JSON,output is JS object)
+
+
+
+
+### DOM (Document Object Modle)
