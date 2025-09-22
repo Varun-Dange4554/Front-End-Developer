@@ -594,3 +594,54 @@ API (Application Programming Interface) is a set of rules and protocols that all
 
 
 ### DOM (Document Object Modle)
+
+The Document Object Model (DOM) in JavaScript serves as a programming interface for HTML and XML documents. It represents the structure of a web page as a tree of objects, where each object corresponds to a part of the document, such as elements, attributes, and text. This tree-like structure allows JavaScript to interact with and dynamically modify the content, structure, and style of a web page.
+
+## What is DOM
+When a wed page is loaded the browser creates a Document Object Model(DOM) of the page
+
+![alt text](image-2.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+## DOM Manipulation 
+
+`Selecting with id`
+
+  document.getElementById("myId")
+
+  
+`Selecting with class`
+
+  document.getElementByClassName("myClass")
+
+  
+`Selecting with tag`
+
+  document.getElementByTagName("p")
+
+  `Query Selector`
+
+  document.querySelector("myId/myClass/tag")
+// returns first element
+
+  document.querySelector("myId/myClass/tag")
+// return a NodeList
+
+
+`Propertis`
+
+-  tagName: returns tag for element nodes
+- innertext:returns the text content of the element and all its children
+- innerHTML:returns the plain text or HTML content in the element
+- textContent:returns textual content even for hidden elements
