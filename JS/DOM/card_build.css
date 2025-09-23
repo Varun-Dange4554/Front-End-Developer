@@ -1,0 +1,15 @@
+.card-div{
+    box-shadow: ;
+}
+.card-div > img{
+    width: 70%;
+    height: 200px;
+}
+
+#mainContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    justify-items: center;
+    align-content: center;
+}
