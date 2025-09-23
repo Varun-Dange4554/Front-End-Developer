@@ -36,7 +36,8 @@ p2:hover{
     margin-top: 35vh;
     height: 200px;
     width: 30%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    margin-left: 20px;
 }
 
 button{
@@ -44,4 +45,15 @@ button{
     height: 35px;
     border-radius: 10px;
     background-color: blueviolet;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box2{
+    height: 550px;
+    width: 30%;
+    background-color: gainsboro;
 }

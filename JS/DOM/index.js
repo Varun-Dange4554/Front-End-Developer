@@ -8,9 +8,11 @@ const infofunc = ()=>{
 
 const generator = async () =>{
     const API = `https://official-joke-api.appspot.com/random_joke`;
-    // const jokeDiv = document.getElementById("joke");
+    // const jokeDiv = document.getElementByID("joke");
+    
+
     const jokeDiv = document.querySelectorAll("#joke");
-    console.log("jokeDiv",jokeDiv);
+    // console.log("jokeDiv",jokeDiv);
 
     try {
         let res = await fetch(API);

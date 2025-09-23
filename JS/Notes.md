@@ -600,19 +600,6 @@ The Document Object Model (DOM) in JavaScript serves as a programming interface 
 ## What is DOM
 When a wed page is loaded the browser creates a Document Object Model(DOM) of the page
 
-![alt text](image-2.png)
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## DOM Manipulation 
 
@@ -645,3 +632,27 @@ When a wed page is loaded the browser creates a Document Object Model(DOM) of th
 - innertext:returns the text content of the element and all its children
 - innerHTML:returns the plain text or HTML content in the element
 - textContent:returns textual content even for hidden elements
+
+
+
+##DOM Manipulation
+
+`Attributes`
+- getAttribute(attr) // to get the attribute value
+- setAttribute(attr,value)// to set the attribute val th
+
+`Style`
+- node.style
+
+`Insert Elements` 
+   
+     let el = document.createElement("div")  
+
+- node.append(el) // add at the end node (inside)
+- node.prepend(el) // adds at the start of node (inside)
+- node.before(el) // adds before the node (outside)
+- node.affter(el) // adds after the node (outside)
+
+`Delete Element`
+
+- node.remove()// removes the node
