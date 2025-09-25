@@ -98,11 +98,11 @@ img:hover{
 
 .tex{
 /* border: 1px solid black; */
-width: 123px;
+width: 110px;
 position: absolute;
 text-align: center;
 top: 90px;
-left: 790px;
+left: 850px;
 background-color: white;
 border-radius: 20px;
     transform: skew(20deg, -20deg);
@@ -121,7 +121,7 @@ button{
     height: 50px;
     width: 10%;
     border-radius: 30px;
-    margin-left: 630px;
+    margin-left: 710px;
   margin-top: 20px;
     color: #E6E6E6;
     background-color: black; 

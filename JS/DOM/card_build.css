@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 
 
@@ -12,12 +13,14 @@ h1{
 
 .card-Div{
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  
     
 }
 .card-Div > img{
     width: 70%;
     height:300px;
     /* border: 2px solid black; */
+    
     
 
 }
@@ -38,5 +41,9 @@ h1{
 
 h2,h3,h4,p{
     text-align: center;
+    
 }
-
+h2,h3{
+    background-color:bisque;
+   
+}
