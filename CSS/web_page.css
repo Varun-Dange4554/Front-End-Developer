@@ -14,7 +14,7 @@
 
 }
 body{
-    height: 200vh;
+    height: 800vh;
 }
 
 p1,p2{
@@ -46,7 +46,7 @@ p2:hover{
     
 }
 
-button{
+.button1>button{
     width: 30%;
     height: 35px;
     border-radius: 10px;
@@ -65,7 +65,7 @@ button{
 .box2 > img{
     margin: 60px  0px 0px 70px;
     height: 600px;
-    width: 400px;
+    width: 600px;
     position: absolute;
 
 }
@@ -97,14 +97,188 @@ button{
     margin-top: 130px;
     height: 150px;
     background-color: #f2f2f2;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 160px;
+    
 
+}
+.sec1 > img{
+    height: 60px;
+    width: 60px;
 }
 .sec2{
     margin-top: 60px;
+    margin-left: 10px;
     
 }
-p3{
-    font-size: xx-large;
+p3,p6,p8,p12,p14{
+    font-size:50px;
+    font-weight: 500;
+    
 
 }
+.sec3{
+    margin-top: 40px;
+    margin-left: 10px;
+     display: flex;
+    align-items: center;
+    gap: 160px;
+    height: 250px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+p3, img{
+    height: 50px;
+    width: 50px;
+}
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
+.sec4{
+    background-color:  #f2f2f2;
+    height: 450px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 170px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    
+}
+
+.button2 > button{
+     width: 270px;
+    height: 35px;
+    border-radius: 10px;
+
+}
+p5,p6,p7,.button2{
+    margin-top: 30px;
+}
+.button2> button:hover{
+    color: white;
+    background-color: blueviolet;
+    cursor: pointer;
+    
+}
+.sub_sec2{
+    display: flex;
+}
+
+.mid_img1 > img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    left: 250px;
+    bottom: 20px;
+    position: relative;
+}
+.mid_img2 > img{
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    position: relative;
+    left: 400px;
+top: 50px;
+}
+.mid_img3 > img{
+     height: 330px;
+    width: 220px;    
+    border-radius: 20px;
+    position: relative;
+    left: 300px;
+    top: 25px;
+
+
+}
+.mid_img4 > img{
+    height: 220px;
+    width: 220px; 
+    border-radius: 20px;
+   position: relative;
+   left: 290px;
+   top: 80px;
+}
+
+.sec5{
+    
+    position: relative;
+    top: 200px;
+}
+.images1{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 30px;
+    text-align: center;
+  
+} 
+.p4 >img{
+    height: 380px;
+    width: 500px;
+    border-radius: 30px;
+}
+.images2{
+    display: flex;
+    justify-content: space-between;
+   position: relative;
+   top: 70px;
+    text-align: center;
+} 
+.button3>button{
+    position: relative;
+    top: 80px;
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: blueviolet;
+   color: white;
+}
+
+.sec6{
+    height: 430px;
+    width: 100%;
+    background-color:  #f2f2f2;
+    margin-top: 480px;
+     display: flex;
+
+}
+.images3>img{
+    height: 550px;
+    width: 450px;
+    position: relative;
+    bottom: 70px;
+    left: 250px;
+    border-radius: 10px;
+}
+.tex1{
+    left: 400px;
+    position: relative;
+    top: 100px;
+}
+.button4 > button{
+     width: 270px;
+    height: 35px;
+    border-radius: 10px;
+
+}
+.button4> button:hover{
+    color: white;
+    background-color: blueviolet;
+    cursor: pointer;   
+}
+p11,p12,p13,.button4{
+    margin-top: 20px;
+}
+
+.sec7{
+    margin-top: 100px;
+}
+.card1{
+    display: flex;
+    
+}

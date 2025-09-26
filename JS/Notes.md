@@ -504,8 +504,6 @@ Synchoronous means the code runs in a particular sequence of instruction given i
 ### Asynchronous
 Due to synchronous programming sometimes imp instructions get blocked due to some previous instruction, which case delay intel UI Ascynchronous code excution allows to execut next instruction immediately and dosent block the flow
 
-
-
 ### callback Hell
 
  - callback hell:-Nested callback stacked below one other forming a pyramid structure.
