@@ -282,3 +282,12 @@ p11,p12,p13,.button4{
     display: flex;
     
 }
+.box4{
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid red; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.box4:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,o.2);
+}
