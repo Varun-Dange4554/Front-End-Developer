@@ -14,9 +14,15 @@
 
 }
 body{
-    height: 800vh;
+    height: 1000vh;
 }
 
+.nav1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 p1,p2{
 
     /* border: 1px solid gainsboro; */
@@ -278,16 +284,253 @@ p11,p12,p13,.button4{
 .sec7{
     margin-top: 100px;
 }
-.card1{
+.card1,.card2{
     display: flex;
-    
+    justify-content: space-evenly;    
+}
+.card1{
+    margin-top: 60px;
 }
 .box4{
-    height: 300px;
-    width: 300px;
+    height: 280px;
+    width: 450px;
     /* border: 1px solid red; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .box4:hover{
     box-shadow: 0 8px 16px rgba(0,0,0,o.2);
+}
+
+h3{
+    position: relative;
+    left: 30px;
+    top: 40px;
+}
+p16{
+    position: relative;
+    top: 70px;
+    left: 30px;
+    right: 20px;
+}
+h5{
+    position: relative;
+    top: 100px;
+    left: 30px;
+}
+p17{
+    top: 110px;
+    position: relative;
+    left: 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: large;
+}
+.button5>button{
+position: relative;
+    top: 50px;
+    left: 700px;
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: blueviolet;
+   color: white;
+
+}
+.sec8{
+    background-color:  #f2f2f2;
+    height: 400px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+p18,p22,p25{
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+    top: 50px;
+    left: 10px;
+}
+p19,p23,p26{
+    position: relative;
+    top: 60px;
+    left: 10px;
+}
+
+.textimonial-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.textimonial-box{
+    background-color: #0a043c;
+    color: white;
+    height: 170px;
+    border-radius: 12px;
+    width: 380px;
+    
+
+}
+.textimonial-text{
+    position: relative;
+    left: 25px;
+    top: 50px;
+}
+
+.textimonial-author{
+    position: relative;
+    top: 90px;
+    left: 200px;
+    color: #ffb400;
+}
+
+.sec9{
+    margin-top: 60px;
+
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.pricing-container{
+    display: flex;
+     display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.pricing{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid red; */
+    height: 490px;
+    border-radius: 12px;
+    width: 380px;
+    margin-top: 130px;
+    
+}
+.pricing1{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 30px 0px 30px;
+    
+}
+.price{
+    font-size: xx-large;
+    font-weight: 600;
+    
+}
+.pricing1>img{
+    height: 60px;
+    width: 70px;
+}
+.tittle{
+    font-weight:700;
+    font-size: x-large;
+    margin: 30px 0px 0px 30px ;
+}
+p24{
+    position: relative;
+    left: 15px;
+    right: 10px;
+}
+ul{
+   list-style: none; 
+    margin-top: 10px;
+}
+li{
+    margin-left: 60px;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: large;
+    
+}
+.button7>button{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 140px;
+    background-color: blueviolet;
+    color: white;
+
+}
+
+.sec10{
+  background-color:  #f2f2f2;
+  margin-top: 50px;
+  height: 830px;
+  width: 100%;
+  display: flex;
+}
+
+.from{
+    height: 700px;
+    width: 550px;
+    /* border: 1px solid red; */
+    margin-left: 100px;
+}
+p26{
+    position: relative;
+    top: 90px;
+    
+}
+.from1{
+    margin-top: 160px;
+    margin-left: 70px;
+    
+    
+}
+
+
+#Email{
+    margin-top: 30px;
+    margin-left: 10px;
+         
+}
+#Subject{
+    margin-top: 30px;
+}
+#message{
+    margin-top: 50px;
+    width: 350px;
+    height: 100px;
+    
+}
+.Send-button{
+    margin-top: 30px;
+     width: 30%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+
+}
+
+.content-image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 150px;
+}
+.image-item1 img{
+    height: 280px;
+    width: 350px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.image-item3 img{
+    height: 400px;
+    width: 350px;
+    border-radius: 20px;
+
+}
+
+.image-item2 img{
+    height: 420px;
+    width: 390px;
+    border-radius: 20px;
+    position: relative;
+    top: 180px;
+    left: 20px;
+
 }

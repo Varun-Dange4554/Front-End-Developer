@@ -17,13 +17,13 @@
         navigator.geolocation.getCurrentPosition((position)=>{
             console.log("posittion",position);
             document.getElementById("output").innerHTML=
-            
-            "Latitude:", position.coords.latitude + 
+            "latitude:"+ position.coords.latitude + 
             "<br>Longitude: " + position.coords.longitude;
         });
     }
     else{
         document.getElementById("output").innerHTML= "geolocation not supported";
+    
     }
 
 </script>
