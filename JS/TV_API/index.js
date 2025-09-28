@@ -14,7 +14,10 @@ const api_fetch = async () =>{
 const Render_UI = (infoData) =>{
     console.log('infoData',infoData);
     infoData.forEach((element)=>{
-        console.log('element',element.show);
+        // console.log('element',element.show);
 
     });
 }
+
+
+

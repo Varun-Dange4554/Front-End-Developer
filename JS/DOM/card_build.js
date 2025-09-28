@@ -8,9 +8,6 @@ const product_Fetch=()=>{
     .catch((err)=>console.log(err))
     .finally(()=>{console.log('api fetch completed')})
 }
-
-
-
 const Render_UI = (value)=>{
     let mainDiv = document.getElementById("mainContainer");
     value.map((element, index)=>{
