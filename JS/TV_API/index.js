@@ -16,6 +16,28 @@ const Render_UI = (infoData) =>{
     infoData.forEach((element)=>{
         // console.log('element',element.show);
 
+
+
+
+        infoData.map((element,index)=>{
+            let cardDiv = document.createElement('div');
+
+            let id = document.createElement('h1');
+
+            id.innerText = element.id;
+
+            cardDiv.className="card-div";
+
+            cardDiv.append(id);
+            mainDiv.append(cardDiv);
+
+        });
+
+
+
+
+
+
     });
 }
 
