@@ -9,12 +9,23 @@
     display: grid;
     grid-template-columns:repeat(4,1fr);
     text-align: center;
+    margin-top: 20px;
+    gap: 10px;
+
+   }
+   .card_div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   }
+   .card_div > img{
+    width: 70%;
+    height: 300px;
    }
 
 
 #image >img{
     width: 158.20px;
     height: 50px;
+    margin-left: 150px;
 }
 
 img{
@@ -29,16 +40,23 @@ img{
 .navbar{
     display: flex;
     justify-content: space-around;
-    margin: 0px 160.4px;
+    /* margin: 0px 160.4px; */
     padding: 15px 0px 0px;
    background-color: #3c3c3c;
 }
 .text{
     display: flex;
-    gap: 35px;
+    gap: 45px;
+    margin-right: 90px;
     color: white;
+    margin-top: 8px;
+    /* border: 1px solid red; */
     
 }
+ h2:hover{
+    color: #3cc6b2;
+}
+
 .input{
     display: flex;
     width: 700px;
@@ -56,12 +74,15 @@ img{
     justify-content: center;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px ;
+    padding: 8px;
+
 }
-.search_img > img{
-    width: 52px;
-    height: 34px;
-    color: white;
+.search_img > img {
+    width: 26.4px;
+    height: 26.4px;
+    
 }
+
 .input input{
     width: 456.66px;
     height: 39px;
@@ -72,5 +93,10 @@ img{
 }
 .input input:hover{
     border: 4px solid white;
+    cursor: pointer;
 
+}
+.search_img:hover{
+      border: 4px solid white;
+    cursor: pointer;
 }

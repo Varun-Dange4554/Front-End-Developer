@@ -13,14 +13,16 @@ const api_fetch = async () =>{
         Render_UI(data);
     }
     catch (error){
-    // console.log('error',error);
+    console.log('error',error);
     }
 }
 
+
+
 const Render_UI = (infoData) =>{
     // console.log('🚀 ~ infoData:', infoData);
-    
     const mainDiv = document.querySelector(".mainContainer");
+    mainDiv.innerHTML = "";
     infoData.forEach((element)=>{
         element = element.show;
         
@@ -33,25 +35,47 @@ const Render_UI = (infoData) =>{
         const runtime = document.createElement("h3");
         const rating = document.createElement("h5");
         const summary = document.createElement("p");
+        const toggleBtn = document.createElement("button");
 
-        id.innerText = `id ${element.id}`;
+        
+
+        id.innerText = `Id: ${element.id}`;
         img.src = element.image.original;
-        name.innerText = `name ${element.name}`;
-        language.innerText = `language ${element.language}`;
-        genres.innerText = `genres ${element.genres}`;
-        runtime.innerText = `runtime ${element.runtime}`;
-        rating.innerText = `rating ${element.rating.average}`;
-        summary.innerHTML = `summary ${element.summary}`;
+        name.innerText = `Name: ${element.name}`;
+        language.innerText = `Language: ${element.language}`;
+        genres.innerText = `Genres: ${element.genres}`;
+        runtime.innerText = `Runtime: ${element.runtime}`;
+        rating.innerText = `Rating: ${element.rating.average}`;
+        // summary.innerHTML = `summary ${element.summary}`;
+        
+         // summary handling
+         const fullSummary = element.summary || "no summary available.";
+         const tempDiv = document.createElement("div");
+         tempDiv.innerHTML = fullSummary;
+         const plainTextSummary = tempDiv.innerText;
+
+         const truncated = plainTextSummary.slice(0, 150) + (plainTextSummary.length>150?"...":"");
+         summary.innerText = truncated;
+         
+         toggleBtn.innerText="More";
+
+         toggleBtn.addEventListener("click", ()=>{
+            if(toggleBtn.innerText === "More"){
+                summary.innerText = plainTextSummary;
+                toggleBtn.innerText = "Less";
+            } else {
+                summary.innerText = truncated;
+                toggleBtn.innerText = "More"
+            }
+         });
 
         //class name
         card_div.className="card_div";
 
-        card_div.append(img,id,name,language,genres,runtime,rating,summary);
+        card_div.append(img,id,name,language,genres,runtime,rating,summary,toggleBtn);
 
         mainDiv.append(card_div);
 
     });
 };
-
-
 
