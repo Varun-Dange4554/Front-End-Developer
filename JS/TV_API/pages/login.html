@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV api fetch</title>
-    <link rel="stylesheet" href="./index.css" />
+    <title>login</title>
+    <!-- <link rel="stylesheet" href="../TV_API/index.css"> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="../pages/login.css">
   </head>
   <body>
     <!-- <h1>TV Show's</h1> -->
@@ -34,12 +35,17 @@
       </div>
 
       <div class="text">
-        <h2 onclick="loginFunc()">Login</h2>
-         <!-- <h2 onclick=" ">Login</h2> -->
-        <h2>Register</h2>
+        <h2 onclick="homePage()">Home</h2>
       </div>
     </div>
+    <!-- login from -->
+
+    <form onsubmit="handleFrom(event)">
+      <input id="email" type="email" placeholder="enter your email..." />
+      <input id="pass" type="pass" placeholder="enter your pass..." />
+      <input type="submit" value="click" />
+    </form>
     <div class="mainContainer"></div>
+    <script src="../JS/login.js"></script>
   </body>
-  <script src="../TV_API/index.js"></script>
 </html>
