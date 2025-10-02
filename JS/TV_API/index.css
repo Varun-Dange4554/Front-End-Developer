@@ -16,11 +16,24 @@
    }
    .card_div{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
    }
+
+
    .card_div > img{
     width: 70%;
-    height: 300px;
+    /* height: 300px; */
+    opacity: 0.9;
+    scale: 0.9;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
    }
+ 
+   .card_div > img:hover{
+    opacity: 8;
+    scale: 1.0;
+}
+
 
 
 #image >img{
@@ -36,8 +49,13 @@ img{
 
 }
 .card_div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
+/* .card_div:hover{
+        
+} */
 .navbar{
     display: flex;
     justify-content: space-around;
