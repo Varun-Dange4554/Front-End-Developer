@@ -62,7 +62,8 @@
 
       .search_img {
         width: 114.16px;
-        height: 39px;
+    height: 32.9px;
+    /* margin-top: 1px; */
         align-items: center;
         background-color: #3cc6b2;
         display: flex;
@@ -78,18 +79,20 @@
 
       .input input {
         width: 456.66px;
-        height: 39px;
         margin: 0px 0px 16px;
         padding: 8px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
+        
+        
+        
       }
       .input input:hover {
-        border: 4px solid white;
+        /* border: 4px solid white; */
         cursor: pointer;
       }
       .search_img:hover {
-        border: 4px solid white;
+        border: 2px solid white;
         cursor: pointer;
       }
 
@@ -122,28 +125,28 @@
        
       input{
         border: none;
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid black;
         margin: 0px 15px 0px 15px;
         /* background-color: #3c3c3c; */
 
       }
-      input:hover{
-        border-bottom: 1px solid black;
-        cursor: pointer;
-
-        
-      }
+      
 
       #email{
         height: 30px;
+        outline:none;
       }
       #pass{
         height: 30px;
+        
+        outline:none;
+
       }
       #submit{
         height: 40px;
        font-size: large; 
        font-weight: 400;
+       cursor: pointer;
        /* background-color: white; */
       
        background-color:#2fbad6;
