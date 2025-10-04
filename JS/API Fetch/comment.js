@@ -21,4 +21,4 @@ const apicalling =async ()=>{
   }
 
 }
-// apicalling()
+apicalling();

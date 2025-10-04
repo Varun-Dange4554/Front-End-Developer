@@ -1,6 +1,7 @@
 
 
 
+
 const apiFunc= (param)=>{
     return API_BASE_URL = `https://api.tvmaze.com/search/shows?q=${param}`;
 }
