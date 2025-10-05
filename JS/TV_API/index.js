@@ -1,7 +1,4 @@
 
-
-
-
 const apiFunc= (param)=>{
     return API_BASE_URL = `https://api.tvmaze.com/search/shows?q=${param}`;
 }
@@ -46,7 +43,8 @@ const Render_UI = (infoData) =>{
         
 
         id.innerText = `Id: ${element.id}`;
-        img.src = element.image.original;
+        img.src = element.image?.original || "https://via.placeholder.com/210x295?text=No+Image"; 
+        img.alt = element.name || "Show image";
         name.innerText = `Name: ${element.name}`;
         language.innerText = `Language: ${element.language}`;
         genres.innerText = `Genres: ${element.genres}`;
@@ -93,7 +91,40 @@ const loginFunc=()=>{
 
 
 
-let path =window.location.pathname;
-console.log('🚀 ~ path:', path);
+// let path =window.location.pathname;
+// console.log('🚀 ~ path:', path);
+
+
+const sampleKeywords = ["batman","star","love","ghost","dog","space","hero","doctor","fire","girl"];
+
+const showRandomData=()=>{
+    const randomIndex = Math.floor(Math.random() * sampleKeywords.length);
+    const randomKeyword = sampleKeywords[randomIndex];
+
+    const url = apiFunc(randomKeyword);
+    fetch(url)
+    .then (res => res.json())
+    .then (data => {
+        Render_UI(data);
+    })
+    .catch(err=>{
+        console.error("Error fetching random data",err);
+    });
+};
+// window.addEventListener("DOMContentLoaded", () => {
+//     showRandomData(); 
+// });
+
+
+
+
+
+
+
+
+
+
+
+
 
 
