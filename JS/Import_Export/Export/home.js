@@ -3,5 +3,4 @@ const home = (x, y)=>{
     <h1>home ${x - y}</h1>
     `;
 };
-
 export default home
