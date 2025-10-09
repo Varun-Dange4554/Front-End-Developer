@@ -20,7 +20,7 @@
         flex-direction: column;
     }
     input,
-        .add_btn,
+        .add_btn,   
         .btn_isDelete,
         .btn_isEdit {
             padding: 10px 20px;
@@ -69,19 +69,18 @@
             }
         }
 
-        #todo_list,
-        .todo_div {
+         #todo_list,
+         .todo_div 
+        
+        {
             width: inherit;
             display: inherit;
             justify-content: inherit;
             align-items: inherit;
             gap: inherit;
             flex-direction: inherit;
-        }
-
-        .todo_div {
-            height: 100px;
-            
+            height: auto;
+            width: auto;
         }
 
         .todo_divs {
@@ -90,15 +89,18 @@
             width: 50%;
             height: 50px;
             display: flex;
-            
             align-items: inherit;
             gap: inherit;
+            font-size: 20px;
+            color: #ffff;
         }    
-
-
-  </style>
-
-
+        .hideData{
+            display: none;
+        }
+        .showData{
+            display: block;
+        }
+        </style>
 </head>
 <body>
     <h1>Todo's</h1>
@@ -108,5 +110,5 @@
     </div>
     <div id="todo_list"> </div>
 </body>
-<script src="../Todo_list/index.js"></script>
+<script src="../CRUD-Todo_list/index.js"></script>
 </html>
