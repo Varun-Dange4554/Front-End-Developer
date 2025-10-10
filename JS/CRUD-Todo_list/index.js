@@ -44,17 +44,17 @@ const read_Todo = ()=>{
        const btn_confirm= document.createElement('button')
 
        inputEdit.value = el.todo;
-       inputEdit.name = "change_edit_input"
+       inputEdit.name = "change_edit_input";
 
        btn_cancel.innerText ="Cancel";
-       btn_confirm.innerText = "Confirm "
+       btn_confirm.innerText = "Confirm ";
 
        // this is edit element end
 
        textTodo.innerText = el.todo;
 
        input_is_completes.type = "checkbox";
-       input_is_completes.name = "completes_input"
+       input_is_completes.name = "completes_input";
 
 
         todoDiv.className = "todo_divs";
@@ -76,6 +76,7 @@ const read_Todo = ()=>{
         btn_cancel.addEventListener("click",()=>{
             cancelHandle(el.id);
         })
+
 
         // logic to hide
 
@@ -99,6 +100,7 @@ const read_Todo = ()=>{
 
     });
 }
+
 
      const cancelHandle = (id)=>{
         const editData = store.map((el) => {

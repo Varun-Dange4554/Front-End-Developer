@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo's List</title>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        gap: 20px;
+        background-color: gray;
+        flex-direction: column;
+    }
+    input,
+        .add_btn,   
+        .btn_isDelete,
+        .btn_isEdit {
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+
+     .add_btn {
+            background: transparent;
+            border: 2px solid bisque;
+
+            &:hover {
+                background: blueviolet;
+                border: none;
+                color: #fff;
+                border-radius: 10px;
+                font-style: italic;
+                transition: all 0.3s ease-in;
+            }
+        }
+
+        .btn_isDelete {
+            background: transparent;
+            border: 2px solid red;
+
+            &:hover {
+                background: red;
+                border: none;
+                color: #fff;
+                border-radius: 10px;
+                font-style: italic;
+                transition: all 0.3s ease-in;
+            }
+        }
+
+        .btn_isEdit {
+            background: transparent;
+            border: 2px solid maroon;
+
+            &:hover {
+                background: greenyellow;
+                border: none;
+                color: #000;
+                border-radius: 10px;
+                font-style: italic;
+                transition: all 0.3s ease-in;
+            }
+        }
+
+         #todo_list,
+         .todo_div 
+        
+        {
+            width: inherit;
+            display: inherit;
+            justify-content: inherit;
+            align-items: inherit;
+            gap: inherit;
+            flex-direction: inherit;
+            height: auto;
+            width: auto;
+        }
+
+        .todo_divs {
+            flex-direction: unset;
+            justify-content: space-between;
+            width: 50%;
+            height: 50px;
+            display: flex;
+            align-items: inherit;
+            gap: inherit;
+            font-size: 20px;
+            color: #ffff;
+        }    
+        .hideData{
+            display: none;
+        }
+        .showData{
+            display: block;
+        }
+        </style>
+</head>
+<body>
+    <h1>Todo's</h1>
+    <div class="todo_div_main">
+        <input  id="todoVal"    type="text" placeholder="enter the Todo's..."/>
+        <button class="add_btn"> add todo</button>
+    </div>
+    <div id="todo_list"> </div>
+</body>
+<script src="../frontend/index.js"></script>
+</html>
