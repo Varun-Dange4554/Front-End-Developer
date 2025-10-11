@@ -4,7 +4,6 @@ const btn_Add = document.querySelector(".add_btn");
 const api =`http://localhost:3000/todo`; // api_base_UI...
 
 /*
-
    get - done
    post - done
    put
@@ -88,7 +87,7 @@ const read_Todo = ()=>{
 
         // delet function
 
-        btn_delete.addEventListener('click',()=>{
+        btn_delete.addEventListener('click',async()=>{
             deleteFuction(el.id);
         })
 
@@ -145,15 +144,26 @@ const read_Todo = ()=>{
         read_Todo();
      }
 
-   const deleteFuction = (id) => {
-    const updateDel = store.filter((el)=> el.id !== id);
+   const deleteFuction =  async(id) => {
+    try{
+        // Delet request to back end server
+        let res = await fetch(`${api}/${id}`,{
+            method:"DELETE"
+        });
 
-    store = updateDel;
+        if(res.ok){
+     store = store.filter(el=> el.id !== id);
      localStorage.setItem("todos",JSON.stringify(store))
-    read_Todo();
-    // console.log('🚀 ~ updateDel:', updateDel);
-
-   }
+     read_Todo();
+        } else{
+            console.error("Field to delete todo. status",res.status);
+        }
+        
+    } catch(error){
+          console.log('🚀 ~ error:', error);
+          
+    }
+   };
   
 
 window.onload = async ()=>{
@@ -166,7 +176,5 @@ window.onload = async ()=>{
         console.log('🚀 ~ error_onload:', error);
         
     }
-    
-    
 }
 

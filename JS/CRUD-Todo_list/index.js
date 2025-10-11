@@ -77,6 +77,10 @@ const read_Todo = ()=>{
             cancelHandle(el.id);
         })
 
+        // confirm btn
+        btn_confirm.addEventListener("click",()=>{
+            updateFunction(el.id)
+        });
 
         // logic to hide
 
@@ -100,6 +104,28 @@ const read_Todo = ()=>{
 
     });
 }
+
+         const updateFunction = (id) => {
+    const inputElement = document.querySelector("input[name='change_edit_input']");
+    const newValue = inputElement.value.trim();
+
+    if (newValue === "") {
+        alert("To-do value cannot be empty.");
+        return;
+    }
+
+    const updatedTodos = store.map((el) => {
+        if (el.id === id) {
+            return { ...el, todo: newValue, isEdits: false };
+        }
+        return el;
+    });
+
+    store = updatedTodos;
+    localStorage.setItem("todos", JSON.stringify(store));
+    read_Todo();
+}
+
 
 
      const cancelHandle = (id)=>{
