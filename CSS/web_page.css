@@ -14,9 +14,17 @@
 
 }
 body{
-    height: 1000vh;
+    height: 860vh;
+    
 }
+button{
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
+}
 .nav1{
     display: flex;
     justify-content: center;
@@ -57,6 +65,8 @@ p2:hover{
     height: 35px;
     border-radius: 10px;
     background-color: blueviolet;
+    border: none;
+    
 }
 
 .h1{
@@ -116,7 +126,7 @@ p2:hover{
 }
 .sec2{
     margin-top: 60px;
-    margin-left: 10px;
+    margin-left: 30px;
     
 }
 p3,p6,p8,p12,p14{
@@ -127,7 +137,7 @@ p3,p6,p8,p12,p14{
 }
 .sec3{
     margin-top: 40px;
-    margin-left: 10px;
+    margin-left: 30px;
      display: flex;
     align-items: center;
     gap: 160px;
@@ -150,6 +160,7 @@ h2 {
     width: 100%;
     /* border: 1px solid black; */
     margin-top: 170px;
+    /* margin-left: 30px; */
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
@@ -160,15 +171,19 @@ h2 {
      width: 270px;
     height: 35px;
     border-radius: 10px;
+    border: none;
+    background-color: blueviolet;
 
 }
 p5,p6,p7,.button2{
     margin-top: 30px;
+    margin-left: 30px;
 }
 .button2> button:hover{
     color: white;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     cursor: pointer;
+    
     
 }
 .sub_sec2{
@@ -270,12 +285,12 @@ top: 50px;
      width: 270px;
     height: 35px;
     border-radius: 10px;
-
+    background-color: blueviolet;
+    
 }
 .button4> button:hover{
     color: white;
-    background-color: blueviolet;
-    cursor: pointer;   
+    cursor: pointer;    
 }
 p11,p12,p13,.button4{
     margin-top: 20px;
@@ -283,7 +298,10 @@ p11,p12,p13,.button4{
 
 .sec7{
     margin-top: 100px;
+    margin-left: 30px;
 }
+
+
 .card1,.card2{
     display: flex;
     justify-content: space-evenly;    
