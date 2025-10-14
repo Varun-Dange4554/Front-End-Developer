@@ -13,10 +13,13 @@
     
 
 }
-body{
-    height: 860vh;
-    
+body {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
 button{
     border: none;
 }
@@ -69,7 +72,7 @@ a:hover{
     height: 200px;
     width: 30%;
     /* border: 1px solid red; */
-    margin-left: 20px;
+    margin-left: 80px;
     
     
 }
@@ -85,7 +88,7 @@ a:hover{
 
 .h1{
     font-weight: 700;
-    font-size: 80px;
+    font-size: 70px;
 }
 .box{
     display: flex;
@@ -95,14 +98,14 @@ a:hover{
 .box2 > img{
     margin: 60px  0px 0px 70px;
     height: 600px;
-    width: 600px;
+    width: 500px;
     position: absolute;
 
 }
 
 .subdiv{
     margin-top: 460px;
-    
+    left: 680px;
     height: 120px;
     width: 300px;
     position: absolute;
@@ -140,22 +143,19 @@ a:hover{
 }
 .sec2{
     margin-top: 60px;
-    margin-left: 30px;
+    margin-left: 80px;
     
 }
 #p3,.p6,.p8,.p12,.p14{
     font-size:50px;
     font-weight: 500;
-    
-    
-
 }
 .sec3{
     margin-top: 40px;
-    margin-left: 30px;
+    margin-left: 80px;
      display: flex;
     align-items: center;
-    gap: 160px;
+    gap: 90px;
     height: 250px;
     width: 100%;
     /* border: 1px solid red; */
@@ -180,10 +180,15 @@ h2 {
     align-items: center;
     /* justify-content: space-between; */
     
+
+    
 }
 
 .sub_sec1{
     position: relative;
+    left: 80px;
+    width: 39%;
+
 }
 .button2 > button{
      width: 270px;
@@ -194,8 +199,16 @@ h2 {
 
 }
 .p5, .p6,.p7,.button2{
-    margin-top: 30px;
-    margin-left: 30px;
+    /* margin-top: 10px; */
+    margin-left: 30px;  
+}
+.p5{
+    position: relative;
+    top: 10px;
+}
+.button2{
+    position: relative;
+    top: 20px;
 }
 .button2> button:hover{
     color: white;
@@ -247,6 +260,7 @@ top: 50px;
     
     position: relative;
     top: 200px;
+    left: 80px;
 }
 .p8,.p9{
     position: relative;
@@ -256,7 +270,9 @@ top: 50px;
 
 .images1{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-around;
+     */
+     gap: 20px;
     position: relative;
     top: 30px;
     text-align: center;
@@ -264,12 +280,14 @@ top: 50px;
 } 
 .p4 >img{
     height: 380px;
-    width: 500px;
+    width: 400px;
     border-radius: 30px;
 }
 .images2{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+     gap: 20px;
+
    position: relative;
    top: 70px;
     text-align: center;
@@ -317,12 +335,24 @@ top: 50px;
     cursor: pointer;    
 }
 .p11,.p12,.p13,.button4{
-    margin-top: 20px;
+    margin-top: 16px;
+}
+.p11{
+    position: relative;
+    top: 30px;
+}
+.p13{
+    position: relative;
+    bottom: 20px;
+}
+.button4{
+    position: relative;
+    bottom: 20px;
 }
 
 .sec7{
     margin-top: 100px;
-    margin-left: 150px;
+    margin-left: 80px;
 }
 
 
@@ -371,7 +401,7 @@ h5{
 .button5>button{
 position: relative;
     top: 50px;
-    left: 700px;
+    left: 600px;
     width: 280px;
     height: 40px;
     border-radius: 10px;
@@ -382,7 +412,8 @@ position: relative;
 .sec8{
     background-color:  #f2f2f2;
     height: 400px;
-    width: 100%;
+    /* width: 100%; */
+    /* margin-left: 80px; */
     margin-top: 100px;
 }
 
@@ -390,8 +421,8 @@ position: relative;
     font-size: 40px;
     font-weight: 600;
     position: relative;
-    top: 50px;
-    left: 230px;
+    top: 20px;
+    left: 80px;
 }
 .p25{
     font-size: 40px;
@@ -402,12 +433,12 @@ position: relative;
 }
 .p19,.p23{
     position: relative;
-    top: 60px;
-    left: 230px;
+    top: 10px;
+    left: 80px;
 }
 
 .textimonial-container{
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -517,8 +548,11 @@ li{
     height: 700px;
     width: 550px;
     /* border: 1px solid red; */
-    margin-left: 100px;
+    margin-left: 80px;
+    
+    
 }
+
 .p26{
     position: relative;
     top: 60px;
@@ -529,9 +563,7 @@ li{
     margin-top: 160px;
     margin-left: 70px;
     
-    
 }
-
 
 #Email{
     margin-top: 30px;
