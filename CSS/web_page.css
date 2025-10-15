@@ -103,6 +103,19 @@ a:hover{
 
 }
 
+
+.dots{
+    position: absolute;
+    right: 40px;
+    top:300px;
+    width: 120px;
+    height: 300px;
+    pointer-events: none;
+    background-image: radial-gradient(circle,#bdbdbd 15%, transparent 16%);
+    background-size: 42git gipx 42px ;
+    background-position: 0 0;
+    opacity: 0.9;
+}
 .subdiv{
     margin-top: 460px;
     left: 680px;
@@ -294,7 +307,7 @@ top: 50px;
 } 
 .button3>button{
     position: relative;
-    top: 80px;
+    top: 50px;
     width: 280px;
     height: 40px;
     border-radius: 10px;
@@ -592,7 +605,7 @@ li{
 .content-image{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin-left: 150px;
+    margin-left: 70px;
 }
 .image-item1 img{
     height: 280px;
