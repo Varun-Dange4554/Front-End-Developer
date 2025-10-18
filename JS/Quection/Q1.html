@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> counter ++</title>
+ </head>
+ <body>
+    <button id="incrementBtn">Click Me </button>
+    <div id="counter"></div>
+ </body>
+ <script>
+    let count = 0;
+    const btn = document.getElementById('incrementBtn');
+    const counterDisplay = document.getElementById('counter');
+   btn.addEventListener('click',()=>{
+      count++;
+      if(count > 10){
+        count = 0
+      }
+      counterDisplay.textContent = count;
+    });
+
+</script>
+ </html> 
+
+
+
+
