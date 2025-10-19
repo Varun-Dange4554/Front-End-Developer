@@ -1,29 +1,82 @@
+<!-- Build a button increase a counter every time it's clicked and resets after reching 10 -->
+ 
+
  <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> counter ++</title>
- </head>
- <body>
-    <button id="incrementBtn">Click Me </button>
-    <div id="counter"></div>
- </body>
- <script>
-    let count = 0;
-    const btn = document.getElementById('incrementBtn');
-    const counterDisplay = document.getElementById('counter');
-   btn.addEventListener('click',()=>{
-      count++;
-      if(count > 10){
-        count = 0
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real-Time Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #search {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+    }
+    #results {
+      margin-top: 20px;
+    }
+    .person {
+      padding: 5px 0;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Search People</h2>
+  <input type="text" id="search" placeholder="Type to search by name..." />
+
+  <div id="results"></div>
+
+  <script>
+    // Sample array of objects
+    const people = [
+      { name: "Alice", age: 25 },
+      { name: "Bob", age: 30 },
+      { name: "Charlie", age: 22 },
+      { name: "David", age: 28 },
+      { name: "Daniel", age: 35 },
+      { name: "Amanda", age: 27 },
+    ];
+
+    const searchInput = document.getElementById('search');
+    const resultsContainer = document.getElementById('results');
+
+    // Function to display results
+    function displayResults(filteredPeople) {
+      resultsContainer.innerHTML = ''; // Clear previous results
+
+      if (filteredPeople.length === 0) {
+        resultsContainer.innerHTML = '<p>No matches found.</p>';
+        return;
       }
-      counterDisplay.textContent = count;
+
+      filteredPeople.forEach(person => {
+        const div = document.createElement('div');
+        div.className = 'person';
+        div.textContent = `${person.name} (${person.age})`;
+        resultsContainer.appendChild(div);
+      });
+    }
+
+    // Initial display
+    displayResults(people);
+
+    // Add input event listener for real-time search
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase();
+
+      const filtered = people.filter(person =>
+        person.name.toLowerCase().includes(query)
+      );
+
+      displayResults(filtered);
     });
+  </script>
 
-</script>
- </html> 
-
-
-
-
+</body>
+</html>
