@@ -3,13 +3,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Live Search Filter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input {
+      padding: 8px;
+      width: 300px;
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 5px 0;
+    }
+  </style>
 </head>
 <body>
-    <input type="text" id="searchInput" placeholder="Search fruits..." />
-<ul id="results"></ul>
+
+  <h2>Live Search</h2>
+  <input type="text" id="searchInput" placeholder="Search for a fruit...">
+
+  <ul id="resultsList"></ul>
+
+  <script>
+    const data = [
+      { id: 1, name: 'Apple' },
+      { id: 2, name: 'Banana' },
+      { id: 3, name: 'Cherry' },
+      { id: 4, name: 'Date' },
+      { id: 5, name: 'Elderberry' }
+    ];
+
+    const searchInput = document.getElementById('searchInput');
+    const resultsList = document.getElementById('resultsList');
+
+    function displayResults(results) {
+      resultsList.innerHTML = '';
+      results.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item.name;
+        resultsList.appendChild(li);
+      });
+    }
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase();
+      const filtered = data.filter(item => item.name.toLowerCase().includes(query));
+      displayResults(filtered);
+    });
+
+    
+    displayResults(data);
+  </script>
 
 </body>
 </html>
