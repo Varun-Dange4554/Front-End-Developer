@@ -24,24 +24,8 @@ const read_Todo = ()=>{
 
     mainDiv.innerHTML = ""; 
 
-//     store.forEach((el)=>{
-//         const todoDiv = document.createElement("div");
-//         const textTodo = document.createElement("h4");
-//         const input_is_completes = document.createElement("input")
-//         const btn_edits = document.createElement("button");
-//         const btn_delete = document.createElement("button");
 
-
-//         textTodo.innerText = el.todo;
-
-//         todoDiv.append(input_is_completes,textTodo,btn_edits,btn_delete)
-//         mainDiv.append(todoDiv);
- 
-//     })
-// }
-
-
-
+    
 
  store.forEach((el) => {
         const todoDiv = document.createElement("div");
@@ -77,9 +61,30 @@ const read_Todo = ()=>{
             read_Todo();
            })
 
+      btn_edits.addEventListener("click",()=>{
+        const newTodo = prompt("Edit your todo",el.todo);
+        if(newTodo !== null && newTodo.trim()!==""){
+            store  = store.map(item =>{
+                return item.id === el.id ? {...item,todo:newTodo}:item;
+            });
+            localStorage.setItem("todos",JSON.stringify(store));
+            read_Todo();
+        }
+        
+
+      })
+
+
+
     });
 };
 
+
+
+
+window.onload = ()=>{
+    read_Todo()
+}
 
 
 
