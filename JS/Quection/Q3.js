@@ -74,13 +74,8 @@ const read_Todo = ()=>{
 
       })
 
-
-
     });
 };
-
-
-
 
 window.onload = ()=>{
     read_Todo()
