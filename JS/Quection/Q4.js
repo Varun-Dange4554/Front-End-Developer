@@ -13,7 +13,7 @@
         renderUsers(data.results);
       } 
       catch (error) {
-        statusDiv.textContent = "❌ Error: " + error.message;
+        statusDiv.textContent = " Error: " + error.message;
         statusDiv.className = "error";
       }
       finally {
