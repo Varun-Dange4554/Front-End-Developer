@@ -1,4 +1,4 @@
-/*
+
 //code 1
 
 function appends(s){
@@ -19,7 +19,7 @@ function appends(s){
 }
 appends('./myscript.js');
 
-*/
+
 
 /*
 // & code 2
