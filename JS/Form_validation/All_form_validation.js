@@ -97,7 +97,7 @@ function myform(e) {
     document.getElementById("email_msg").style.color = "red";
     return false;
   }
-  //   mehfoozkhan@gmail.in //length 19
+  //length 19
   else if (
     email.charAt(email.length - 4) != "." &&
     email.charAt(email.length - 3) != "."
