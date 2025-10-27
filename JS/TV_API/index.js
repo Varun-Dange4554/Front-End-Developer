@@ -18,9 +18,6 @@ const api_fetch = async () =>{
     }
 }
 
- 
-
-
 
 const Render_UI = (infoData) =>{
     // console.log('🚀 ~ infoData:', infoData);
@@ -88,6 +85,8 @@ const loginFunc=()=>{
     
 
 }
+
+
 
 
 
