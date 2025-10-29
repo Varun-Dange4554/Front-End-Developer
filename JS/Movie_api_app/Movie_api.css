@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+.main-heading {
+  text-align: center;
+  padding: 20px;
+  font-size: 32px;
+  color: #222;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Search Bar and Button container */
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    margin-bottom: 25px ;
+}
+
+/* Search Input Style */
+#searchInput {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #555;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* Button Style */
+button {
+    padding: 10px 18px;
+    font-size: 16px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 6px;
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* ✅ Updated section */
+#movie {
+  width: 90%;  
+  display: grid;
+  grid-template-columns: repeat(5, 220px);
+  justify-content: center;
+  gap: 25px 100px;
+  padding: 50px;
+}
+
+.card-div {
+  width: 260px;
+  padding: 20px;
+  border-radius: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card-div img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card-div:hover {
+  transform: scale(1.05);
+  border-color: #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}

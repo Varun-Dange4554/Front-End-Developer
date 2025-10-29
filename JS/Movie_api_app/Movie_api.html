@@ -6,11 +6,14 @@
     <title>Movie</title>
     <link rel="stylesheet" href="../Movie_api_app/Movie_api.css">
 </head>
-<body>
+<body onload="movie_fetch()">
     
 <h1>movie</h1>
 
-    <div id="mainContainer"></div>
+       <input type="text" id="searchInput" placeholder="Search any movie..." />
+    <button onclick="searchMovie()">Search</button>
+
+    <div id="movie"></div>
 
 
 
