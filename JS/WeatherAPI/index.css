@@ -1,19 +1,13 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    border: none;
-    outline: none;
-}
-
-
-body{
-    background-color: gray;
-    height: 97vh;
-}
-#form{
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    text-transform: capitalize;
     
-}
+    }
+
+ input,
+ button {
+     border: 1px solid black;
+     padding: 10px 20px;
+ }

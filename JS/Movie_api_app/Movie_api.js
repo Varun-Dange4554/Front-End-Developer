@@ -30,17 +30,18 @@ const Render_UI = (movies) => {
         let title = document.createElement('h3');
         let type = document.createElement('p');
         let year = document.createElement('p');
-        let imdbId = document.createElement('p'); // ✅ correct variable
+        let imdbId = document.createElement('p'); 
 
         img.src = Element.Poster;
         title.innerText = Element.Title;
         type.innerText = "Type: " + Element.Type;
         year.innerText = "Year: " + Element.Year;
-        imdbId.innerText = "IMDB ID: " + Element.imdbID; // ✅ correct key
+        imdbId.innerText = "IMDB ID: " + Element.imdbID; 
 
         cardDiv.className = "card-div";
 
         cardDiv.append(img, title, type, year, imdbId);
         mainDiv.append(cardDiv);
     });
+    
 };

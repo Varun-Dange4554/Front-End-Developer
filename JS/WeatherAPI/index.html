@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather app</title>
+    <link rel="stylesheet" href="../WeatherAPI/index.css">
     
-   <form action="#" id="form">
+</head>
 
-    <input type="text" id="search" placeholder="Search your Locations"  autocomplete="off">
-   </form>
-   <div id="main"></div>
+<body onload="getLocation()">
+    <input type="text" id="city" />
+    <button onclick="apiCall()">search</button>
 
+    <div id="container"></div>
+
+    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+        <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
+            <iframe style="height:100%;width:100%;border:0;" frameborder="0" id="iframe_tag"></iframe>
+        </div>
     </div>
-
 </body>
-<script src="index.js"></script>
-</html> 
+<script src="./index.js"></script>
+
+</html>
