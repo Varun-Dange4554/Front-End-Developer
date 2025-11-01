@@ -14,7 +14,7 @@
   <body>
     <!-- <h1>TV Show's</h1> -->
 
-    <div class="navbar">
+    <!-- <div class="navbar">
       <div id="image">
         <img
           src="https://static.tvmaze.com/images/tvm-header-logo.png"
@@ -29,7 +29,7 @@
           id="search-input"
         />
         <div class="search_img">
-          <!-- <img src="../TV_API/search.png" alt="serch"> -->
+          
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
@@ -38,7 +38,8 @@
         <h2 onclick="homePage()">Home</h2>
       </div>
     </div>
-    <!-- login from -->
+    login from -->
+      <header class="navbar"></header>
 
     <form onsubmit="handleFrom(event)">
       <h1>Login</h1>
@@ -51,5 +52,9 @@
     <div class="mainContainer"></div>
      </body>
     <script src="../JS/login.js"></script>
+    <script type="module" >
+      import {NavCom,LoginCom} from "../Components/Navbar.js"
+      document.querySelector(".navbar").innerHTML = LoginCom("https://static.tvmaze.com/images/tvm-header-logo.png")
+    </script>
  
 </html>

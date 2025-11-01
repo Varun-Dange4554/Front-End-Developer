@@ -1,6 +1,4 @@
-
 //code 1
-
 function appends(s){
     // hello()
     let script = document.createElement('script');

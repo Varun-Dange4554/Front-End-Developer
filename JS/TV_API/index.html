@@ -11,9 +11,9 @@
     />
   </head>
   <body onload="showRandomData()">
-    <!-- <h1>TV Show's</h1> -->
+    
 
-    <div class="navbar">
+    <!-- <div class="navbar">
       <div id="image">
         <img
           src="https://static.tvmaze.com/images/tvm-header-logo.png"
@@ -28,17 +28,24 @@
           id="search-input"
         />
         <div class="search_img">
-          <!-- <img src="../TV_API/search.png" alt="serch"> -->
+          
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-      </div>
+      </div> 
 
       <div class="text">
         <h2 onclick="loginFunc()">Login</h2>
         <h2>Register</h2>
       </div>
-    </div>
+    </div>-->
+      <header class="navbar"></header>
+    
+
     <div class="mainContainer"></div>
   </body>
   <script src="../TV_API/index.js"></script>
+  <script type="module" >
+    import {NavCom } from "./Components/Navbar.js"
+    document.querySelector(".navbar").innerHTML = NavCom("https://static.tvmaze.com/images/tvm-header-logo.png");
+  </script>
 </html>
