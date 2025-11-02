@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo comment </title>
+    <style>
+        #mainContainer{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+        }
+    </style>
 </head>
 
-<body>
+<body onload="product_Fetch()">
     <h1>api calling</h1>
-    <script src="../API Fetch/comment.js"></script>
+    <div id="mainContainer"></div>
+
     <!-- <button onclick="apicalling()" >onclick </button> -->
 </body>
+<script src="../API Fetch/comment.js"></script>
 </html>
