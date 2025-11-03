@@ -1,11 +1,11 @@
-// // let div = document.querySelector("div");
-// // console.log(div);
+let div = document.querySelector("div");
+console.log(div);
 
-// // let id = div.getAttribute("id");
-// // console.log(id);
+let id = div.getAttribute("id");
+console.log(id);
 
-// // let para = document.querySelector("p");
-// // console.log(para.getAttribute("class"));
+let para = document.querySelector("p");
+console.log(para.getAttribute("class"));
 
 // /* change the attribute value
 
@@ -60,13 +60,13 @@
 // */
 
 
-// //Delete element
-// /*
+//Delete element
+
 // let para = document.querySelector("p")
 // para.remove();
 
 // let newHeadding = document.querySelector("h2");
 // newHeadding.remove();
-// */
+
 
 
