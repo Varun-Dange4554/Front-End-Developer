@@ -32,3 +32,22 @@
 | **View Layer Only**                | React only handles UI (View); you need extra libraries like Redux or Context API for state management. | `jsx // Need external tools for large-scale state management ` |
 | **SEO Challenges (in SPA)**        | Without SSR (Server Side Rendering), bots may not index all pages.                                     | Solved using _Next.js_.                                        |
 | **Boilerplate Code**               | Setting up routing, state, and configurations needs extra libraries.                                   | React Router, Redux, etc.                                      |
+
+# Passing Props to a Component :-     
+React components use props to communicate with each other. Every parent component can pass some information to its child components by giving them props. Props might remind you of HTML attributes, but you can pass any JavaScript value through them, including objects, arrays, and functions. 
+
+
+# useState :-
+useState is a React Hook that lets you add a state variable to your component.
+
+const [state, setState] = useState(initialState)
+
+ # useEffect :-
+ useEffect is a React Hook that lets you synchronize a component with an external system.
+
+useEffect(setup, dependencies?)
+
+ ![alt text](./0_4YjVu-tQtQc2Esw8.png)
+
+
+              
