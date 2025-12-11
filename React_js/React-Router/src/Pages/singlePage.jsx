@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 const getData = (url) => {
     return fetch(url, {
         headers: {
-            "x-api-key": "reqres-free-v1"
+            "x-api-key": "reqres_ac8d753a626d46f6b4a63689f6204ae1"
         }
     }).then((res) => res.json()).catch((err) => console.log(err));
 }
