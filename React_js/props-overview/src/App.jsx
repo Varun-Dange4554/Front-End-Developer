@@ -1,7 +1,8 @@
 import './App.css'
 // import { PropsOverView } from './Components/PropsOverView'
-import { PropsValidations } from './Components/PropsValidation'
-import { Form } from './Components/Form'
+import { Form } from './Components/Form';
+// import { PropsValidations } from './Components/PropsValidation'
+ 
 
 
 function App() {
@@ -33,6 +34,13 @@ function App() {
       type:'password',
       isRequire:true,
       placeholder:'enter your password',
+    },
+    {
+      name:'userConfirmPass',
+      label:'userConfirmPass',
+      type:'password',
+      isRequire:true,
+      placeholder:'enter your confirm password',
     },
   ];
 

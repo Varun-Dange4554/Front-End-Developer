@@ -1,17 +1,61 @@
 import PropType from 'prop-types';
+import { useState } from 'react';
 
-export const Form =({ formData }) =>{
+/** 
+ @param {formData}
+
+ { 
+ userName:'',
+ userPassword:'',
+ userPhone:'',
+ userEmail:'',
+ }
+ */
+
+export const Form = ({ formData }) =>{
     console.log('🚀 ~ formData:', formData);
+    const [formValue, setFormValue] = useState (()=>{
+        return formData.reduce((acc, curr) => {
+            acc[curr.name] = '';
+            return acc;
+        }, {});
+    });
+    console.log('🚀 ~ formValue:', formValue);
+    
+    
     return (
         <>
-        <h1>form</h1>
-        <form></form>
+        <h1>Form</h1>
+        <form>
+            { formData?.map((el, i)=> {
+                return (
+                    <div key={i}>
+                        <label name={el.name} htmlFor={el.id} >
+                            {el.label}
+                        </label>
+                        <br />
+                        <br />
+                        <input
+                        id={el.id}
+                        name={el.name}
+                        type={el.name}
+                        placeholder={el.placeholder}
+                        required={el.isRequired}
+                        autoComplete='off'
+                         />
+                         <br />
+                         <br />
+
+                    </div>
+                );
+            })}
+        </form>
 
         </>
     );
 };
 
-Form.prototype = {
+Form.proptype = {
     formData: PropType.arrayOf(
         PropType.shape({
             name:PropType.string.isRequired,
@@ -22,3 +66,6 @@ Form.prototype = {
         }).isRequired
     ),
 };
+
+
+
