@@ -1,7 +1,6 @@
 import React from 'react'
 
 
-
 import { reducer } from '../Reducer/Reducer';
 import { initialValue } from '../Reducer/Store';
 import { ADD_TODO_ITEMS } from '../Reducer/Action';
@@ -15,15 +14,16 @@ export const TodoInput = () => {
 
 
   const handleAddTodo = ()=>{
-    const value = todoText.current.value;
-    dispatch({ type: ADD_TODO_ITEMS,payload: value});
-  }
+    const value = todoText.current.value.trim();
+    if (value === '') return;
+    dispatch({ type: ADD_TODO_ITEMS,payload:value});
+    todoText.current.value='';
+  };
   return (
     <>
     <input ref={todoText} type='text' placeholder='enter your task!!!'></input>
     <button onClick={handleAddTodo}>add task</button>
     < TodoList value={{ state ,dispatch}}/>
-    
     </>
   )
 }

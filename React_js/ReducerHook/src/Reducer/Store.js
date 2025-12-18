@@ -1,5 +1,5 @@
 export const initialValue = {
-    Items: [ ],
+    items: [ ],
     isLoading:false,
     isError:null,
 }
