@@ -4,7 +4,7 @@ import React from "react";
 // eslint-disable-next-line react-refresh/only-export-components
 export const AuthContext = React.createContext(null);
 
-// eslint-disable-next-line react/prop-types
+
 
 export const AuthContextProvider = ({ children }) => {
   const [isAuth, setIsAuth] = React.useState(false);
