@@ -30,6 +30,8 @@ export const TodoList = ({ value }) => {
     dispatch ({ type: type.EDITS_TODO_ITEMS, payload: id });
   };
 
+  
+
   return (
     <>
      { state.items && 

@@ -1,4 +1,4 @@
-import { DELETE_TODO_ITEMS, ADD_TODO_ITEMS, EDITS_TODO_ITEMS } from "./Action";
+import { DELETE_TODO_ITEMS, ADD_TODO_ITEMS, EDITS_TODO_ITEMS,COMPLETE_TODO_ITEMS } from "./Action";
 import { initialValue } from './Store'
 
 export  const reducer = ( state = initialValue, action) =>{

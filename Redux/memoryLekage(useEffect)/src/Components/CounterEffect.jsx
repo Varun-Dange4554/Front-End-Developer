@@ -24,4 +24,4 @@ export const CounterEffect = () => {
   )
 }
 
-export default CounterEffect
+// export default CounterEffect
