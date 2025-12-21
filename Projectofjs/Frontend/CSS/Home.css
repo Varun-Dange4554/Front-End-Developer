@@ -75,7 +75,63 @@ display: flex;
 
 .footer{
     height: 824.3px;
-    width: 100%;
-    background-color: #f4dfdb;
+    /* width: 100%; */
+    background-color: #f4dfdb;  
+}
+
+
+.container{
+  padding: 0px 40px;
+  
+}
+
+.container1{
+  padding: 60px 0px 80px;
+ margin: opx -10px -50px;  
+  display: flex;
+  justify-content: space-between;
 
 }
+
+.menu-block1,.menu-block2,.menu-block3{
+  margin:  0px 0px 40px;
+  padding: 0px 20px;
+}
+
+.menu-block4{
+  margin:  0px 0px 50px;
+  padding: 0px 20px;
+
+}
+
+.section-footer-title{
+  font-size: 16px;
+  margin: 0px 0px 20px;
+  color: #171717;
+}
+
+li{
+  font-size: 15px ;
+  margin: 0px 0px 7.5px;
+  color: #676869;
+}
+
+p{
+  color: #676869;
+  font-size: 15px;
+  margin: 0px 0px 15px;
+}
+
+.signup-form-email{
+  background-color: #FFFFFF;
+padding: 12.8px 15px;
+width: 310px;
+}
+
+.signup-form__button{
+  background-color: #FFFFFF;
+  font-size: 13px;
+  padding: 15.6px 25px;
+  width: 108.35px;
+}
+
