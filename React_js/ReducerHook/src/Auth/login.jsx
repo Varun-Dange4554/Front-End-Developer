@@ -13,19 +13,19 @@ export const Login = ({ dispatch}) => {
         dispatch({type:"LOGIN_SUCCESS"})
     };
     return(
-        <div style={{width:"320",margin:"120px auto"}}>
-            <h2>Login</h2>
+        <div style={{width:"320",margin:"120px auto",display: "flex", flexDirection: "column"}}>
+            <h2>user login</h2>
             <input type="email"
             placeholder="Email"
             value={email}
             onChange={(e)=> setEmail(e.target.value)}
-            style={{width:"100%",marginBottom:"10px"}}
+            style={{width:"210px",marginBottom:"15px",padding:"10px"}}
              />
            <input type="password"
            placeholder="password"
            value={password}
            onChange={(e)=> setPassword(e.target.value)}
-           style={{ width:"100%", marginBottom:"10px"}} 
+           style={{ width:"210px", marginBottom:"15px",padding:"10px"}} 
            />
 
            {error && <p style={{ color:"red"}}> {error}</p>}

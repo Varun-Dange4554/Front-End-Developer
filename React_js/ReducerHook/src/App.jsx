@@ -18,6 +18,7 @@ function App() {
     authDispatch={authDispatch}>
      <Todo />
      </PrivateRoute>
+       {/* <Todo /> */}
     </>
   )
 }
