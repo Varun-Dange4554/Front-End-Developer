@@ -4,8 +4,10 @@ import React from "react";
     return(
         <>
         <h1>count {count}</h1>
+        <div className="div">
         <button onClick={()=> setCount((prev)=> prev +1)}>increment</button>
         <button onClick={()=> setCount((prev)=> prev -1)}>decrememt</button>
+        </div>
         </>
     )
  }
