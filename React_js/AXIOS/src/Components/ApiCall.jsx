@@ -27,6 +27,18 @@ export const ApiCall = () =>{
     return(
         <>
         <h1>Api Call</h1>
+
+        <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:"20px"}}>
+            {data.map((item)=>(
+                <div key={item.id} style={{border:"1px solid #ccc",padding:"10px"}}>
+                    <img src="{item.image}" alt="item.tittle" width="100" height="100" />
+                    <h3>{item.title}</h3>
+                    <p>{item.prise}</p>
+
+                </div>
+            ))}
+
+        </div>
         </>
     );
 };
