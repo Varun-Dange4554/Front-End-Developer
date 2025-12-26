@@ -23,7 +23,7 @@ console.log('name',name);
 
 
 // mutable --> non-primitive data type (call by reference)   mutable --> changeable
-//  // object  arrays and functions 
+ // object  arrays and functions 
 let arr=[1, 2, 3, 4];
 
 arr[0]=4;
@@ -33,7 +33,7 @@ console.log('arr:',arr)
 // console.log({}=={});
 
 
-
+    
 
 
 
