@@ -1,4 +1,4 @@
-import PropType from 'prop-types';
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 
 /** 
@@ -55,14 +55,14 @@ export const Form = ({ formData }) =>{
     );
 };
 
-Form.proptype = {
-    formData: PropType.arrayOf(
-        PropType.shape({
-            name:PropType.string.isRequired,
-            label:PropType.string.isRequired,
-            type:PropType.string.isRequired,
-            isRequired:PropType.bool.isRequired,
-            placeholder:PropType.string.isRequired,
+Form.propTypes = {
+    formData: PropTypes.arrayOf(
+        PropTypes.shape({
+            name:PropTypes.string.isRequired,
+            label:PropTypes.string.isRequired,
+            type:PropTypes.string.isRequired,
+            isRequired:PropTypes.bool.isRequired,
+            placeholder:PropTypes.string.isRequired,
         }).isRequired
     ),
 };
