@@ -118,3 +118,62 @@
 // a = 'varun';
 // a = null;
 // a = undefined;
+
+
+
+
+
+
+//Templatet literals
+// let n=10;
+// console.log(`welcome to ${n}`);
+
+// console.log(
+//     `
+//     1 Name
+//     2 email
+//     `
+// )
+
+
+
+// Data Types in Js
+
+  
+// let n = 10;
+// console.log(n,typeof(n))
+// let w="welcome"
+// console.log(w,typeof(w)); // o/t -welcome string
+
+// let n=10.5
+// console.log(n,typeof(n))  // o/t- 10.5 number
+
+// let n;
+// console.log(n,typeof(n)) // o/t - undefined
+
+// let stastus = true;
+// console.log(stastus,typeof(stastus)) // boolean
+
+// console.log(true+5) // 1+5=6
+
+// null
+
+//  let n = null
+//  console.log(n,typeof(n)) // o/t - object
+
+
+// let p1 = Symbol("hello123")
+// console.log(p1,typeof(p1))   //o/t - Symbol(hello123) 'symbol'
+// let p2 = Symbol("welcome123")
+
+
+
+
+// non-primitive
+// let l=[10,40,29]
+// console.log(l,typeof(l));
+
+// let obj ={
+//     name:"varun"
+//     age: 12 ;
+// }
