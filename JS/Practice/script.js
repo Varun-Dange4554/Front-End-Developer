@@ -177,3 +177,136 @@
 //     name:"varun"
 //     age: 12 ;
 // }
+
+
+//function
+
+// function showdata(){
+    
+// }
+//     console.log(showdata,typeof(showdata))
+
+
+// let n=10
+// console.log(n*"20")
+
+
+// let m=10
+// console.log(m+"20")\
+
+
+// num1  = parseInt(prompt("enter the 1st value "));
+// num2  = parseInt(prompt("enter the 2st value "));
+// res = num1 + num2 + num3;
+// console.log(res);
+
+
+// num3 = Number(prompt("enter the number"))
+
+
+// let name = "varun"
+// let age = 22
+// let isStudent = true
+
+// console.log(
+//     `
+//     Name =${name}
+//     Age=${age}
+//     isStudent =${isStudent}
+//     `
+// )
+
+
+// let count = 10;
+// // count = count+5
+// count+= count
+// console.log(count)
+
+
+// let a= 4;
+// let b= 12;
+
+// a= a+b
+// b=b-a
+
+
+
+// let a=10
+// let b = 20
+// let c=5
+// console.log(a<b<c)  // 10<20 = true // 1<5 = true
+
+
+// let age = Number(prompt("enter the number"))
+
+// let result = (age>=18) ?  "adult":"Minor";
+// console.log(result)
+
+
+// let msg=Number(prompt("enter the number"))
+// if(msg>18){
+//     msg="adult"
+// }else{
+//     msg="minor"
+// }
+
+// console.log(msg)
+
+
+// let num1=Number(prompt("enter the number"))
+
+// if(num1>=100){
+//     console.log(num1,"is greater than 100")
+// }else{
+//     console.log(num1,"is not greater than 100")
+// }
+
+
+
+// let amount = Number(prompt("Enter the number:-"));
+
+// if(amount>1000){
+//     console.log("20% Discount ")
+// }
+// else if(amount>500){
+//     console.log("10% Discount")
+// }
+// else{
+//     console.log("no Discount")
+// }
+// let weather = Number(prompt("enter the number"));
+
+// if (weather > 35) {
+//   console.log("very hot");
+// }
+// else if (weather > 25) {
+//   console.log("hot");
+// }
+// else if (weather > 15) {
+//   console.log("pleasant");
+// }
+// else if (weather > 5) {
+//   console.log("cold");
+// }
+// else {
+//   console.log("very cold");
+// }
+
+// ATM Action Menu
+
+
+let num = Number(prompt("enter ther number"));
+
+switch(num){
+    case 1:
+        console.log("check balance");
+        break;
+     case 2:
+        console.log("withdearw")
+        break;
+      case 3:
+        console.log("Deposite")
+        break;
+        case 4:
+            console.log("exit")     
+}
