@@ -136,10 +136,80 @@
 
 // }
 
-for (i=1;i<=10;i++){
-  if(i==3 || i==9){
-    continue
-  }
-    console.log(i,"welcome")
+// for (i=1;i<=10;i++){
+//   if(i==3 || i==9){
+//     continue
+//   }
+//     console.log(i,"welcome")
 
+// }
+
+
+// for...of
+
+// let w = "welcome"
+// for(let v of w){
+//   console.log(v)
+// }
+
+
+// for...in loop
+
+// let user ={
+//   'name':'varun',
+//   'cname':'ws'
+// }
+// for (let userkey in user){
+//   console.log(userkey,user[userkey])
+// }
+
+
+// // let i=1;
+// for(let i=1;i<=10;i++)
+// {
+//   console.log(i,"* 2 =",i*2)
+// }
+
+// nessted loops (loop inside loop)
+
+// for(i=1;i<=5;i++){
+//   for(let c=1;c<=5;i++){
+//     console.log("*")
+//   }
+// }
+
+
+
+// for (let r=1;r<=3;r++){
+
+//   for(let j=1;j<=3;j++){
+//     console.log(`${r} * ${j} = ${r*j}`)
+//   }
+// }
+
+
+// start pattern
+
+// let n = 5;
+// let str = "";
+// for (let i= 1;i<=n;i++){
+//   for ( let j=1; j<=1;j++){
+//     str += "*";
+//   }
+//   str +="\n"
+// }
+
+// console.log(str)
+
+
+
+// for(let s=1;s<=50;s++){
+//   if(s%2==0){
+//     console.log(s)
+//   }
+// }
+
+
+for (let r=20;r>=0;r--){
+  console.log(r)
 }

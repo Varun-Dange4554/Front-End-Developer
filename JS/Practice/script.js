@@ -295,18 +295,54 @@
 // ATM Action Menu
 
 
-let num = Number(prompt("enter ther number"));
+// let num = Number(prompt("enter ther number"));
 
-switch(num){
-    case 1:
-        console.log("check balance");
-        break;
-     case 2:
-        console.log("withdearw")
-        break;
-      case 3:
-        console.log("Deposite")
-        break;
-        case 4:
-            console.log("exit")     
-}
+// switch(num){
+//     case 1:
+//         console.log("check balance");
+//         break;
+//      case 2:
+//         console.log("withdearw")
+//         break;
+//       case 3:
+//         console.log("Deposite")
+//         break;
+//         case 4:
+//             console.log("exit")     
+// }
+
+
+
+
+// let userInput = Number(prompt("Enter your number"));
+// let isPrime = true;
+
+// if (userInput <= 1) {
+//   isPrime = false;
+// } else {
+//   let midvalue = userInput / 2;
+
+//   for (let s = 2; s <= midvalue; s++) {
+//     if (userInput % s === 0) {
+//       isPrime = false;
+//       break;
+//     }
+//   }
+// }
+
+// if (isPrime) {
+//   console.log("Prime number");
+// } else {
+//   console.log("Not a prime number");
+// }
+
+
+
+
+
+// Reverse a Number
+
+
+// let usernum = Number(prompt("enter your number"));
+
+
