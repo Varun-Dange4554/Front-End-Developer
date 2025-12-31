@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const nums = [1,2,3,4]
+    let newArr=nums.map((v)=>v+v)
+    console.log(newArr) //[2, 4, 6, 8]
+
+
+    // task2
+
+    let l=[35,48,25,17,30,37,22,12,32]
+
+    let m=l.filter((v)=> v%2==0)
+    console.log(m)
+
+    // task3
+
+    const student =[
+        {name:'varun',marks:70},
+        {name:'ravi',marks:35},
+        {name:'ram',marks:24},
+
+    ];
+
+    let firstfiledstudent = student.find((value)=> value.marks<35)
+    console.log('🚀 ~ firstfiledstudent:', firstfiledstudent);
+
+
+</script>
+</html>

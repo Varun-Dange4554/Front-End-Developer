@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+
+
+        .modalDiv{
+            position: fixed;
+            left: 50%;
+            top: -1000px;
+            width: 350px;
+            box-shadow: 0px 0px 10px 2px #ccc;
+            height: 350px;
+            transform: translate(-50%,-50%);
+            transition: 0.5s;
+        }
+        .modalDiv h2{
+            padding: 10px 0px;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            position: relative;
+        }
+    
+          .modalDiv h2 span {
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+          }
+
+    </style>
+</head>
+<body>
+    <button>show Modal</button>
+    <div class="modalDiv">
+        <h2> Enquire Now <span> &times;</span></h2>
+        <form action="
+        "> </form>
+
+    </div>
+</body>
+<script>
+
+let btn = document.querySelector("button")
+let modalDivElement = document.querySelector(".modalDiv")
+
+let closeBtn=document.querySelector(".modalDiv span")
+
+btn.addEventListener("click",()=>{
+    modalDivElement.style.top="50%"
+
+})
+closeBtn.addEventListener("click",()=>{
+     modalDivElement.style.top="-1000px"
+})
+
+
+</script>
+</html>
