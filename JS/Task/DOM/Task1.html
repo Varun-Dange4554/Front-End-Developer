@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .main{
+            width: 1000px;
+            margin: auto;
+        }
+        .main textarea{
+            width: 100%;
+            height: 200px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+         
+     <div class="main">
+     <textarea name="" id=""></textarea>
+     <h2>Length - <span>0</span></h2>
+     <div id="resDiv">
+
+     </div>
+     </div>
+    
+</body>
+<script>
+let textareaElement = document.querySelector("textarea")
+
+let lengthElement = document.querySelector("h2 span")
+
+let resDivElement = document.querySelector("#resDiv")
+
+textareaElement.addEventListener("keyup",()=>{
+    resDivElement.innerHTML=textareaElement.value
+    lengthElement.innerHTML=textareaElement.value.length
+})
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 1000px;
+            height: 500px;
+            background: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+</body>
+<script>
+    let mainElement = document.querySelector(".main")
+    mainElement.addEventListener("mouseenter",()=>{
+        mainElement.style.background="green"
+    })
+
+     
+    mainElement.addEventListener("mouseleave",()=>{
+        mainElement.style.background="red"
+    })
+    let body=document.body
+
+    body.addEventListener("contextmenu",()=>{
+        console.log("welcome")
+    })
+    
+    window.addEventListener("load",()=>{
+        mainElement.style.display="block"
+    })
+
+</script>
+</html>

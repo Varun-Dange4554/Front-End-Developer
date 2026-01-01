@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css
+
+
+
+">
     <title>Document</title>
     <style>
+        
         *{
             margin: 0;
             padding: 0;
@@ -32,6 +38,32 @@
             font-weight: bold;
             text-transform: uppercase;
           }
+          .micon{
+            display: none;
+          }
+
+          @media only screen and (min-width:200px) and (max-width:575px){
+                     header nav{
+                        position: fixed;
+                        top:0px;
+                        background-color: #ccc;
+                        width: 80%;
+                        left: -100px;
+                        height: 100%;
+                        transition: 0.5s;
+
+                     }
+                      header nav ul{
+                        flex-direction: column;
+                      }
+            .micon{
+            display: block;
+            cursor: pointer;
+          }
+          .showMenu{
+            left: 0px !important;
+          }
+          }
     </style>
 </head>
 <body>
@@ -39,7 +71,9 @@
         <figure>
             <img height="60px" src="./utils/image.png" alt="">
         </figure>
-        <nav>
+        
+        <i class="fa-solid fa-bars micon" ></i>
+        <nav >
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -50,7 +84,20 @@
 
             </ul>
         </nav>
+
     </header>
     
 </body>
+<script>
+    let mIcon = document.querySelector(".micon");
+    let navElement = document.querySelector("nav")
+
+
+    mIcon.addEventListener("click",()=>{
+        
+        mIcon.classList.toggle('fa-bars')
+        mIcon.classList.toggle('fa-xmark')
+        navElement.classList.toggle('showMenu')
+    })
+</script>
 </html>

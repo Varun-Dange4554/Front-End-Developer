@@ -27,6 +27,7 @@ import * as types from '../Reducer/Action'
         {/* <div className="div"> */}
         <button onClick={()=> dispatch({ type:types.INCREMENT})}>increment</button>
         <button onClick={()=> dispatch({ type:types.DECREMENT})}>decrememt</button>
+        <button onClick={()=> dispatch({type:types.DOUBLE})}>double</button>
         {/* </div> */}
         </>
     )

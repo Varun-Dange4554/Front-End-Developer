@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 1000px;
+            height: 500px;
+            margin: auto;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <h1>
+            welcome to nettech
+        </h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nihil consectetur quidem fugit consequuntur! Nostrum quibusdam vel tempora, facilis optio necessitatibus a est beatae nulla ratione debitis asperiores, ea inventore?
+        </p>
+        <button>    read more</button>
+    </div>
+</body>
+<script>
+    let mainElement = document.querySelector(".main")
+    mainElement.addEventListener("click",(e)=>{
+
+        if(e.target.tagName=="BUTTON"){
+            
+            alert("f")
+        }
+
+    //     console.log(e)
+    //   console.log(e.type)
+    //   console.log(e.target)
+    //   console.log(e.currentTarget)
+    //   console.log(e.clientX)
+
+
+    })
+    
+</script>
+</html>
