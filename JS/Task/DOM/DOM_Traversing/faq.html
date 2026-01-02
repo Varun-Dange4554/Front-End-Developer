@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+            list-style: none;
+        }
+        h1{
+            text-align: center;
+            padding: 50px 0px;
+
+        }
+        
+        .faqMid{
+            max-width: 1000px;
+            margin: auto;
+        }
+        .faqItems{
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        .faqItems h3{
+            background-color: aqua;
+            padding: 10px;
+            position: relative;
+        }
+        .faqItems h3 span{
+            position: absolute;
+            right: 10px;
+        }
+        .ans{
+            padding: 10px;
+            display: none;
+        }
+        .showAns{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAQs About Leicester Taxi Service</h1>
+    <div class="faqMid">
+        <div class="faqItems">
+            <h3>1. How do I book a taxi? <span>+</span></h3>
+            <div class="ans">
+               1. Online or all our customer support team to receive a confirmation instantly
+            </div>
+             </div>
+        <div class="faqItems">
+            <h3>2. How do I book a taxi? <span>+</span> </h3>
+            <div class="ans">
+               2. Online or all our customer support team to receive a confirmation instantly
+            </div>
+             </div>
+        <div class="faqItems">
+            <h3>3. How do I book a taxi? <span>+</span> </h3>
+            <div class="ans">
+               3. Online or all our customer support team to receive a confirmation instantly
+            </div>
+            </div>
+
+        <div class="faqItems">
+            <h3>4. How do I book a taxi? <span>+</span> </h3>
+            <div class="ans">
+               4. Online or all our customer support team to receive a confirmation instantly
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let  allquection=document.querySelectorAll(".faqItems h3") // Node list
+
+    //  console.log(allquection)
+
+    allquection.forEach((quection,index)=>{
+      quection.addEventListener("click",()=>{
+        // alert(index)
+
+        allquection.forEach((q,i)=>{
+            if(i!=index){
+                q.lastElementChild.innerHTML="+"
+              q.nextElementSibling.classList.remove('showAns')
+            }
+        })
+
+        // click quection logic
+
+        if(quection.lastElementChild.innerHTML=="+"){
+            quection.lastElementChild.innerHTML="-"
+        }
+        else{
+            quection.lastElementChild.innerHTML="+"
+
+        }
+
+        quection.nextElementSibling.classList.toggle('showAns')
+      })
+    })
+
+</script>
+</html>

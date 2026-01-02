@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+             box-sizing: border-box;
+        }
+        #Productsection{
+            width: 100%;
+            padding: 50px 0px;
+            
+        }
+        .main{
+            width: 1320px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+        #Productsection h1{
+            text-align: center;
+           font-size: 30px;
+           margin-bottom: 30px;
+        
+        }
+        .productesItems img{
+            width: 100%;
+            height: 250px;
+        }
+        .modelElement{
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            display: none;
+            background-color: rgba(0, 0, 0,0.5);
+        }
+        .whiteModal{
+            position: fixed;
+            width: 800px;
+            /* height: 500px; */
+            left: 50%;
+            top: 50%;
+            background: white;
+            transform: translate(-50%,-50%);
+        }
+        .whiteModal img{
+            width: 100%;
+            display: block;
+        }
+        .whiteModal span{
+            position: absolute;
+            right: 0px;
+            font-size: 40px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .showModal{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="modelElement">
+        <div class="whiteModal">
+            <span>&times;</span>
+            <img src="" alt="">
+            
+        </div>
+    </div>
+    <section id="Productsection">
+    <h1>Product</h1>
+    <div class="main">
+        <div class="productesItems">
+            <img src="https://uptownskylla.realitysolutions.in/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-01-at-16.38.01-1.jpeg" alt="">
+        </div>
+        <div class="productesItems">
+            <img src="https://uptownskylla.realitysolutions.in/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-01-at-16.38.05-1.jpeg" alt="">
+        </div>
+        <div class="productesItems">
+            <img src="https://uptownskylla.realitysolutions.in/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-01-at-16.38.04-1.jpeg" alt="">
+        </div>
+           <div class="productesItems">
+            <img src="https://uptownskylla.realitysolutions.in/wp-content/uploads/2021/10/20.jpeg" alt="">
+        </div>
+         <div class="productesItems">
+            <img src="https://uptownskylla.realitysolutions.in/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-01-at-16.38.07.jpeg" alt="">
+
+        </div>
+        <div class="productesItems">
+            <img src="https://uptownskylla.realitysolutions.in/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-01-at-16.38.05-1.jpeg" alt="">
+        </div>
+        <div class="productesItems">
+            <img src="https://uptownskylla.realitysolutions.in/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-01-at-16.38.04-1.jpeg" alt="">
+        </div>
+        <div class="productesItems">
+            <img src="https://uptownskylla.realitysolutions.in/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-01-at-16.38.07.jpeg" alt="">
+
+        </div>
+        
+        
+
+    </div>
+    </section>
+</body>
+<script>
+   let mainElement = document.querySelector(".main")
+
+   let modelElementDiv=document.querySelector(".modelElement")
+
+   let ModalImg=document.querySelector(".whiteModal img")
+
+   let closebtn=document.querySelector(".whiteModal span")
+
+    mainElement.addEventListener("click",(e)=>{
+        if(e.target.tagName=="IMG"){
+            let clickImagePath=e.target.src
+            
+            modelElementDiv.classList.add('showModal')
+           ModalImg.src=clickImagePath
+
+         
+        }
+
+    })
+
+    closebtn.addEventListener("click",()=>{
+         
+           modelElementDiv.classList.remove('showModal');
+           ModalImg.src=''
+           
+    })
+
+    modelElementDiv.addEventListener("click",()=>{
+         modelElementDiv.classList.remove('showModal');
+           ModalImg.src=''
+    })
+
+
+    let whiteModalElelment=document.querySelector(".whiteModal")
+
+    whiteModalElelment.addEventListener("click",(e)=>{
+        e.stopPropagation()
+    })
+
+</script>
+</html>

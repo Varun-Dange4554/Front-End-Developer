@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .formSection{
+            display: grid;
+            padding: 20px;
+            grid-template-columns: 20% auto;
+            gap: 30px;
+        }
+        .formSection form{
+            padding: 15px;
+            box-shadow: 0px 0px 10px 2px #ccc;
+        }
+        .formSection form h3{
+            padding-bottom: 15px ;
+        }
+
+        .innerOuter label{
+            display: block;
+            font-size: 14px;
+
+        }
+        .innerOuter{
+            margin-bottom: 10px;
+        }
+        .innerOuter input{
+            width: 100%;
+            height: 30px;
+        }
+         .formSection form button{
+            width: 100%;
+            border: none;
+            background-color: aquamarine;
+            color: white;
+            padding: 8px 0px;
+
+         }
+
+         table{
+            width: 100%;
+            border-collapse: collapse;
+
+         }
+         th,td{
+            text-align: center;
+            padding: 8px;
+         }
+         th{
+            background-color: #f2f2f2;
+         }
+         button{
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer; 
+         }
+    </style>
+</head>
+<body>
+    <section class="formSection">
+        <form action="">
+            <h3>Enquire Now</h3>
+            <div class="innerOuter">
+                <label for="">Name</label>
+                <input type="text" name="userName" id="" >
+            </div>
+
+            <div class="innerOuter">
+                <label for="">Email</label>
+                <input type="email" name="userEmail" id="" >
+            </div>
+            <div class="innerOuter">
+                <label for="">Number</label>
+                <input type="text" name="userPhone" id="" >
+            </div>
+            <button>Save</button>
+        </form>
+        <div>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                    <th>Sr.No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+
+                    
+
+                </tbody>
+                
+            </table>
+        </div>
+    </section>
+
+</body>
+
+
+
+<!-- 
+<script>
+      
+
+    //   let body=document.querySelector("body")
+    //   body.addEventListener("contextmenu",(e)=>{e
+    //     e.preventDefault()
+    //   })
+
+
+
+    let formElement=document.querySelector(".formSection form")
+    // console.log(formElement)
+
+    let userData=[]
+
+    formElement.addEventListener("submit",(e)=>{
+        // console.log(e.target) // 
+
+        e.preventDefault() // page refresh stop
+
+        let userName=e.target.userName.value
+        let userEmail=e.target.userEmail.value
+        let userPhone=e.target.userPhone.value
+
+        let userObject={
+            userName,
+            userEmail,
+            userPhone
+        }
+
+        
+        let checkEmail=userData.find((items)=>items,userEmail==userEmail)
+
+        if(checkEmail){
+            alert("Email Already Exist...")
+        }
+        else{
+        userData.push(userObject)   
+        storeDataTable();
+
+        }
+
+        // console.log(userObject)
+
+        e.target.reset()
+
+        
+    })
+
+    let tableBodyElement=document.querySelector("#tableBody")
+
+    let storeDataTable=()=>{
+
+       let tableRow=''
+     
+        userData.forEach((items,index)=>{
+
+            tableRow+=`
+            <tr>
+                    <td>${index+1}</td>
+                    <td>${items.userName}</td>
+                    <td>${items.userEmail}</td>
+                    <td>${items.userPhone}</td>
+                    <td><button>Delete</button></td>
+                    </tr>
+            `
+        })
+        tableBodyElement.innerHTML=tableRow
+
+    }
+</script> -->
+<script>
+    let formElement = document.querySelector(".formSection form");
+    let tableBodyElement = document.querySelector("#tableBody");
+
+    let userData = [];
+
+    // FORM SUBMIT
+    formElement.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        let userName = e.target.userName.value.trim();
+        let userEmail = e.target.userEmail.value.trim();
+        let userPhone = e.target.userPhone.value.trim();
+
+        if (!userName || !userEmail || !userPhone) {
+            alert("All fields are required");
+            return;
+        }
+
+        // EMAIL DUPLICATE CHECK
+        let checkEmail = userData.find(
+            (item) => item.userEmail === userEmail
+        );
+
+        if (checkEmail) {
+            alert("Email already exists");
+            return;
+        }
+
+        let userObject = {
+            userName,
+            userEmail,
+            userPhone
+        };
+
+        userData.push(userObject);
+        storeDataTable();
+        e.target.reset();
+    });
+
+    // TABLE RENDER FUNCTION
+    function storeDataTable() {
+        let tableRow = "";
+
+        userData.forEach((item, index) => {
+            tableRow += `
+                <tr>
+                    <td>${index + 1}</td>
+                    <td>${item.userName}</td>
+                    <td>${item.userEmail}</td>
+                    <td>${item.userPhone}</td>
+                    <td><button>Delete</button></td>
+                </tr>
+            `;
+        });
+
+        tableBodyElement.innerHTML = tableRow;
+    }
+</script>
+
+</html>
