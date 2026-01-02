@@ -1,14 +1,17 @@
-import { counter } from './Components/counter'
+
 import './App.css'
+import Counter from './Components/counter'
+import Dummy from './Components/Dummy'
+
 
 function App() {
- 
+  
 
   return (
     <>
-    <h1>parent</h1>
-     < counter/>
-    
+      <h1>Parent </h1>
+      <Counter/>
+      <Dummy/>
     </>
   )
 }
