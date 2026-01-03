@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+
+
+
+</style>
+<body>
+    <h1>
+
+    </h1>
+</body>
+<script>
+    let currentDate = new Date()
+    console.log('🚀 ~ currentDate:', currentDate.getFullYear());
+    console.log('🚀 ~ currentDate:', currentDate.getDate());
+    console.log('🚀 ~ currentDate:', currentDate.getDay());
+    console.log('🚀 ~ currentDate:', currentDate.getHours()<12 ? currentDate.getHours() : currentDate.getHours()-12);
+    console.log('🚀 ~ currentDate:', currentDate.getMinutes());
+    console.log('🚀 ~ currentDate:', currentDate.getMilliseconds());
+
+    console.log(currentDate.toLocaleDateString())
+    console.log(currentDate.toLocaleString())
+    console.log(currentDate.toLocaleTimeString())
+
+
+
+
+    let h1Element = document.querySelector("h1")
+
+
+
+    let dclock = (()=>{
+              let currentDate = new Date()
+        h1Element.innerHTML=currentDate.toLocaleTimeString()
+
+    })
+    dclock()
+    setInterval(dclock,1000)
+    
+
+    
+</script>
+</html>

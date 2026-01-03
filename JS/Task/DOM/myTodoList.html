@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+
+        }
+
+        body{
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+        }
+        h1{
+            color: #4CAF50;
+            margin-top: 20px;
+        }
+        .mainTodoList{
+            width: 70%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        input[type="text"]{
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button{
+            padding: 10px 15px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #45a049;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0px;
+            margin-top: 20px;
+        }
+        li{
+            background-color: #f9f9f9;
+            margin: 10px 0 ;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        li button{
+            background-color: #f44336;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>My Todo List</h1>
+    <div class="mainTodoList">
+        <div>
+        <input type="text" id="todoInput" placeholder="Add a new task...">
+        <button id="addTodoBtn">Add Todo</button>
+        </div>
+        <ul id="todoList">
+            <!-- Todo items will be added here dynamically -->
+             <!-- <li> </li>? -->
+
+
+        </ul>
+    </div>
+</body>
+<script>
+    let addBtn=document.querySelector("#addTodoBtn")
+    let todoItem=document.querySelector("#todoInput")
+    let todoList=localStorage.getItem("TODO") ? JSON.parse(localStorage.getItem("TODO")) :[]
+
+    let todoListul =document.querySelector("#todoList")
+
+    addBtn.addEventListener("click",()=>{
+       let obj={
+        title:todoInput.value,
+        isStatus:true
+       }
+       todoList.push(obj)
+       localStorage.setItem("TODO",JSON.stringify(todoList))
+       showAllTodo()
+    })
+
+    let showAllTodo =()=>{
+    let todoList=localStorage.getItem("TODO") ? JSON.parse(localStorage.getItem("TODO")) :[]
+    
+    let list=''
+    todoList.forEach((items,index)=>{
+       list+=`<li>  <span onclick="taskMark(${index})"  style="text-decoration:${items.isStatus ? '' :'line-through' }" > ${index+1} ${items.title} </span><button>&times;</button></li>`
+    })
+      todoListul.innerHTML=list
+    }
+    showAllTodo()
+
+// task complete 
+    let taskMark=(currentIndex)=>{
+        console.log('🚀 ~ currentIndex:', currentIndex);
+        
+    }
+</script>
+</html>

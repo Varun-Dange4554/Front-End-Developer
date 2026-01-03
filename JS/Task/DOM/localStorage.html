@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>White</button>
+    <button>red</button>
+    <button>black</button>
+</body>
+<script>
+//     localStorage.setItem("name","varun")
+
+//    console.log(localStorage.getItem("name")) 
+
+
+   let bodyElement = document.querySelector("body")
+
+   let allBtns=document.querySelectorAll("button")
+
+   allBtns.forEach((btn)=>{
+    btn.addEventListener("click",()=>{
+
+        localStorage.setItem("COLOURTHEM", btn.innerHTML.toLocaleLowerCase())
+        localStorage.setItem("TIME", new Date().toLocaleTimeString())
+
+        setColourThemeBody()     
+    })
+   })
+
+
+   let setColourThemeBody=()=>{
+    let color=localStorage.getItem('COLOURTHEM')
+    console.log(color)
+    bodyElement.style.background=color
+   }
+   setColourThemeBody()
+//    localStorage.removeItem("TIME")
+
+// localStorage.clear()
+console.log(localStorage.key(2))
+
+</script>
+</html>

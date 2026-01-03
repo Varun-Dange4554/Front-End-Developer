@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // let loginStastus=false
+    // let myPromise = new Promise((res,rej)=>{
+    //     if(loginStastus){
+    //              res({status:1,msg:"Login Done"})
+    //     }else{
+    //         rej({status:0,msg:"Invalid user name password"})
+    //     }
+    // })
+
+    // myPromise
+    // .then((res)=>{
+    //     console.log(res)
+    // })
+    // .catch((err)=>{
+    //     console.log(err)
+    // })
+
+    // let doneTask = (taskNumber,time)=>{
+    //     return new Promise((resolve,reject)=>{
+    //         setTimeout(()=>{
+    //             console.log("Task",taskNumber)
+    //             resolve()
+    //         },time)
+    //     })
+    // }
+
+    // doneTask(1,1000)
+    // .then((res)=>doneTask(2,2000))
+    // .then((res)=>doneTask(3,3000))
+
+    // async awite
+
+    // let doHomeWork = (subject)=>new Promise((resolve, reject) => {
+
+    // })
+
+    let doHomeWork = (subject) => {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve(`${subject} home work done`);
+        }, 1000);
+      });
+    };
+
+    // async function finishHomeWork() { }   // normal function call
+
+
+    // let finishHomeWork = async ()=>{ } //arrow function
+    let finishHomeWork = async () => {
+    //   let myTask1 = await doHomeWork("Math");
+    //   console.log("🚀 ~ myTask:", myTask1);
+    //   let myTask2 = await doHomeWork("English");
+    //   console.log("🚀 ~ myTask2:", myTask2);
+    //         let myTask3 = await doHomeWork("Hindi");
+    //   console.log("🚀 ~ myTask2:", myTask3);
+
+    // doHomeWork("math"),
+
+    let myAllTask=await Promise.all([
+
+        doHomeWork("Hindi"),
+        doHomeWork("Marathi"),
+         doHomeWork("English")
+    ])
+      console.log(myAllTask)
+
+
+
+    };
+
+    finishHomeWork();
+  </script>
+</html>
