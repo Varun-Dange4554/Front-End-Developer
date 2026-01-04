@@ -90,37 +90,69 @@
     </div>
 </body>
 <script>
-    let addBtn=document.querySelector("#addTodoBtn")
-    let todoItem=document.querySelector("#todoInput")
-    let todoList=localStorage.getItem("TODO") ? JSON.parse(localStorage.getItem("TODO")) :[]
+    let addBtn = document.querySelector("#addTodoBtn");
+    let todoItem = document.querySelector("#todoInput");
+    let todoListul = document.querySelector("#todoList");
 
-    let todoListul =document.querySelector("#todoList")
+    let todoList = localStorage.getItem("TODO")
+        ? JSON.parse(localStorage.getItem("TODO"))
+        : [];
 
-    addBtn.addEventListener("click",()=>{
-       let obj={
-        title:todoInput.value,
-        isStatus:true
-       }
-       todoList.push(obj)
-       localStorage.setItem("TODO",JSON.stringify(todoList))
-       showAllTodo()
-    })
+    // Add Todo
+    addBtn.addEventListener("click", () => {
+        if (todoItem.value.trim() === "") {
+            alert("Please enter a task");
+            return;
+        }
 
-    let showAllTodo =()=>{
-    let todoList=localStorage.getItem("TODO") ? JSON.parse(localStorage.getItem("TODO")) :[]
-    
-    let list=''
-    todoList.forEach((items,index)=>{
-       list+=`<li>  <span onclick="taskMark(${index})"  style="text-decoration:${items.isStatus ? '' :'line-through' }" > ${index+1} ${items.title} </span><button>&times;</button></li>`
-    })
-      todoListul.innerHTML=list
-    }
-    showAllTodo()
+        let obj = {
+            title: todoItem.value,
+            isStatus: true
+        };
 
-// task complete 
-    let taskMark=(currentIndex)=>{
-        console.log('🚀 ~ currentIndex:', currentIndex);
-        
-    }
+        todoList.push(obj);
+        localStorage.setItem("TODO", JSON.stringify(todoList));
+        todoItem.value = "";
+        showAllTodo();
+    });
+
+    // Show All Todos
+    let showAllTodo = () => {
+        let list = "";
+
+        todoList.forEach((items, index) => {
+            list += `
+            <li>
+                <span 
+                    onclick="taskMark(${index})"
+                    style="text-decoration:${items.isStatus ? 'none' : 'line-through'}"
+                >
+                    ${index + 1}. ${items.title}
+                </span>
+                <button onclick="deleteTodo(${index})">&times;</button>
+            </li>`;
+        });
+
+        todoListul.innerHTML = list;
+    };
+
+    showAllTodo();
+
+    // Mark Task Complete / Incomplete
+    let taskMark = (currentIndex) => {
+        todoList[currentIndex].isStatus = 
+            !todoList[currentIndex].isStatus;
+
+        localStorage.setItem("TODO", JSON.stringify(todoList));
+        showAllTodo();
+    };
+
+    // Delete Todo
+    let deleteTodo = (index) => {
+        todoList.splice(index, 1);
+        localStorage.setItem("TODO", JSON.stringify(todoList));
+        showAllTodo();
+    };
 </script>
+
 </html>

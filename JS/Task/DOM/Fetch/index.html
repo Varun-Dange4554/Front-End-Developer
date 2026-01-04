@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        color: #333;
+        /* text-align: center; */
+     }
+     h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        
+     }
+     .productSection{
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        margin: 20px 0px;
+     }
+     .productRow{
+        display: grid;
+        grid-template-columns: 20% auto;
+        gap: 20px;
+
+     }
+     .productRow aside{
+        padding: 15px;
+        box-shadow: 0px 0px 10px 2px #ccc;
+
+     }
+     .productRow aside ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+     }
+     .productRow aside ul li{
+       padding: 7px;
+        cursor: pointer;
+        color: #007bff;
+     }
+     .productList{
+        padding: 20px;
+        box-shadow: 0px 0px 10px 2px #ccc;
+
+     }
+     .products{
+        display: grid;
+        grid-template-columns: (4,1fr);
+        margin-top: 20px;
+     }
+     .productitem{
+        box-shadow:  0px 10px 2px #ccc;
+     }
+     .productitem img{
+        width: 100%;
+
+     }
+    </style>
+</head>
+<body>
+    <section class="productSection">
+           <h1>Our Products</h1>
+           <div class="productRow">
+            <aside>
+                <h2>Categoro List</h2>
+                <ul>
+                    <li>Category 1</li>
+                    <li>Categori 2</li>
+                    <li>Categori 3</li>
+                </ul>
+            </aside>
+                 <div class="productList">
+                    <h2>Product </h2>
+                    <div class="products">
+                     <div class="productitem">
+                        <img src="https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp" alt="">
+
+                     </div>
+
+                    </div>
+
+                 </div>
+           </div>
+     </section>
+ 
+</body>
+<script>
+
+    // async await
+
+    // let getProductes=async()=>{
+    //   let firstresponse=await  fetch(`https://dummyjson.com/products`)
+    //              let finalRes = await firstresponse.json()
+    //              console.log('🚀 ~ finalRes:', finalRes.products);
+      
+      
+    // }
+    // getProductes()
+
+
+
+    // .then .catch
+
+       let getProductes=()=>{
+      fetch(`https://dummyjson.com/products`)
+      .then((res,rej)=>res.json())
+      .then((finalRes)=>{
+        let {products}=finalRes
+     console.log(products)        
+      })     
+      
+    }
+
+     let getCategory =()=>{
+        fetch (`https://dummyjson.com/products/categories`)
+        .then(res=>res.json())
+        .then((finalResponse)=>{
+            console.log(finalResponse)
+        })
+     }
+     getCategory()
+
+    getProductes()
+
+
+</script>
+</html>
