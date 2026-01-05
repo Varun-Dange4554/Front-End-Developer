@@ -125,6 +125,7 @@
 
     let productsElement = document.querySelector(".products") 
     let categoryElement = document.querySelector("aside ul");
+    let currentslug
     // .then .catch
 
        let getProductes=( catSlug='')=>{
@@ -172,13 +173,12 @@ apiUrl = `https://dummyjson.com/products/category/${catSlug}`
          let catlist='';
          finalResponse.forEach(eleement=>{
             // console.log('🚀 ~ eleement:', eleement);
-catlist += `<li data-slug="${eleement}">${eleement}</li>`
+catlist += `<li style="background:${eleement.slug==currentslug ? 'red' : ''}" data-slug="${eleement.slug}">${eleement.name}</li>`
             
          })
 
          categoryElement.innerHTML=catlist
 
-            // console.log(finalResponse) //24 object
         })
      }
 
@@ -186,9 +186,14 @@ catlist += `<li data-slug="${eleement}">${eleement}</li>`
 
     categoryElement.addEventListener("click",(e)=>{
       if(e.target.tagName=="LI"){
-let currentslug = e.target.getAttribute('data-slug')
-      console.log('🚀 ~ currentslug:', currentslug);
+ currentslug = e.target.getAttribute('data-slug')
+ 
+
+
+     
+     
       getProductes(currentslug)
+      getCategory()
       }
     })
 

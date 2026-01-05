@@ -2,7 +2,7 @@ import React, { useContext , useEffect } from 'react';
 import axios from 'axios';
 import { contextCreated } from '../Context/CreateComponentsContext';
 
-const fetchData = (url) => {
+const fetchData =async (url) => {
     return axios 
         .get(url)
         .then((res) =>{
@@ -31,9 +31,9 @@ export const ApiCall = () =>{
         <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:"20px"}}>
             {data.map((item)=>(
                 <div key={item.id} style={{border:"1px solid #ccc",padding:"10px"}}>
-                    <img src="{item.image}" alt="item.tittle" width="100" height="100" />
+                    <img src={item.image} alt="item.title" width="100" height="100" />
                     <h3>{item.title}</h3>
-                    <p>{item.prise}</p>
+                    <p>{item.price}</p>
 
                 </div>
             ))}
