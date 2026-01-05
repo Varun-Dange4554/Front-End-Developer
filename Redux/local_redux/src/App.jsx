@@ -1,6 +1,7 @@
 
 import './App.css'
 import { Counter } from './components/counter'
+import { Todos } from './components/Todos'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
       <Counter/>
+      <Todos/>
     </>
   )
 }
