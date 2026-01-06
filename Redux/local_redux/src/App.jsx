@@ -1,15 +1,18 @@
 
 import './App.css'
-import { Counter } from './components/counter'
-import { Todos } from './components/Todos'
+// import { Counter } from './components/counter'
+import { Todo } from './page/Todo'
+
+
 
 function App() {
 
 
   return (
     <>
-      <Counter/>
-      <Todos/>
+      {/* <Counter/> */}
+      <Todo/>
+      
     </>
   )
 }

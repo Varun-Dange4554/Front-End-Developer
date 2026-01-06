@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useSelector, useDispatch } from 'react-redux';
-import * as types from '../Reducer/Action';
+import * as types from '../Reducer/Count/Action';
 
 export const Counter = () => {
   const dispatch = useDispatch();

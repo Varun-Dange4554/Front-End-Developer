@@ -1,9 +1,6 @@
-import * as types from'./Action'
+import * as types from'../Count/Action'
 
-const initialValue = {
-     count:0,
-     todos:[] 
-    }
+const initialValue = { count:0 }
 
 export const myOwnReducer=(state = initialValue,{type, payload}) =>{
     switch(type){
@@ -18,22 +15,8 @@ export const myOwnReducer=(state = initialValue,{type, payload}) =>{
                 ...state,
                 count: state.count - 1
             };
-            
-         case types.ADD_TODO:
-            return {
-                ...state,
-                todos:[...state.todos,payload]
-            };    
-
-         case types.DELETE_TODO:
-            return {
-                ...state,
-                todos: state.todos.filter((_, index) => index !== payload)
-            }   
+        
     
-
-
-
 
             default:
                 return state;
