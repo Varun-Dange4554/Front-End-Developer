@@ -15,7 +15,8 @@ export const TodosInput = () => {
 
       const handleAdd = () =>{
         const valueText = inputData.current.value;
-        dispatch({ type:types.ADDTODOS,payload:valueText})
+        dispatch({  type: types.ADDTODOS, payload: valueText})
+        inputData.current.value=''
       };
   return (
     <>
