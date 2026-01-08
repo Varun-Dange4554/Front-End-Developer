@@ -11,6 +11,26 @@ export const Navbar = () => {
         { path:'/todo' ,element:'todo'},
 
     ]
-  return   <></>
+  return  (
+  <>
+  {routes.map((el,i)=>{
+    return(
+      <NavLink 
+      to={el.path}
+      key={i}
+      style={{ display:'inline-flex',
+        justifyContent:'space-evenly',
+        alignItem:'center',
+        with:'100px',
+        margin:'20px',
+      }}
+      >
+        {el.element}
+        
+      </NavLink>
+    )
+  })}
+  </>
+);
 }
 
