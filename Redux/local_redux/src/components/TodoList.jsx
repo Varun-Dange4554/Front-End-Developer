@@ -1,43 +1,89 @@
-import React from 'react'
+import React,{ useRef } from 'react'
+import { useDispatch, useSelector} from 'react-redux'
+
+
 
 import  * as types from '../Reducer/Todos/Actions'
 
-import { useDispatch, useSelector} from 'react-redux'
 export const TodoList = () => {
-  const todos = useSelector((state) => state.todo)
   const dispatch = useDispatch()
+  const editRef = useRef(null)
+  
+
+  const value = useSelector((xyz) => {
+    return xyz.todo;
+  })
+  console.log('🚀 ~ value:', value);
+
+  
 
 
 
-    const handleClickDelete=(id)=>{
-      dispatch ({ type:types.DELETETODOS, payload: id})
+    const handleClickDelete = (id) =>{
+      dispatch ({ type: types.DELETETODOS, payload: id})
 
     }
 
+    const handleClickEdit = (id) =>{
+      dispatch({ type: types.EDITTODOS, payload: id })
+    };
 
+    const handleConfirm = (id) => {
+      const text = editRef.current.value.trim()
+      if (! text ) return
+      dispatch({
+        type: types.UPDATETODOS,
+        payload: {id,text},
+      });
+    };
+   
+
+    const handleCancel = (id) =>{
+      dispatch({type: types.CANCELTODOS,payload:id})
+    }
 
 
   return (
     <>
-      <div style={{  gap: '20px', marginTop: '20px' }}>
-        {todos.map((item) => (
-          <div
-            key={item.id}
-            style={{ marginTop: '20px', fontWeight: 'bold', fontSize: '20px' }}
-          >
-            <span style={{ marginRight: "20px" }}>#{item.id}</span>
-            {item.text}
-        
-      
-        <button style={{ marginTop: '20px',background:'red', marginLeft:"20px" }} onClick={()=>handleClickDelete(item.id)}  >
-          Delete
-        </button>
-          </div>
-      
 
-      ))}
-      </div>
+    <h2>Todo List</h2>
+    { value && 
+    value.map((el) => {
+      return (
+        <div key={el.id} style={{width:'70%',
+          margin:'10px auto',
+          display:'flex',
+          justifyContent:'space-around',
+        }}
+        >
+          <input type='checkbox'/>
+          
+          <h3>#{el.id}</h3>
+          {el.isEdit ? (
+            <input
+            ref={editRef}
+             type='text'
+            defaultValue={el.text} />
 
+          ) : (
+             <h3>{el.text}</h3>
+          )}
+          {el.isEdit ? (
+
+          <>
+          <button onClick={() => handleConfirm(el.id) } > confirm</button>
+          <button onClick={() => handleCancel(el.id)}> cancel </button>
+
+          </>
+          ) : (
+          <>
+          <button onClick={() =>handleClickEdit(el.id) }>edite</button>
+          <button onClick={() => handleClickDelete(el.id) }>delete</button>
+          </>
+          )}
+        </div>
+      )
+    })}
     </>
-  )
-}
+  );
+};

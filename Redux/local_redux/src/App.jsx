@@ -1,8 +1,8 @@
 
 import './App.css'
 // import { Counter } from './components/counter'
-import { Todo } from './page/Todo'
-
+// import { Todo } from './page/Todo'
+import { AllRoutes } from './Routes/AllRoutes.router'
 
 
 function App() {
@@ -11,7 +11,8 @@ function App() {
   return (
     <>
       {/* <Counter/> */}
-      <Todo/>
+      {/* <Todo/> */}
+      <AllRoutes/>
       
     </>
   )

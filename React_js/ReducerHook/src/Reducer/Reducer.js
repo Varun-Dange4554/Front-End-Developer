@@ -49,11 +49,17 @@ export  const reducer = ( state = initialValue, action) =>{
                     };
                 }
 
+                
+
             case DELETE_TODO_ITEMS:
                 return {
                     ...state,
                     items: state.items.filter((el)=> el.id != action.payload),
                 };
+
+
+
+                
             
             default:
                 return state;
