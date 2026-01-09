@@ -9,10 +9,17 @@ const api =`http://localhost:3000/todo`; // api_base_UI...
    put
    patch
    delete
+
 */
 
+let store = []
 btn_Add.addEventListener("click", async()=>{
-    const value_todo = document.querySelector("#todoVal").value
+    const value_todo = document.querySelector("#todoVal").value.trim();
+    if(!value_todo){
+        alert("todo empty hai");
+        return
+    }
+    
 
     const dataObj = {
         id: Date.now(),
@@ -21,14 +28,19 @@ btn_Add.addEventListener("click", async()=>{
         isCompleted:false
     }
       try{
-        let res = await fetch(api,{
+         res = await fetch(api,{
             method: "post",
             headers:{
                 "Content-Type":"application/json"
             },
             body:JSON.stringify(dataObj)
         })
-        read_Todo();
+
+        const res = await fetch(api)
+        store = await res.json()
+        read_Todo()
+
+        document.querySelector("#todoVal").value = ""
       }catch(error){
         console.log('🚀 ~ error:', error);
         
