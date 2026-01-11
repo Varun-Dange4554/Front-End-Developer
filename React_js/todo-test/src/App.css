@@ -1,0 +1,28 @@
+.App {
+            /* full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    /* vertical center */
+  align-items: center;        /* horizontal center */
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+li{
+   
+    list-style: none;
+}

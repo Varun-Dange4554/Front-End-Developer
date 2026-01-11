@@ -1,38 +1,33 @@
 import React from 'react'
-import TodoList from './TodoList';
+
+const TodoInput = ( { todolist, setTodoList }) => {
+
+  let saveTodoList=(event)=>{
+        event.preventDefault();
+
+    
+    let toName = event.target.toName.value.trim();
+        if (!toName) return;
 
 
-const TodoInput = () => {
-  const [todoText, setTodoText] = React.useState(""); 
-  const [todoData, setTodoData] = React.useState([]);
-  // console.log('🚀 ~ todoData:', todoData);
-  
-
-   const handleTodo = () => {
-    if (todoText.trim() === "") return;
-   const todoInfo ={
-    id:Date.now(),
-    text: todoText,
-    isEdit:false,
-   };
-   setTodoData((prev)=>[...prev,todoInfo]);
-   setTodoText("")
+   if(!todolist.includes(toName)){
+    let finalTodoList=[...todolist,toName]
+    setTodoList(finalTodoList)
+     
+   }else{
+    alert("all ready includes")
    }
-   
-   
 
+
+  }
   return (
-    <>
-      <h1>Todo Input</h1>
-      <input type="text" 
-      value={todoText} 
-      placeholder='enter your todo'
-      onChange={(e)=> setTodoText(e.target.value)}/>
-
-        <button onClick={handleTodo}>Add</button>      
-        < TodoList props={{todoData,setTodoData}}    />                     
-    </>
+    <div className='App'>
+      <h1>Add Todo</h1>
+     <form onSubmit={saveTodoList}>
+      <input type="text" placeholder='Enter your todo' name='toName' /> <button>Add Todo</button>
+     </form>
+    </div>
   )
 }
 
-export default TodoInput;
+export default TodoInput
