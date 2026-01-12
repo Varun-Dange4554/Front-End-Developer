@@ -3,11 +3,13 @@ import React from 'react'
 const TodoInput = ( { todolist, setTodoList }) => {
 
   let saveTodoList=(event)=>{
-        event.preventDefault();
+           event.preventDefault();
 
     
+    
     let toName = event.target.toName.value.trim();
-        if (!toName) return;
+    if (!toName) return;
+
 
 
    if(!todolist.includes(toName)){
@@ -17,6 +19,8 @@ const TodoInput = ( { todolist, setTodoList }) => {
    }else{
     alert("all ready includes")
    }
+
+         
 
 
   }
