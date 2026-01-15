@@ -21,8 +21,6 @@ export const TodoList = () => {
   console.log('🚀 ~ token:', token);
   
 
-
-
     const handleClickDelete = (id) =>{
       dispatch ({ type: types.DELETETODOS, payload: id})
 
@@ -34,7 +32,7 @@ export const TodoList = () => {
 
     const handleConfirm = (id) => {
       const text = editRef.current.value.trim()
-      if (! text ) return
+      if (!text ) return
       dispatch({
         type: types.UPDATETODOS,
         payload: {id,text},
@@ -80,11 +78,9 @@ export const TodoList = () => {
              <h3>{el.text}</h3>
           )}
           {el.isEdit ? (
-
           <>
           <button onClick={() => handleConfirm(el.id) } > confirm</button>
           <button onClick={() => handleCancel(el.id)}> cancel </button>
-
           </>
           ) : (
           <>

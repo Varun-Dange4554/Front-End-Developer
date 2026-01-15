@@ -8,14 +8,18 @@ export const Login = () => {
   const handlelogin = ({email,pass}) =>{
     if(email === 'admin' && pass === 'admin@123'){
       dispatch({type:types.LOGIN_SUCCESSFULL,payload:'fakeToken'})
-    } else {
+    
+         
+    } 
+
+     else {
       dispatch({type:types.LOGIN_FAILURE,payload:'wrong credentials'});
     }
   };
   if(isLoading) return <h1>Loading...</h1>
   return (
     <>
-    <LoginsCompo props={handlelogin}/>
+    <LoginsCompo props={ handlelogin }/>
     {isError && <h1>Something went Wrong...</h1>}
     </>
   );

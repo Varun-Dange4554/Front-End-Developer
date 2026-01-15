@@ -22,7 +22,7 @@ export const AllRoutes = () => {
             <Route path="/signup" element={< Signup/>}></Route>
             <Route path="/todo" element={
                 <PrivateRoutes>
-                <Todo/>
+                <Todo />
                 </PrivateRoutes>
                 }>
                     

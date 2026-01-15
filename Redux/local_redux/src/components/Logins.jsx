@@ -7,7 +7,7 @@ export const LoginsCompo = ( { props }) => {
 
     const handleSubmit = (e) =>{
         e.preventDefault();
-        const payload = {email,pass};
+        const payload = { email,pass };
         props(payload);
     }
   return (
