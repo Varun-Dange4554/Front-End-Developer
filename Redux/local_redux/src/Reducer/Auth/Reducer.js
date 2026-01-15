@@ -1,10 +1,11 @@
+import { isAction } from 'redux';
 import * as types from './Action'
 
-const token = localStorage.getItem('token')
+const tokenValue = localStorage.getItem('token')
 
 const initialvalue = {
-    token:token ? token:'',
-    isAuth:false,
+    token:tokenValue || '',
+    isAuth:tokenValue ? true : false,
     isError:null,
     isLoading:false,
 };
@@ -17,19 +18,25 @@ export const authReducer = (state = initialvalue,action ) => {
                 isLoading:true,
             }
     
-        case types.LOGIN_SUCCESSFULL:
-            return {
-                ...state,
-                isLoading:false,
-                isAuth:true,
-            }
+        case types.LOGIN_SUCCESSFULL: {
+            if( !action.payload) return state;
+        
+        localStorage.setItem('token', action.payload);
     
+        return {
+            ...state,
+            isLoading:false,
+            isAuth:true,
+            token:action.payload,
+         }
+        }
+
         case types.LOGIN_FAILURE:
             return {
                 ...state,
-                isLoading: false,
-                isError: action.payload,
-            }
+                isLoading:false,
+                isError:action.payload
+            };
 
             default:
                 return state;

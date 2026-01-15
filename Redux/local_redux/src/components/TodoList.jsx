@@ -11,10 +11,14 @@ export const TodoList = () => {
   
 
   const value = useSelector((xyz) => {
-    return xyz.todo;
+    return xyz.todos.todo;
   })
   console.log('🚀 ~ value:', value);
 
+  const { token } = useSelector((xyz)=>{
+    return xyz.auths;
+  })
+  console.log('🚀 ~ token:', token);
   
 
 
@@ -45,6 +49,13 @@ export const TodoList = () => {
 
   return (
     <>
+    <h1 style={{ 
+      color:'tomato',
+      fontSize:'24px',
+      fontWeight:'bolder',
+    }}>
+      {token}
+    </h1>
 
     <h2>Todo List</h2>
     { value && 

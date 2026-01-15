@@ -10,7 +10,7 @@ export const Navbar = () => {
         { path:'/counter' ,element:'counter'},
         { path:'/todo' ,element:'todo'},
 
-    ]
+    ];
   return  (
   <>
   {routes.map((el,i)=>{
