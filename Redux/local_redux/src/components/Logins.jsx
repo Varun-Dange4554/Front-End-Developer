@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 export const LoginsCompo = ( { props }) => {
   console.log('🚀 ~ props:', props);
+
     const [email,setEmail] = useState('');
     const [pass,setPass] = useState('');
 
@@ -10,6 +11,7 @@ export const LoginsCompo = ( { props }) => {
         const payload = { email,pass };
         props(payload);
     }
+
   return (
     
     <div
@@ -17,7 +19,7 @@ export const LoginsCompo = ( { props }) => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '90vh' 
+        height: '90vh', 
       }}
     >
         
@@ -46,7 +48,7 @@ export const LoginsCompo = ( { props }) => {
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-          <label htmlFor="password">Password</label>
+          <label htmlFor="pass">Password</label>
           <input
             type="text"
             id="password"

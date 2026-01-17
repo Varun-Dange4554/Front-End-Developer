@@ -8,3 +8,9 @@ export const CANCELTODOS = "CANCELTODOS";
 
 
 
+const addTodo = (data) =>{
+    return { type:ADDTODOS,payload:data}
+
+}
+
+export { addTodo };

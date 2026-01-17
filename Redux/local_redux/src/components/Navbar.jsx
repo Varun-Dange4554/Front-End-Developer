@@ -20,8 +20,8 @@ export const Navbar = () => {
       key={i}
       style={{ display:'inline-flex',
         justifyContent:'space-evenly',
-        alignItem:'center',
-        with:'100px',
+        alignItems:'center',
+        width:'100px',
         margin:'20px',
       }}
       >

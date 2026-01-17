@@ -4,7 +4,6 @@ import { myOwnReducer } from '../Reducer/Count/Reducer'
 import { authReducer } from '../Reducer/Auth/Reducer'
 import { todoReducer } from '../Reducer/Todos/Reducer'
 
-// export const myOwnStore = legacy_createStore( todoReducer );
 
 const terminalReducer = combineReducers({
     todos:todoReducer,
@@ -14,3 +13,9 @@ const terminalReducer = combineReducers({
 })
 
 export const myOwnStore = legacy_createStore(terminalReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+
+
+
+
+
+
