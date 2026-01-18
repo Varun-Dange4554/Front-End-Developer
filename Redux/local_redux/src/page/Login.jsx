@@ -1,16 +1,21 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { LoginsCompo } from '../components/Logins'
+import { useNavigate } from 'react-router-dom'
 
 import * as types from '../Reducer/Auth/Action'
 
 export const Login = () => { 
   const dispatch = useDispatch();
+    const navigate = useNavigate();
+
   const { isLoading,isError}=useSelector((state)=> state.auths);
 
   const handlelogin = ({email,pass}) =>{
     if(email === 'admin' && pass === 'admin@123'){
       dispatch({type:types.LOGIN_SUCCESSFUL,payload:'fakeToken'})
     
+            navigate('/todo');
+
          
     } 
 
