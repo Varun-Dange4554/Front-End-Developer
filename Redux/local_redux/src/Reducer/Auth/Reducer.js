@@ -33,18 +33,19 @@ export const authReducer = (state = initialvalue,action ) => {
 
             }
     
-        case types.LOGIN_SUCCESSFUL: {
-            if( action.payload !== "fakeToken") return state;
+        case types.LOGIN_SUCCESSFUL: 
+            
         
         dataSave(tokenKeys, action.payload)    
         return {
             ...state,
             isLoading:false,
             isAuth:true,
-            token:action.payload
+            token:action.payload,
+            isError:null
 
          }
-        }
+        
         
 
         case types.LOGIN_FAILURE:

@@ -9,4 +9,12 @@ const getLogin = () =>{
     return { type:REMOVE_TOKEN }
 };
 
-export { getLogin }; 
+
+const loginSuccessfull = (payload) =>{
+    return {type: LOGIN_SUCCESSFUL,payload:payload}
+};
+
+const loginFailure = (payload) =>{
+    return { type:LOGIN_FAILURE,payload:payload}
+}
+export { getLogin,loginSuccessfull,loginFailure }; 

@@ -15,6 +15,7 @@ export const Navbar = () => {
   <>
   {routes.map((el,i)=>{
     return(
+      
       <NavLink 
       to={el.path}
       key={i}
@@ -25,9 +26,11 @@ export const Navbar = () => {
         margin:'20px',
       }}
       >
+        
         {el.element}
         
       </NavLink>
+      
     )
   })}
   </>

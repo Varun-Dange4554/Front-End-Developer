@@ -2,7 +2,9 @@ import { useDispatch, useSelector } from 'react-redux'
 import { LoginsCompo } from '../components/Logins'
 import { useNavigate } from 'react-router-dom'
 
-import * as types from '../Reducer/Auth/Action'
+// import * as types from '../Reducer/Auth/Action'
+
+import { loginSuccessfull,loginFailure} from '../Reducer/Auth/Action'
 
 export const Login = () => { 
   const dispatch = useDispatch();
@@ -12,15 +14,13 @@ export const Login = () => {
 
   const handlelogin = ({email,pass}) =>{
     if(email === 'admin' && pass === 'admin@123'){
-      dispatch({type:types.LOGIN_SUCCESSFUL,payload:'fakeToken'})
+      dispatch(loginSuccessfull('fakeToken_varun'));
     
-            navigate('/todo');
-
-         
+            navigate('/todo');         
     } 
 
      else {
-      dispatch({type:types.LOGIN_FAILURE,payload:'wrong credentials'});
+      dispatch(loginFailure('wrong_credential'));
     }
   };
   if(isLoading) return <h1>Loading...</h1>
