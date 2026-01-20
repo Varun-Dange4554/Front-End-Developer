@@ -1,4 +1,4 @@
-import { combineReducers,legacy_createStore } from 'redux'
+import { combineReducers,legacy_createStore,applyMiddleware,compose } from 'redux'
 
 import { myOwnReducer } from '../Reducer/Count/Reducer'
 import { authReducer } from '../Reducer/Auth/Reducer'
@@ -12,7 +12,16 @@ const terminalReducer = combineReducers({
     
 })
 
-export const myOwnStore = legacy_createStore(terminalReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const logger = (store) => (next) => (action) =>{
+    return typeof action === 'function'
+    ? action(store.dispatch, store.getStore) : next(action)
+}
+
+const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
+
+const enhance =composeEnhancers(applyMiddleware(logger));
+
+export const myOwnStore = legacy_createStore(terminalReducer, enhance);
 
 
 

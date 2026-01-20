@@ -9,7 +9,6 @@ import { loginSuccessfull,loginFailure} from '../Reducer/Auth/Action'
 export const Login = () => { 
   const dispatch = useDispatch();
     const navigate = useNavigate();
-
   const { isLoading,isError}=useSelector((state)=> state.auths);
 
   const handlelogin = ({email,pass}) =>{

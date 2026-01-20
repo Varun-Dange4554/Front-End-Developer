@@ -7,14 +7,19 @@ export const myOwnReducer=(state = initialValue,{type, payload}) =>{
         case types.INCREMENT:
             return {
                 ...state,
-                count: state.count + 1
+                count: state.count + 1,
             };
         
          case types.DECREMENT:
             return {
                 ...state,
-                count: state.count - 1
+                count: state.count - 1.
             };
+            case types.INCREMENT_BY_VALUE:
+                return {
+                    ...state,
+                    count:state.count+payload,
+                }
         
     
 
