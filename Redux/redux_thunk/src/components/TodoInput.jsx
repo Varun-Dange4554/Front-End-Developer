@@ -1,28 +1,33 @@
-import React from "react"
-import { useDispatch, useSelector } from "react-redux"
+import axios from "axios";
+import React from "react";
 
-import axios from 'axios'
-import * as  actFunc from '../Redux/action'
+export const TodoInput = ({ getApi }) => {
+ const inputValue = React.useRef();
 
-
-export const TodoInput = () => {
-    const data = useSelector((state) => state.todos);
-    const dispatch = useDispatch();
-
-    const getApi = () => {
-        axios
-        .get('http://localhost:8080/todo')
-        .then((res) => dispatch(actFunc.getTodoSuccess(res)))
-        .catch((err) => console.log(err))
+ const addTodos = () =>{
+  if(inputValue && inputValue.current.value.trim() !== '') {
+    let data = {
+      title:inputValue.current.value,
+      status:false,
     }
-    React.useEffect(()=>{
-        getApi();
+    return axios
+    .post('http://localhost:8080/todo',data)
+    .then((res) => res)
+    .catch((err)=> console.log(err))
+  }
+ };
 
-    },[])
+ const handleAdd = () =>{
+  addTodos().then(()=> getApi())
+ };
 
+ return (
+  <>
+  <input type="text" ref={inputValue} />
+  <button onClick={handleAdd}>add</button>
+  </>
+ );
 
-  return (
-    <div>TodoInput</div>
-  )
+   
 }
 

@@ -14,7 +14,6 @@ export const todoReducers = (oldState = initialState, action) => {
       return {
         ...oldState,
         isLoading: true,
-        isError: null,
       };
 
     case types.GET_TODOS_SUCCESS:
@@ -30,6 +29,31 @@ export const todoReducers = (oldState = initialState, action) => {
         isLoading: false,
         isError: payload,
       };
+
+
+
+
+
+      case types.ADD_TODOS_REQUEST:
+      return {
+        ...oldState,
+        isLoading: false,
+      };
+
+    case types.ADD_TODOS_SUCCESS:
+      return {
+        ...oldState,
+        isLoading: false,
+        isError: payload, 
+      };
+
+    case types.ADD_TODOS_FAILURE:
+      return {
+        ...oldState,
+        isLoading: false,
+        isError: payload,
+      };
+
 
     default:
       return oldState;
