@@ -630,3 +630,57 @@ li{
     left: 20px;
 
 }
+
+
+
+
+
+@media (max-width: 768px){
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .nav1 {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .box1 {
+        width: 90%;
+        margin-left: 0;
+        margin-top: 15vh;
+    }
+
+    .button1>button, .button2>button, .button3>button, .button4>button, .button5>button, .button7>button, .Send-button {
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10 {
+        margin-left: 0;
+        padding: 0 10px;
+    }
+
+    .sec1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    ul li {
+        margin-left: 20px;
+        line-height: 30px;
+    }
+
+    .content-image{
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+}
