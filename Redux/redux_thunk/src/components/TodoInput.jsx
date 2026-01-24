@@ -1,10 +1,15 @@
 import axios from "axios";
 import React from "react";
+import { useDispatch } from "react-redux";
 
-export const TodoInput = ({ getApi }) => {
+import { getApi,addTodosRequest,addTodosFailure,addTodoSuccess } from "../Redux/action";
+
+export const TodoInput = () => {
  const inputValue = React.useRef();
+ const dispatch = useDispatch();
 
  const addTodos = () =>{
+  dispatch(addTodosRequest)
   if(inputValue && inputValue.current.value.trim() !== '') {
     let data = {
       title:inputValue.current.value,
@@ -12,13 +17,19 @@ export const TodoInput = ({ getApi }) => {
     }
     return axios
     .post('http://localhost:8080/todo',data)
-    .then((res) => res)
-    .catch((err)=> console.log(err))
+    .then((res) => {
+      dispatch(addTodoSuccess);
+      return res
+    })
+    .catch((err)=> {
+      console.log(err);
+      dispatch(addTodosFailure)
+    })
   }
  };
 
  const handleAdd = () =>{
-  addTodos().then(()=> getApi())
+  addTodos().then(()=> dispatch(getApi))
  };
 
  return (
