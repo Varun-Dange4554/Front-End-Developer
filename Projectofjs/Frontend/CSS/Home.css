@@ -137,11 +137,18 @@ width: 310px;
 }
 
 .signup-form__button{
-  background-color: #FFFFFF;
+  background-color: #212B36;
   font-size: 13px;
   padding: 15.6px 25px;
   width: 108.35px;
+  color: white;
 }
+.signup-form__button:hover{
+  color: #212B36;
+  background-color: white;;
+
+}
+
 
 a ,strong{
   text-decoration: none;
