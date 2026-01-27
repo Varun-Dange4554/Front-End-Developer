@@ -23,7 +23,7 @@ export const Navbar = () => {
     </section>
 
     <section class="btn_sign_login">
-      <button name="login"class="login">login</button>
+      <button name="login" class="login" >login</button>
       <button name="signup"class="signup">signup</button>
     </section>
   `;
