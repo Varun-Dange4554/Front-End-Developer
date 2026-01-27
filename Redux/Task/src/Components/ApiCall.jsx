@@ -1,38 +1,18 @@
-import React from 'react'
-import axios from 'axios'
+// Redux/apiActions.js
+import axios from "axios"
+import { fetchStart, fetchSuccess, fetchError } from "../Redux/action"
 
-import {ContextCreate } from '../Context/CreateComponentsContext'
-import { useContext } from 'react'
-import { contextCreated } from '../../../../React_js/AXIOS/src/Context/CreateComponentsContext'
-import { useEffect } from 'react'
+const API_URL = "https://fakestoreapi.com/products"
 
-const fetchData = async (url) =>{
-    return axios
-    .get(url)
-    .then((res) =>{
-        return res.data
+export const ApiCall = () => (dispatch) => {
+  dispatch(fetchStart())
+
+  axios
+    .get(API_URL)
+    .then((res) => {
+      dispatch(fetchSuccess(res.data))
     })
-    .catch((err)=>{
-        return [null,err]
+    .catch((err) => {
+      dispatch(fetchError(err.message))
     })
 }
-
-export const ApiCall = () => {
-    const {data, setData } = useContext(contextCreated);
-    console.log('🚀 ~ data:', data);
-    
-    const api = 'https://fakestoreapi.com/products';
-    useEffect(() =>{
-        fetchData(api)
-    .then((res) => setData(res))
-    .catch((err) => console.warn(err))
-    }, []);
-
-  return (
-    <>
-      
-    </>
-  )
-}
-
-
