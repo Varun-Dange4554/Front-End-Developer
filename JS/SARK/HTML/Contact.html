@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="navbar">
+
+</div>
+    
+</body>
+<script src="../JS/index.js"></script>
+<script type="module" >
+import { navBar,navStyle } from "../JS/component.js";
+  document.querySelector("#navbar").innerHTML= navBar();
+
+    const styleTag = document.createElement("style");
+  styleTag.innerHTML = navStyle();
+  document.head.appendChild(styleTag);
+  
+</script>
+<script src="../JS/component.js"></script>
+</html>
