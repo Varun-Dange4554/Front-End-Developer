@@ -12,6 +12,7 @@ function names(){
 class{
     console.log('hello class java script ')
 }
+
 ```
 **What is a java script**
 

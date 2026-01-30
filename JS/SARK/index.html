@@ -1,57 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SARK</title>
-   
-</head>
-<body>
-<div id="navbar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SARK</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+  </body>
+  <script src="./JS/index.js"></script>
+  <script type="module">
+    import { navBar, navStyle } from "./JS/component.js";
 
-</div>
-  
-  <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi dolore sed vel, eos, natus voluptatibus reprehenderit voluptatem consequatur eum nostrum dolores similique quas. Rem corrupti atque beatae repellat dignissimos quos?
-  Eos nostrum accusamus iste rerum dolorem quos nulla alias error! At exercitationem ullam sed, unde animi rem saepe ratione nam soluta eaque! Quibusdam magnam, eos iure laudantium nihil praesentium itaque?
-  Similique perferendis tempore dolorum maiores hic deleniti autem minima fuga saepe porro, natus explicabo blanditiis amet reprehenderit earum. Maxime culpa dolorem id tempora et quo aperiam voluptatibus a odio vero!
-  Facere modi sint consequatur tenetur perspiciatis distinctio beatae, in, architecto iste dolore fuga incidunt ullam? Vitae, facilis itaque. Eum aspernatur distinctio debitis, magni quaerat aut iusto aperiam harum nostrum neque.
-  Illo vero nulla expedita sapiente fuga blanditiis error mollitia labore veniam fugiat et, sequi eum tempora quia? Enim delectus harum reiciendis ad eum ex iusto minus inventore excepturi. Incidunt, ipsam!
-  Quam voluptatibus natus quidem distinctio ex nihil amet! Dolorum consequuntur quisquam ad debitis ab distinctio odit similique dolor voluptatum incidunt, eveniet delectus. Expedita praesentium consectetur, fugiat rerum mollitia iure reprehenderit!
-  A sequi necessitatibus ab et! Labore assumenda temporibus tenetur veritatis nulla nobis maiores earum doloremque dicta vero error eaque dignissimos suscipit incidunt sint atque, doloribus magni repellat dolor autem. Dignissimos!
-  Alias dolor minus voluptates aut error quibusdam temporibus porro, repudiandae dolorum aliquid cupiditate, doloremque qui, architecto delectus eveniet quae velit assumenda tempora? Deserunt recusandae ex nesciunt placeat officia sint suscipit!
-  Inventore unde facere, vel animi, ullam eos, saepe sunt nostrum vero doloribus corrupti minus. Hic voluptate dicta explicabo. Exercitationem corporis voluptas inventore similique qui vero quia dolorum illum ipsum nisi.
-  Distinctio eum aut saepe laboriosam animi, possimus ut perferendis veniam illo, totam quis! Ipsam eum molestiae odit nobis esse minus ad mollitia adipisci odio, maiores numquam velit voluptatum ratione aspernatur!
-  Minima vero, eveniet eos ducimus sapiente iusto dolore consequatur laborum sed sint quasi incidunt. Aperiam ratione blanditiis sit deserunt maiores! Temporibus error itaque assumenda tenetur. Nulla nihil deserunt expedita libero.
-  Nemo optio veniam eveniet fugit illo libero ipsam, minima perspiciatis voluptates asperiores numquam et nobis facere voluptatem eaque ex! Nobis modi ipsa mollitia tenetur? Eius facere amet perspiciatis ex sint?
-  Quos sed repellendus quibusdam earum laborum similique nam. Vitae illum nostrum ipsum reiciendis repellat optio veritatis, veniam, impedit esse vel aliquid incidunt distinctio! Doloribus, quas! Facilis accusantium itaque rem expedita.
-  Itaque soluta debitis adipisci amet quam, quaerat ab, doloribus nihil laudantium ipsam iure quia commodi, voluptatem magnam quas cumque vero praesentium libero facere? Minima ullam dolores, quod ducimus asperiores iusto!
-   Officiis minima facere hic accusamus doloribus dolor necessitatibus eius sit similique soluta eveniet iusto impedit explicabo ratione labore, dolorum fugiat accusantium vel eum enim! Sunt vel cupiditate in deserunt aliquam!
-  Aliquam aspernatur molestias fugit nisi beatae? Quasi nostrum accusantium voluptate a, rem exercitationem quis consequuntur iusto libero molestiae id accusamus laudantium inventore eaque obcaecati, soluta nulla excepturi distinctio, laboriosam dolores!
-  Ducimus veritatis expedita, omnis corrupti consequatur repellat quos reiciendis porro dolor harum tenetur ut voluptatum laboriosam quae provident, eius est quisquam dolores ullam quaerat, dolorem vitae placeat? Fugiat, officia delectus.
-  Illum obcaecati officiis consectetur, ratione eaque, provident necessitatibus odit ex distinctio magni ducimus reiciendis! Sequi totam possimus, dolore quo libero sint eaque quisquam perferendis consequuntur cupiditate corrupti architecto, reiciendis recusandae?
-  Omnis inventore deserunt doloribus nobis nemo culpa dolorum eius recusandae pariatur, fuga tenetur iure odio. Rerum accusamus voluptatum minima reiciendis iure! Dolorum cumque architecto explicabo odio eaque officia ipsum fugiat.
-  Et incidunt reprehenderit illum enim eum similique expedita! Laboriosam maiores repellat reiciendis excepturi cumque, tempora officia facere accusamus ipsa. Explicabo sapiente totam et illo eligendi at illum dolor. Deserunt, minus.</div>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelector("#navbar").innerHTML = navBar();
 
-</body>
-<script src="./JS/index.js"></script>
-<script type="module">
-import { navBar, navStyle } from "./JS/component.js";
+      const styleTag = document.createElement("style");
+      styleTag.innerHTML = navStyle();
+      document.head.appendChild(styleTag);
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector("#navbar").innerHTML = navBar();
-
-  const styleTag = document.createElement("style");
-  styleTag.innerHTML = navStyle();
-  document.head.appendChild(styleTag);
-
-  document
-    .querySelector(".contact-btn")
-    .addEventListener("click", () => {
-      window.location.href = "./HTML/Contact.html";
+      document.querySelector(".contact-btn").addEventListener("click", () => {
+        window.location.href = "./HTML/Contact.html";
+      });
     });
-});
-</script>
-
-
-
+  </script>
 </html>
