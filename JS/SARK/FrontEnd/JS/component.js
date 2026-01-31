@@ -1,35 +1,36 @@
-export const navBar = () => {
-  return `
-    <header class="navbar">
-      <div class="logo">
-        <img src="../Utils/image.png" alt="logo" />
-      </div>
+export const navBar = () => `
+<header class="navbar">
+  <div class="logo">
+    <img src="../Utils/image.png" alt="logo" />
+  </div>
 
-      <nav class="nav-links">
-        <ul>
-          <li>About Us</li>
-          <li>Services</li>
-          <li>Gallery</li>
-          <li>Testimonials</li>
-          <li>Clients</li>
-          <li>Case Studies</li>
-          <li class="contact-btn">Contact Us</li>
-        </ul>
-      </nav>
-    </header>
+  <nav class="nav-links">
+    <ul>
+      <li>About Us</li>
+      <li>Services</li>
+      <li>Gallery</li>
+      <li>Testimonials</li>
+      <li>Clients</li>
+      <li>Case Studies</li>
+      <li class="contact-btn">Contact Us</li>
+    </ul>
+  </nav>
+</header>
 
-    <section class="slider_hero">
-      <div class="slider "><img src="../Utils/head-slide1.jpg"></div>
-      <div class="slider"><img src="../Utils/head-slide4.jpg"></div>
-      <div class="slider"><img src="../Utils/head-slide3.jpg"></div>
-      <div class="slider"><img src="../Utils/head-slide5.jpg"></div>
-      <div class="slider"><img src="../Utils/head-slide6.jpg"></div>
+<section class="slider_hero">
+  <div class="slider"><img src="../Utils/head-  slide1.jpg"></div>
+  <div class="slider"><img src="../Utils/slide2.jpg"></div>
+  <div class="slider"><img src="../Utils/slide3.jpg"></div>
+  <div class="slider"><img src="../Utils/slide4.jpg"></div>
+  <div class="slider"><img src="../Utils/slide5.jpg"></div>
+  <div class="slider"><img src="../Utils/slide6.jpg"></div>
 
-      <button class="arrow prev">&#10094;</button>
-      <button class="arrow next">&#10095;</button>
-    </section>
-  `;
-};
+  <button class="arrow prev">&#10094;</button>
+  <button class="arrow next">&#10095;</button>
+</section>
+`;
+
+
 
 
 export const navStyle = () => {

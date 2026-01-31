@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SARK</title>
-  </head>
-  <body>
-    <div id="navbar"></div>
-  </body>
-  <script src="./JS/index.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SARK</title>
+
+</head>
+<body>
+
+  <div id="navbar"></div>
+
+  <script src="./FrontEnd/JS/index.js"></script>
   <script type="module">
-    import { navBar, navStyle } from "./JS/component.js";
+    import { navBar, navStyle } from "./FrontEnd/JS/component.js";
 
-    document.addEventListener("DOMContentLoaded", () => {
-      document.querySelector("#navbar").innerHTML = navBar();
+    document.querySelector("#navbar").innerHTML = navBar();
 
-      const styleTag = document.createElement("style");
-      styleTag.innerHTML = navStyle();
-      document.head.appendChild(styleTag);
+    const styleTag = document.createElement("style");
+    styleTag.innerHTML = navStyle();
+    document.head.appendChild(styleTag);
 
-      document.querySelector(".contact-btn").addEventListener("click", () => {
-        window.location.href = "./HTML/Contact.html";
-      });
-    });
+  
   </script>
+
+</body>
 </html>
