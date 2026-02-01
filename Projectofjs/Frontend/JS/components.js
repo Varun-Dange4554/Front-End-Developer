@@ -41,6 +41,81 @@ export const navBar =()=>{
 }
 
 
+
+export  const navStyle = () =>{
+    return `
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Jost, sans-serif;
+}
+
+header {
+  padding: 0 20px;
+  border-bottom: 1px solid gray;
+  height: 86px;
+}
+
+.search,
+.list_icon,
+.logo {
+  width: 100%;
+}
+
+.list_icon > span > img,
+.search > div > img {
+  width: 50px;
+  width: 24px;
+  height: fit-content;
+
+}
+
+.list_icon > span {
+  display: block;
+  gap: 5px;
+}
+
+.logo > div > img {
+  width: 135px;
+  height: fit-content;
+  background: #000;
+}
+.offer {
+  background: #b61d0f;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 12px;
+}
+
+header,
+.list_icon,
+.list_icon > span,
+.logo > div {
+  display: flex;
+  align-items: center;
+}
+
+.list_icon {
+  gap: 10px;
+  display: flex;
+  justify-content: end;
+}
+
+.logo > div {
+  justify-content: center;
+}
+.search > div {
+align-items: center;
+display: flex;
+
+}
+
+    `
+}
+
+
 export const Footer = () =>{
     return `
      <div class="container">
@@ -229,4 +304,117 @@ export const Footer = () =>{
             </div>
       </div>
 `
+}
+
+
+
+export const footerStyle = () => {
+    return `
+    
+.footer{
+    height: 824.3px;
+    background-color: #f4dfdb;  
+}
+
+
+.container{
+  padding: 0px 40px;
+  
+}
+
+.container1{
+  padding: 60px 0px 80px;
+ margin: opx -10px -50px;  
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.menu-block1,.menu-block2,.menu-block3{
+  margin:  0px 0px 40px;
+  padding: 0px 20px;
+}
+
+.menu-block4{
+  margin:  0px 0px 50px;
+  padding: 0px 20px;
+
+}
+
+.section-footer-title{
+  font-size: 16px;
+  margin: 0px 0px 20px;
+  color: #171717;
+}
+
+li a  {
+  text-decoration: none;
+  color: #676869;
+}
+
+li{
+  font-size: 15px ;
+  margin: 0px 0px 7.5px;
+  list-style: none;
+
+
+}
+
+p{
+  color: #676869;
+  font-size: 15px;
+  margin: 0px 0px 15px;
+}
+
+.signup-form-email{
+  background-color: #FFFFFF;
+padding: 12.8px 15px;
+width: 310px;
+}
+
+.signup-form__button{
+  background-color: #212B36;
+  font-size: 13px;
+  padding: 15.6px 25px;
+  width: 108.35px;
+  color: white;
+}
+.signup-form__button:hover{
+  color: #212B36;
+  background-color: white;;
+
+}
+
+
+a ,strong{
+  text-decoration: none;
+  color: #676869;
+}
+
+
+
+.men-links ,.women-links,.kids-links a{
+  line-height: 1.6;
+}
+
+
+.Popular{
+  color: #171717;
+  font-size: 17px;
+  margin: 0px 0px 10px;
+}
+
+
+
+
+
+
+
+.last_row{
+  color: #676869;
+  margin: 0px -10px;
+  padding: 50px 0px ;
+}
+
+    `
 }

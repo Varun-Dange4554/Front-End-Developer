@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -61,21 +61,19 @@ header,
   justify-content: center;
 }
 .search > div {
-    /* justify-content: center; */
 align-items: center;
 display: flex;
 
-}
+} */
 
 
 
 
 
 
-
+/* 
 .footer{
     height: 824.3px;
-    /* width: 100%; */
     background-color: #f4dfdb;  
 }
 
@@ -112,7 +110,6 @@ display: flex;
 
 li a  {
   text-decoration: none;
-  /* color: black; */
   color: #676869;
 }
 
@@ -178,4 +175,4 @@ a ,strong{
   color: #676869;
   margin: 0px -10px;
   padding: 50px 0px ;
-}
+} */

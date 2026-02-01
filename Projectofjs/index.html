@@ -14,16 +14,23 @@
     <br>
 
     <!-- footer -->
-    <footer class="footer">
-       
-
-    </footer>
+    <footer class="footer"> </footer>
 </body>
+
 <script type="module" >
-    import { navBar,Footer} from './Frontend/JS/components.js'
+    import { navBar,Footer,navStyle,footerStyle} from './Frontend/JS/components.js'
 
     document.querySelector("nav").innerHTML=navBar();
     document.querySelector(".footer").innerHTML=Footer();
+
+    const navstyleTag = document.createElement("style");
+navstyleTag.innerHTML = navStyle();
+document.head.appendChild(navstyleTag);
+
+const footerstyleTag = document.createElement("style");
+footerstyleTag.innerHTML = footerStyle();
+document.head.appendChild(footerstyleTag);
+
 </script>
 
 </html>

@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SARK</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SARK</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"  />
+  </head>
 
-</head>
-<body>
+  <body>
+    <nav></nav>
+    <h1>lorem*10</h1>
 
-  <div id="navbar"></div>
 
-  <script src="./FrontEnd/JS/index.js"></script>
+
+    <footer class="footer">
+     
+        </footer>
+  </body>
+
+  <script src="./JS/index.js"></script>
   <script type="module">
-    import { navBar, navStyle } from "./FrontEnd/JS/component.js";
+    import { navBar, navStyle,Footer,footerStyle } from "./JS/component.js";
 
-    document.querySelector("#navbar").innerHTML = navBar();
+    document.querySelector("nav").innerHTML = navBar();
+    document.querySelector(".footer").innerHTML = Footer();
 
-    const styleTag = document.createElement("style");
-    styleTag.innerHTML = navStyle();
-    document.head.appendChild(styleTag);
+    const navstyleTag = document.createElement("style");
+    navstyleTag.innerHTML = navStyle();
+    document.head.appendChild(navstyleTag);
+   
+
+    const footerstyleTag = document.createElement("style");
+    footerstyleTag.innerHTML = footerStyle();
+    document.head.appendChild(footerstyleTag)
 
   
-  </script>
 
-</body>
+
+  </script>
 </html>
