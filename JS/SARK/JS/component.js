@@ -1,8 +1,13 @@
+const companylogo = new URL ('../Utils/image.png', import.meta.url).href;
+
+
+
+
 export const navBar = () => {
   return `
 <header class="navbar">
   <div class="logo">
-    <img src="Utils/image.png" alt="logo" />
+    <img src="${companylogo}" alt="logo" />
   </div>
 
   <nav class="nav-links">
@@ -92,21 +97,16 @@ body{
   transition: transform 0.4s ease;
 }
 
-/* hover effect */
 .nav-links li:hover::after {
   transform: scaleX(1);
   animation: gradient-89 3s linear infinite;
 }
 
-/* gradient animation */
 @keyframes gradient-89 {
   0% { background-position: 0% center; }
   100% { background-position: 200% center; }
 }
  
-
-
-
 `
 };
 
@@ -217,7 +217,6 @@ export const footerStyle = () => {
   box-sizing:border-box;
 }
 
-/* ================= FOOTER ================= */
 .footer{
   width:100%;
   background:#F5F5F5;
@@ -225,12 +224,10 @@ export const footerStyle = () => {
   box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
 }
 
-/* main container */
 .container{
   padding: 40px 60px;
 }
 
-/* footer columns wrapper */
 .container1{
   display:flex;
   justify-content:space-between;
@@ -238,7 +235,6 @@ export const footerStyle = () => {
   flex-wrap:wrap;
 }
 
-/* footer blocks */
 .menu-block1,
 .menu-block2,
 .menu-block3,
@@ -247,7 +243,6 @@ export const footerStyle = () => {
   min-width:220px;
 }
 
-/* TITLES */
 .section-footer-title{
   font-size:16px;
   font-weight:600;
@@ -255,7 +250,6 @@ export const footerStyle = () => {
   color:#171717;
 }
 
-/* TEXT */
 p{
   color:#676869;
   font-size:14px;
@@ -279,7 +273,7 @@ strong{
   gap:8px;
 }
 
-/* LINKS */
+
 .menu-block2 ul,
 .menu-block3 ul{
   list-style:none;
@@ -312,7 +306,7 @@ strong{
   color:#676869;
 }
 
-/* SOCIAL ICONS */
+
 .social-links{
   display:flex;
   gap:17px;
@@ -328,7 +322,7 @@ strong{
   color:#171717;
 }
 
-/* BOTTOM BAR */
+
 .last-container{
   padding:0 40px;
 }

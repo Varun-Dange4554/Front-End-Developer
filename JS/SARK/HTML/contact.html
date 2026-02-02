@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../CSS/contact.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"  />
+</head>
+<body>
+    <nav></nav>
+
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container header-flex">
+      <h1><strong>Contact Us</strong></h1>
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>Contact Us</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div class="contact">
+    <div class="container">
+      <div class="box">
+
+        <!-- LEFT -->
+        <div class="main-row">
+
+          <div class="info-box">
+            <h3>Sark Corporation Pvt. Ltd.</h3>
+            <p>
+              Office No 268,<br />
+              SSIII, FF, Sector 6 Kopar Khairane Rd,<br />
+              Sector 6, Kopar Khairane, Navi Mumbai,<br />
+              Maharashtra 400709
+            </p>
+          </div>
+
+          <div class="info-box">
+            <h3>Call Us</h3>
+            <p>
+              +91 8600887710<br />
+              +91 8600887710<br />
+              +91 8600887710
+            </p>
+          </div>
+           </div>
+           </div>
+
+           <div class="form-div">
+
+          <form>
+            <div class="info-box1">
+              <h3>Get In Touch</h3>
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name" />
+            </div>
+
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your Email" />
+            </div>
+
+            <div class="form-group">
+              <input type="tel" class="form-control" placeholder="Mobile" />
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+          </form>
+          
+
+
+        <!-- RIGHT MAP -->
+        <div class="col-5">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30162.01369012549!2d72.9713843049574!3d19.096610355154347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c0d669c43c99%3A0x6e9c1c187d7dc591!2sNavi%20Mumbai%2C%20Maharashtra%20400709!5e0!3m2!1sen!2sin!4v1770021382943!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+
+    </div>
+  </div>
+
+    <footer class="footer"></footer>
+
+</body>
+
+<script src="../JS/index.js"></script>
+  <script type="module">
+    import { navBar, navStyle,Footer,footerStyle } from "../JS/component.js";
+
+    document.querySelector("nav").innerHTML = navBar();
+    document.querySelector(".footer").innerHTML = Footer();
+
+    const navstyleTag = document.createElement("style");
+    navstyleTag.innerHTML = navStyle();
+    document.head.appendChild(navstyleTag);
+   
+
+    const footerstyleTag = document.createElement("style");
+    footerstyleTag.innerHTML = footerStyle();
+    document.head.appendChild(footerstyleTag)
+
+  </script>
+</html>
