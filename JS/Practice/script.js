@@ -346,3 +346,14 @@
 // let usernum = Number(prompt("enter your number"));
 
 
+
+
+// console.log(a)
+
+// let  a = 10;
+
+let a = [1, 2];
+let b = [3, 4];
+let c = [...a, ...b];
+
+console.log(c)
