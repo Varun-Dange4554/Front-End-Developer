@@ -352,8 +352,31 @@
 
 // let  a = 10;
 
-let a = [1, 2];
-let b = [3, 4];
-let c = [...a, ...b];
+// let a = [1, 2];
+// let b = [3, 4];
+// let c = [...a, ...b];
 
-console.log(c)
+// console.log(c)
+
+
+// 1. Array Destructuring
+
+
+// const number = [1,22,34];
+
+// const [a,b,c] = number;
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+
+const obj = {
+    name:"varun",
+    age:"22"
+}
+
+const {name,age} = obj;
+
+console.log(name)
+console.log(age)
