@@ -15,7 +15,7 @@ Rejected: The operation failed, and the promise holds a reason for the failure (
 
 // $    ()=>{} // callback function
 
-/* let ice_cream = new Promise((res, rej) => {
+ let ice_cream = new Promise((res, rej) => {
   let got_ice_cream = false;
   if (got_ice_cream) res(got_ice_cream);
   else rej(got_ice_cream);
@@ -30,7 +30,7 @@ ice_cream
   })
   .catch(() => {
     console.log('call mommy');
-  }); */
+  }); 
 
 //! what if we get delay to get the response
 /*
@@ -100,17 +100,17 @@ function main(func){
 
 
 
-function waiting_msg_promise(){
- return new Promise((resolve,reject)=>{
-  resolve("gotch you????????");
- })
-}
+// function waiting_msg_promise(){
+//  return new Promise((resolve,reject)=>{
+//   resolve("gotch you????????");
+//  })
+// }
 
-const async_await_show_msg_promise = async ()=>{
-console.log("start the task...")
+// const async_await_show_msg_promise = async ()=>{
+// console.log("start the task...")
 
-let msg = await waiting_msg_promise();
-console.log('msg',msg);
-console.log(`finish the task!!!!`);
-}
-async_await_show_msg_promise()
+// let msg = await waiting_msg_promise();
+// console.log('msg',msg);
+// console.log(`finish the task!!!!`);
+// }
+// async_await_show_msg_promise()
