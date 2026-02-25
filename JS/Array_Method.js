@@ -80,6 +80,7 @@ console.log(join);
 
 let array2 = [1, 2, 6, 4, 5, 3];
 let copy = array2.copyWithin(0,1);
+console.log('🚀 ~ copy:', copy);
 console.log(array2);
 
 
