@@ -1,0 +1,101 @@
+// What are the Primitive types -> Primitive types are basic data types that store a single value.
+// They are immutable (cannot be changed)
+
+// 1.Number
+// String 
+// Booolean
+// undefined
+// Null
+// BigInt
+// Symbol
+
+// Number ->Used to store numeric values (integer & decimal).
+
+let a = 10; // integer
+let b = 5.5; // decimal
+let c = -100 // negative
+
+
+
+console.log(10 / 0);      // Infinity
+console.log("a" / 2);     // NaN
+
+// String -> Used to store text
+
+let name = "John";
+let city = 'Mumbai';
+let msg = `Hello ${name}`;
+
+// Strings are Immutable
+
+let str = "hello"
+str[0] = "H";
+console.log(str); //not a change original string
+
+// Boolean -> Store only two values  true or false
+
+// Undifined -> A variable declared but not assigned a value.
+
+let x;
+console.log(x); // undefined
+
+// Null -> Represents intentional empty value
+let data = null;
+
+// undefined                                                 // null
+// Variable declared but not assigned                     Intentional empty value
+// Type: undefined                                          Type: object (JS bug)
+
+
+console.log(typeof undefined); // "undefined"
+console.log(typeof null);      // "object"
+
+// BigInt -> Used for very large numbers beyond Number limit.
+let big2 = BigInt(1234567890);
+
+// Symbol -> Used to create unique identifiers.
+
+
+let id1 = Symbol("id");
+let id2 = Symbol("id");
+
+console.log(id1 === id2); // false
+
+
+// Primitive values are stored in stack memory.
+
+let a2= 10
+let b2 = a2
+b2 = 20
+console.log('🚀 ~ a2:', a2);
+console.log('🚀 ~ b2:', b2);
+
+//Primitive Vs	Reference
+
+// Primitive                                            Reference Type
+
+// Stored in stack	                                     Stored in heap
+// Copy by value	                                     Copy by reference
+// Immutable	                                         Mutable
+
+// Example of reference:
+
+
+let obj1 = {name:"joho"}
+let obj2 = obj1
+
+obj2.name = "varun";
+
+console.log(obj1.name) //  only change inside the objectn value 
+console.log(obj1)
+
+//
+
+const user = {
+  name: "John",
+  age: 25
+};
+
+user.name = "Mike";
+
+console.log(user);

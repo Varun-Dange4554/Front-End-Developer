@@ -1,0 +1,36 @@
+// Comparison Operators
+
+// What are Comparison Operators? -> Comparison operators are used to compare two values.
+
+
+let a = 5;
+let b = "5";
+let c = 10;
+
+console.log(a == b);    // true  (value same, type ignored)
+console.log(a === b);   // false (value same, type different)
+
+console.log(a != b);    // false (value same)
+console.log(a !== b);   // true  (type different)
+
+console.log(c > a);     // true  (10 > 5)
+console.log(a < c);     // true  (5 < 10)
+
+console.log(a >= 5);    // true  (equal allowed)
+console.log(a <= 4);    // false (5 is not <= 4)
+
+console.log(null == undefined);   // true  (special rule)
+console.log(null === undefined);  // false (different types)
+
+console.log(NaN == NaN);   // false (NaN is never equal to anything)
+console.log("10" > 5);     // true  (string converted to number)
+console.log("2" > "10");   // true  (string comparison)
+
+
+
+// == → compares value only
+//  === → compares value + type
+//  != → not equal (value)
+//  !== → strict not equal
+//  > < >= <= → number comparison
+//  Special cases → null, undefined, NaN
