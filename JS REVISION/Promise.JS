@@ -6,29 +6,31 @@
 // $ Fulfilled → Success
 
 // Creating a Promise
-let myPromise = new Promise((resolve, reject) => {
-  let success = true;
+// let myPromise = new Promise((resolve, reject) => {
+//   let success = true;
 
-  if (success) {
-    resolve("Data received");
-  } else {
-    reject("Error occurred");
-  }
-});
+//   if (success) {
+//     resolve("Data received");
+//   } else {
+//     reject("Error occurred");
+//   }
+// });
 
-let promise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Task completed");
-  }, 2000);
-});
+// let promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("Task completed");
+//   }, 2000);
+// });
 
-promise.then((msg) => console.log(msg));
+// promise.then((msg) => console.log(msg));
 
 let loginStastus = false;
-let Promise = new Promise((res, rej) => {
+let loginPromise = new Promise((res, rej) => {
   if (loginStastus) {
     res({ status: 1, msg: "Login Done" });
   } else {
     rej({ status: 0, msg: "Invalid user name password" });
   }
 });
+
+// function step1(callback)
