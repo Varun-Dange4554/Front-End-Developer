@@ -24,13 +24,35 @@
 
 // promise.then((msg) => console.log(msg));
 
-let loginStastus = false;
+/* 
+let loginStatus = true;
+
 let loginPromise = new Promise((res, rej) => {
-  if (loginStastus) {
+  if (loginStatus) {
     res({ status: 1, msg: "Login Done" });
   } else {
     rej({ status: 0, msg: "Invalid user name password" });
   }
 });
 
-// function step1(callback)
+loginPromise
+  .then((data) => {
+    console.log("Success:", data);
+  })
+  .catch((err) => {
+    console.log("Error:", err);
+  });
+*/
+
+// $async / await
+
+async function checkLogin() {
+  try {
+    let data = await loginPromise; // wait karega jab tak promise resolve na ho
+    console.log("Success:", data);
+  } catch (err) {
+    console.log("Error:", err);
+  }
+}
+
+checkLogin();

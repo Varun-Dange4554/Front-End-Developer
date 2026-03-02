@@ -1,4 +1,5 @@
 //code 1
+/*
 function appends(s){
     // hello()
     let script = document.createElement('script');
@@ -17,7 +18,7 @@ function appends(s){
 }
 appends('./myscript.js');
 
-
+*/
 
 /*
 // & code 2
@@ -53,7 +54,6 @@ appends('./myscript.js')
 
 */
 
-
 // code 3
 /*
 function appends(s){
@@ -88,14 +88,12 @@ function appends(s){
  
  */
 
-
-
 // promise
-// let promise = new Promise((res, rej)=>{
-    //    console.log(`I am a promise`);
-    //    res("result");
-    // rej("error");
-// });
+let promise = new Promise((res, rej) => {
+  console.log(`I am a promise`);
+  res("result");
+  rej("error");
+});
 
 /*
 
@@ -150,13 +148,6 @@ p2.then((res)=>{
 })
 */
 
-
-
-
-
-
-
-
 /*
 // async await
 
@@ -194,12 +185,6 @@ getAlldata();
 
 */
 
-
-
-
-
-
-
 /*
 function getdata (dataId){
     // console.log("data",dataId);
@@ -228,13 +213,6 @@ return getdata(2);
 })
 */
 
-
-
-
-
-
-
-
 /*
  // callback hell
 
@@ -262,4 +240,3 @@ getdata(1,()=>{
     });
 });
 */
-
